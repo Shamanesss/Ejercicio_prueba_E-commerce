@@ -1,0 +1,15 @@
+body{
+    background-color: #fdf8f5;
+}
+.form-color{
+    background-color: #e8cebf;
+}
+.colour{
+    background-color: #266150;
+}
+.btn-color{
+    background-color: #266150;
+}
+.checkgreen input:checked ~ .checkmark {
+    background-color: green;
+    }
