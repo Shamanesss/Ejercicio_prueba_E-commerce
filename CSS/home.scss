@@ -1,0 +1,30 @@
+@import "_parcial";
+
+.logo {
+    width: 7vw;
+    margin-left: 2rem;
+}
+
+.encabezado {
+    background-color: $color-verde;
+}
+
+.encabezado-3 a{
+    margin: 0 .5rem;
+}
+
+.encabezado-3 a:last-child{
+    margin-right: 2rem;
+}
+
+
+// Media query
+
+
+@media (max-width: 420px) {
+    .logo {
+        margin-left: 0;
+        width: 20vw;
+    }
+  }
+  
