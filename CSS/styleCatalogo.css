@@ -9,3 +9,13 @@
     padding: 1rem 0 1rem 0;
     margin-bottom: 5rem;
 }
+.contenido-hombre{
+    background-color: #FDF8F5;
+    height: auto;
+    padding-bottom: 1rem;
+}
+.contenido-mujeres{
+    background-color: #e9af8e;
+    height: auto;
+    padding-bottom: 1rem;
+}
