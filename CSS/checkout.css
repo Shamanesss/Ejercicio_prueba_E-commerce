@@ -1,0 +1,30 @@
+body {
+  background-image: linear-gradient(35deg, #4F4846, #DDAF94, #E8CEBF);
+}
+body .contenedor {
+  display: flex;
+  justify-content: space-around;
+}
+body .contenedor .caja1 .contenido .nomap {
+  display: flex;
+  gap: 2rem;
+}
+body .contenedor .caja1 .contenido .ciuco {
+  display: flex;
+  gap: 2rem;
+}
+body .contenedor .caja1 .contenido .largo input {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+body .contenedor .caja1 .contenido .corto input {
+  border-radius: 0.5rem;
+}
+body .contenedor .caja1 .contenido select {
+  width: 100%;
+  height: 1.8rem;
+  border-radius: 0.5rem;
+}
+body .contenedor .caja2 {
+  margin-top: 10rem;
+}/*# sourceMappingURL=checkout.css.map */
