@@ -1,0 +1,23 @@
+.logo {
+  width: 7vw;
+  margin-left: 2rem;
+}
+
+.encabezado {
+  background-color: #266150;
+}
+
+.encabezado-3 a {
+  margin: 0 0.5rem;
+}
+
+.encabezado-3 a:last-child {
+  margin-right: 2rem;
+}
+
+@media (max-width: 420px) {
+  .logo {
+    margin-left: 0;
+    width: 20vw;
+  }
+}/*# sourceMappingURL=home.css.map */
