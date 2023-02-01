@@ -1,0 +1,33 @@
+@charset "UTF-8";
+body {
+  background-color: linear-gradient(35deg, #4F4846, #DDAF94, #E8CEBF);
+  border: 1px solid black;
+}
+
+.boton_comprar {
+  background-color: #266150;
+}
+
+.boton_añadir {
+  background-color: #266150;
+}
+
+.talla1 {
+  background-color: #DDAF94;
+}
+
+.talla2 {
+  background-color: #DDAF94;
+}
+
+.talla3 {
+  background-color: #DDAF94;
+}
+
+.talla4 {
+  background-color: #DDAF94;
+}
+
+.spiner {
+  background-color: rgb(128, 101, 15);
+}/*# sourceMappingURL=expecifico.css.map */
