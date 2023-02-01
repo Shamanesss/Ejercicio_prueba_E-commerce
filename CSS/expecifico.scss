@@ -1,0 +1,34 @@
+@import "_parcial";
+
+body{
+    background-color: $fondo;
+    border: 1px solid black;
+}
+
+.boton_comprar{
+    background-color: $color-verde;
+}
+
+.boton_añadir{
+    background-color: $color-verde;
+}
+
+.talla1{
+    background-color: $color-marron;
+}
+
+.talla2{
+    background-color: $color-marron;
+}
+
+.talla3{
+    background-color: $color-marron;
+}
+
+.talla4{
+    background-color: $color-marron;
+}
+
+.spiner{
+   background-color: $color-bota1-hombre ; 
+}
