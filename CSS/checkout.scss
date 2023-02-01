@@ -1,8 +1,79 @@
 @import "_parcial";
 
-.yo {
-    height: 30rem;
-    width: 20rem;
-    background-color: $color-verde;
-}
+
+
+body {
+      padding: 3rem;
+      background-image: $fondo;
+    .contenedor {
+        display: flex;
+        justify-content: space-between;
+        // background-color: white;
+        .caja1 {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            .logo {
+                 display: flex;
+                 justify-content: center;
+                 
+              
+            }
+            
+            .contenido{
+                .nomap {
+                    display: flex;
+                    gap: 2.19rem;
+                }
+                .ciuco {
+                    display: flex;
+                    gap: 2rem;
+                }
+                
+                .largo {
+                    input {
+                        height: 2rem;
+                        width: 100%;
+                        border-radius: 0.5rem;
+                        border: none;
+                    }
+                }
+                .corto {
+                    input {
+                        height: 2rem;
+                        border-radius: 0.5rem;
+                        border: none;
+                    }
+                }
+                select {
+                    width: 100%;
+                    height: 2rem;
+                    border-radius: 0.5rem;
+                }
+                
+                }
+               .btn {
+                background-color: $color-verde;
+               }
+              
+            }
+    }
+        .caja2 {
+            position: absolute;
+            margin-top: 10rem;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+
+            img {
+                width:100%;
+                height: 100%;
+                // box-shadow: 10px 8px 8px rgb(192, 168, 168);
+            }
+        }
+    }
+
+
+
+
 
