@@ -30,10 +30,16 @@
   <body>
     <div class="container">
       <header
-        class="encabezado d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
-
-        <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none";>
-          <img class="logo" src="/img/logo-blanco.png"alt="Logo de ZapatON"/>
+        class="encabezado d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none";
+        >
+          <img class="logo"
+            src="/img/logo-blanco.png"
+            alt="Logo de ZapatON"
+          />
         </a>
 
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center">
@@ -75,22 +81,22 @@
 
       <!-- Desplegable -->
 
-      <nav class="encabezado navbar navbar-expand-lg ">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-
-
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none";>
-            <img class="logo" src="/img/logo-blanco.png"alt="Logo de ZapatON"/>
-          </a>
-          
+          <div class="encabezado-3 col-md-3 text-end">
+            <a href=""><i class="idiomas fa-solid fa-globe text-dark"></i></a>
+            <a href=""><i class="login fa-regular fa-user text-dark"></i></a>
+            <a href=""><i class="carrito fa-sharp fa-solid fa-cart-shopping text-dark"></i
+            ></a>
+          </div>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a href="#" class="nav-link active px-2 text-white" aria-current="page">Inicio</a>
+                <a href="#" class="nav-link active px-2 text-dark" aria-current="page">Inicio</a>
               </li>
 
               <!-- <li class="nav-item">
@@ -98,42 +104,75 @@
 
                 <ul></ul> -->
 
-                <li class="nav-item dropdown">
-                  <a class="nav-link px-2 text-white dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                    Tienda
-                  </a>
-                  <ul class="dropdown-menu" >
-                    <li><a class="dropdown-item" href="#">Hombre</a></li>
-                    <li><a class="dropdown-item" href="#">Mujer</a></li>
-                    <li><a class="dropdown-item" href="#">Ofertas</a></li>
-                  </ul>
-                </li>
+                <li class="nav-item "><a href="#" class="nav-link px-2 text-dark">Tienda</a>
+                    <ul>
+                        <li><a href="#" class="nav-link dropdown-item px-2 text-dark">Hombre</a></li>
+                        <li><a href="#" class="nav-link dropdown-item px-2 text-dark">Mujer</a></li>
+                        <li><a href="#" class="nav-link dropdown-item px-2 text-dark">Ofertas</a></li>
+                    </ul>
+              </li>
 
 
               <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-white" aria-current="page">Servicio al cliente</a>
+                <a href="#" class="nav-link px-2 text-dark" aria-current="page">Servicio al cliente</a>
               </li>
               
               <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-white" aria-current="page">Sobre ZapatON</a>
+                <a href="#" class="nav-link px-2 text-dark" aria-current="page">Sobre ZapatON</a>
               </li>
 
             </ul>
           </div>
-
-          <div class="encabezado-3 col-md-3 text-end">
-            <a href=""><i class="idiomas fa-solid fa-globe text-white"></i></a>
-            <a href=""><i class="login fa-regular fa-user text-white"></i></a>
-            <a href=""><i class="carrito fa-sharp fa-solid fa-cart-shopping text-white"></i
-            ></a>
-          </div>
-
         </div>
         
       </nav>
     </div>
 
-    
+    <!-- Barra fija -->
+
+    <header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container-fluid">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarExample01"
+        aria-controls="navbarExample01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarExample01">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar -->
+
+  <!-- Jumbotron -->
+  <div class="p-5 text-center bg-light" style="margin-top: 58px;">
+    <h1 class="mb-3">Heading</h1>
+    <h4 class="mb-3">Subheading</h4>
+    <a class="btn btn-primary" href="" role="button">Call to action</a>
+  </div>
+  <!-- Jumbotron -->
+</header>
 
 
 

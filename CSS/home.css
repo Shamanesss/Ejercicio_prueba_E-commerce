@@ -15,6 +15,10 @@
   margin-right: 2rem;
 }
 
+.contenidoBajoHeader {
+  margin-top: 8rem;
+}
+
 @media (max-width: 420px) {
   .logo {
     margin-left: 0;
