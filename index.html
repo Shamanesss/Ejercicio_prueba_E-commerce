@@ -29,102 +29,139 @@
   </head>
   <body>
     <div class="container">
-      <header
-        class="encabezado d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4"
-      >
-        <a
-          href="/"
-          class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none";
-        >
-          <img class="logo"
-            src="/img/logo-blanco.png"
-            alt="Logo de ZapatON"
-          />
-        </a>
-
-        <ul class="nav col-12 col-md-auto mb-2 justify-content-center">
-          <li><a href="#" class="nav-link px-2 text-white">Inicio</a></li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link px-2 text-white dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-              Tienda
-            </a>
-            <ul class="dropdown-menu" >
-              <li><a class="dropdown-item" href="#">Hombre</a></li>
-              <li><a class="dropdown-item" href="#">Mujer</a></li>
-              <li><a class="dropdown-item" href="#">Ofertas</a></li>
-            </ul>
-          </li>
-
-          <!-- <li><a href="#" class="nav-link px-2 text-white">Tienda</a>
-                <ul>
-                    <li><a href="#" class="nav-link px-2 text-white">Hombre</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Mujer</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Ofertas</a></li>
-                </ul>
-          </li> -->
-          <li><a href="#" class="nav-link px-2 text-white">Servicio al cliente</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Sobre ZapatON</a></li>
-        </ul>
-
-
-
-        <div class="encabezado-3 col-md-3 text-end">
-          <a href=""><i class="idiomas fa-solid fa-globe text-white" id="idiomas"></i></a>
-          <a href=""><i class="login fa-regular fa-user text-white" id="login"></i></a>
-          <a href=""><i class="carrito fa-sharp fa-solid fa-cart-shopping text-white" id="carrito"></i
-          ></a>
-        </div>
-      </header>
+      
 
       <!-- Desplegable -->
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="encabezado-altura">
+      <nav class="encabezado navbar navbar-expand-lg fixed-top " style="padding-top: 0px;padding-bottom: 0px;">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="encabezado-3 col-md-3 text-end">
-            <a href=""><i class="idiomas fa-solid fa-globe text-dark"></i></a>
-            <a href=""><i class="login fa-regular fa-user text-dark"></i></a>
-            <a href=""><i class="carrito fa-sharp fa-solid fa-cart-shopping text-dark"></i
-            ></a>
-          </div>
+
+          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none";>
+            <img class="logo" src="/img/logo-blanco.png"alt="Logo de ZapatON"/>
+          </a>
+          
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a href="#" class="nav-link active px-2 text-dark" aria-current="page">Inicio</a>
+                <a href="#" class="nav-link active px-2 text-white" aria-current="page">Inicio</a>
               </li>
 
-              <!-- <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-dark" aria-current="page">Tienda</a>
-
-                <ul></ul> -->
-
-                <li class="nav-item "><a href="#" class="nav-link px-2 text-dark">Tienda</a>
-                    <ul>
-                        <li><a href="#" class="nav-link dropdown-item px-2 text-dark">Hombre</a></li>
-                        <li><a href="#" class="nav-link dropdown-item px-2 text-dark">Mujer</a></li>
-                        <li><a href="#" class="nav-link dropdown-item px-2 text-dark">Ofertas</a></li>
-                    </ul>
-              </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link px-2 text-white dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tienda
+                  </a>
+                  <ul class="dropdown-menu" >
+                    <li><a class="dropdown-item" href="#">Hombre</a></li>
+                    <li><a class="dropdown-item" href="#">Mujer</a></li>
+                    <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                  </ul>
+                </li>
 
 
               <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-dark" aria-current="page">Servicio al cliente</a>
+                <a href="#" class="nav-link px-2 text-white" aria-current="page">Servicio al cliente</a>
               </li>
               
               <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-dark" aria-current="page">Sobre ZapatON</a>
+                <a href="#" class="nav-link px-2 text-white" aria-current="page">Sobre ZapatON</a>
+              </li>
+
+              <li class="nav-item ocultar-login">
+                <a href="" class="nav-link px-2 text-white"> <strong>Mi cuenta</strong> </a>
               </li>
 
             </ul>
+
+
           </div>
+
+<!-- MMMMMMMMMM -->
+          <div class="encabezado-3 col-md-3 text-end">
+            <!-- <a href=""><i class="idiomas fa-solid fa-globe text-white"></i></a> -->
+
+<!-- lalalalala -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 en-linea">
+            <li class="nav-item dropdown">
+              <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="idiomas fa-solid fa-globe text-white"></i>
+              </a>
+              <ul class="dropdown-menu" >
+                <li><a class="dropdown-item" href="#" style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img class="bandera" src="/img/espana.png" alt="">  ES</a></li>
+
+                
+
+                <li><a class="dropdown-item" href="#" style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img class="bandera" src="/img/estados-unidos.png" alt="">  EN</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="" class="ocultar"><i class="login fa-regular fa-user  text-white"></i></a>
+            </li>
+
+            <li class="nav-item">
+              <a href=""><i class="carrito fa-sharp fa-solid fa-cart-shopping text-white"></i></a>
+            </li>
+
+        </ul>
+
+<!-- lalalalalala -->
+
+
+            <!-- <a href="" class="ocultar"><i class="login fa-regular fa-user  text-white"></i></a>
+            <a href=""><i class="carrito fa-sharp fa-solid fa-cart-shopping text-white"></i></a> -->
+          </div>
+
+<!-- MMMMMMMMMM -->
+
+          <div class="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=" text-white"><i class="fa-solid fa-bars"></i></span>
+          </div>
+
+
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+          </button> -->
+
+
         </div>
         
       </nav>
+    </header>
     </div>
+
+
+<div class="contenedor bajo-header">
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
+    </div>
+
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
+    </div>
+
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
+    </div>
+
+    <div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
+    </div>
+
+  </div>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
