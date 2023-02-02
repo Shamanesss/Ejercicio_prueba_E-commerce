@@ -5,6 +5,10 @@ body{
     background-attachment: fixed;
 }
 
+.spiner{
+    background-color: rgb(209, 132, 32);
+}
+
 .boton_comprar{
     background-color: $color-verde;
 }
@@ -13,22 +17,9 @@ body{
     background-color: $color-verde;
 }
 
-.talla1{
+.talla{
     background-color: $color-marron;
 }
 
-.talla2{
-    background-color: $color-marron;
-}
 
-.talla3{
-    background-color: $color-marron;
-}
 
-.talla4{
-    background-color: $color-marron;
-}
-
-.spiner{
-   background-color: $color-bota1-hombre ; 
-}
