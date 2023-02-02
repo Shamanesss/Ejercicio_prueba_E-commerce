@@ -1,0 +1,76 @@
+@import "_parcial";
+
+main {
+    .contenedor-carrito {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        .carrito-vacio {
+            color: $color-negro;
+            display: none;
+        }
+        .carrito-productos {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .carrito-pr {
+                display: flex;
+                justify-content: space-between;
+                background-color: $color-marron-light;
+                padding: 0.5rem;
+                padding-right: 1.5rem;
+                border-radius: 1rem;
+                align-items: center;
+                .carrito-producto-imagen {
+                    width: 6rem;
+                    border-radius: 1rem;
+            
+                }
+                small {
+                    font-size: 1rem;
+                }
+                .carrito-producto-delete {
+                    border: 0;
+                    background-color: transparent;
+                    color: $color-verde;
+                }
+            }
+        }
+        .carrito-acciones {
+            display: flex;
+            justify-content: space-between;
+            .acciones-delete {
+                margin: 0;
+                padding: 0.5rem;
+                border-radius: 1rem;
+                background-color: $color-verde;
+                color: $color-blanco;
+                margin-left: 1.5rem;
+
+            }
+            .carrito-acciones-comprar {
+                margin: 0;
+                padding: 0.5rem;
+                border-top-right-radius: 1rem;
+                border-bottom-right-radius: 1rem;
+                background-color: $color-verde;
+                color: $color-blanco;
+                margin-right: 1.5rem;
+            }
+            .carrito-acciones-dr {
+                display: flex;
+                gap: 0.5rem;
+                .carrito-acciones-total {
+                    margin: 0;
+                   display: flex;
+                   padding: 0.5rem;
+                   border-top-left-radius: 1rem;
+                   border-bottom-left-radius: 1rem;
+                   background-color: $color-marron-light;
+                   gap: 0.5rem;
+                }
+            }
+        }
+    }
+
+}
