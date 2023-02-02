@@ -1,4 +1,5 @@
 const imgArray = [
+    "../img/zapatoMihai50.png",
     "../img/zapatomujer4_60.png",
     "../img/zapatoMihai2.png",
     "../img/zapatoMihai3.png",
