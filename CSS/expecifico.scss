@@ -1,8 +1,8 @@
 @import "_parcial";
 
 body{
-    background-color: $fondo;
-    border: 1px solid black;
+    background: $fondo;
+    background-attachment: fixed;
 }
 
 .boton_comprar{
