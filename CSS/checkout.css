@@ -2,27 +2,6 @@ body {
   padding: 3rem;
   background-image: linear-gradient(35deg, #4F4846, #DDAF94, #E8CEBF);
 }
-body .contenedor {
-  display: flex;
-  justify-content: space-between;
-}
-body .contenedor .caja1 {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-}
-body .contenedor .caja1 .logo {
-  display: flex;
-  justify-content: center;
-}
-body .contenedor .caja1 .contenido .nomap {
-  display: flex;
-  gap: 2.19rem;
-}
-body .contenedor .caja1 .contenido .ciuco {
-  display: flex;
-  gap: 2rem;
-}
 body .contenedor .caja1 .contenido .largo input {
   height: 2rem;
   width: 100%;
@@ -38,6 +17,12 @@ body .contenedor .caja1 .contenido select {
   width: 100%;
   height: 2rem;
   border-radius: 0.5rem;
+}
+body .contenedor .caja1 .contenido .pago {
+  display: inline;
+}
+body .contenedor .caja1 .contenido h6 {
+  padding-top: 0.5rem;
 }
 body .contenedor .caja1 .btn {
   background-color: #266150;

@@ -11,13 +11,13 @@
 </head>
 <body onload="interval()">
     <div class="grande">
-        <div class="contenedor">
-            <div class ="caja1">
-                <div class="logo">
+        <div class="contenedor d-flex justify-content-between">
+            <div class ="caja1 d-flex flex-column gap-4">
+                <div class="logo d-flex justify-content-center">
                     <a href="/Users/mihaicocea/Desktop/ZapatON/index.html"><img src="/img/logo-pequeno.png" alt=""></a>
                 </div>
                 <div class="contenido">
-                    <div class="nomap">
+                    <div class="nomap d-flex gap-2">
                         <div class="nombre corto">
                             <h6>Nombre</h6>
                             <input type="text">
@@ -31,7 +31,7 @@
                         <h6>Direccion</h6>
                         <input type="text">
                     </div>
-                    <div class="ciuco">
+                    <div class="ciuco d-flex gap-2">
                         <div class="ciudad corto">
                             <h6>Ciudad</h6>
                             <input type="text">
@@ -68,11 +68,16 @@
                             <option>Pago con Paypall</option>
                             <option>Pago en Efectivo</option>
                         </select>
-                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <img class="" src="/img/maestrocard.png" alt="">
+                        <img class="" src="/img/mastercard.png" alt="">
+                        <img class="" src="/img/paypallcard.png" alt="">
+                        <img class="" src="/img/visacard.png" alt="">
+                        <img class="" src="/img/americanexpress.png" alt="">
+                        <!-- <i class="fa-brands fa-cc-mastercard"></i>
                         <i class="fa-brands fa-cc-visa"></i>
                         <i class="fa-brands fa-cc-paypal"></i>
                         <i class="fa-brands fa-cc-apple-pay"></i>
-                        <i class="fa-brands fa-cc-amazon-pay"></i>
+                        <i class="fa-brands fa-cc-amazon-pay"></i> -->
                         <!-- <input type="text"> -->
                     </div>
                     <button class="btn btn-success-emphasis col-12 my-5">ENVIAR</button>

@@ -6,28 +6,28 @@ body {
       padding: 3rem;
       background-image: $fondo;
     .contenedor {
-        display: flex;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
         // background-color: white;
         .caja1 {
-            display: flex;
-            flex-direction: column;
-            gap: 4rem;
+            // display: flex;
+            // flex-direction: column;
+            // gap: 4rem;
             .logo {
-                 display: flex;
-                 justify-content: center;
+                //  display: flex;
+                //  justify-content: center;
                  
               
             }
             
             .contenido{
                 .nomap {
-                    display: flex;
-                    gap: 2.19rem;
+                    // display: flex;
+                    // gap: 2rem;
                 }
                 .ciuco {
-                    display: flex;
-                    gap: 2rem;
+                    // display: flex;
+                    // gap: 2rem;
                 }
                 
                 .largo {
@@ -49,6 +49,14 @@ body {
                     width: 100%;
                     height: 2rem;
                     border-radius: 0.5rem;
+                }
+                .pago {
+                     display: inline;
+                   
+                   
+                }
+                h6 {
+                    padding-top: 0.5rem;
                 }
                 
                 }
