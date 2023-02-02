@@ -1,8 +1,16 @@
 @import "_parcial";
 
+
+
+
+
 .logo {
-    width: 7vw;
+    width: 6vw;
     margin-left: 2rem;
+}
+
+.bandera {
+    width: 1.5rem;
 }
 
 .encabezado {
@@ -21,13 +29,52 @@
     margin-top: 8rem;
 }
 
+.navbar-toggler-icon span{
+    color: white;
+}
+
+.sin-padding{
+    padding: 0;
+}
+
+.en-linea {
+    display: flex;
+}
+
 // Media query
+
+.ocultar-login{
+    display: none;
+}
+
+.contenedor {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.bajo-header{
+    margin-top: 7rem;
+}
 
 
 @media (max-width: 420px) {
     .logo {
         margin-left: 0;
-        width: 20vw;
+        width: 16vw;
+    }
+
+    .ocultar{
+        display: none;
+    }
+
+    .ocultar-login{
+        display:inline;
+        text-transform: capitalize;
+    }
+
+    .en-linea {
+        display: flex;
+        flex-direction: row;
     }
   }
   
