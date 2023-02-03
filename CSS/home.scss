@@ -25,13 +25,14 @@
     margin-right: 2rem;
 }
 
-.contenidoBajoHeader {
-    margin-top: 8rem;
-}
+// .contenidoBajoHeader {
+//     margin-top: 8rem;
+// }
 
 .navbar-toggler-icon span{
     color: white;
 }
+
 
 .sin-padding{
     padding: 0;
@@ -40,6 +41,11 @@
 .en-linea {
     display: flex;
 }
+
+.carousel-item img{
+    height: 80vh;
+}
+
 
 // Media query
 
@@ -53,11 +59,27 @@
 }
 
 .bajo-header{
-    margin-top: 7rem;
+    margin-top: 3.7rem;
+}
+
+.titulo-seccion-productos{
+    text-transform: uppercase;
+    color: $color-verde;
+}
+
+.promocion{
+    height: 50vh;
+    background-color: aquamarine;
+}
+
+.footer-background {
+    background-color: $color-negro;
 }
 
 
-@media (max-width: 420px) {
+
+
+@media (max-width: 920px) {
     .logo {
         margin-left: 0;
         width: 16vw;
@@ -76,5 +98,17 @@
         display: flex;
         flex-direction: row;
     }
+
+    .carousel-item img{
+        height: 35vh;
+    }
+
+    .card {
+        margin-bottom: 1.5rem;
+    }
+
+    .promocion{
+        height: 25vh;
+        background-color: aquamarine;
+    }
   }
-  
