@@ -17,9 +17,17 @@ function validar(){
     // if(nombre!=null && nombre != undefined){
     //     saludar.innerHTML = nombre;
     // }
-    saludar.innerHTML = "Hola "+nombre;
-    }
+    
+   saludar.innerHTML = "Hola "+nombre;
 
+   
+    
+    
+    
+
+   // )
+    }
+    
 // cerrar.addEventListener('click', cerrarLogin)
 // function cerrarLogin(){
 //     delete.localStorage.logeado

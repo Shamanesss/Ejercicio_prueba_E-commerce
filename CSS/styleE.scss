@@ -4,7 +4,7 @@ body{
     background-color: $color-blanco;
 
 }
-.form-color{
+.form-color {
     background-color: $color-marron;
   }
   .colour{
@@ -17,4 +17,13 @@ body{
     background-color: $color-blanco;
     font-size: large;
     
+  }
+  .datospersonales{
+    background-color: $color-marron;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+  }
+  .datospersonales input{
+    background-color: $color-marron;
+    border: 0;
   }
