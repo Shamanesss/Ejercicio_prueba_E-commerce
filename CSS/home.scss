@@ -2,11 +2,9 @@
 
 
 
-
-
 .logo {
     width: 6vw;
-    margin-left: 2rem;
+
 }
 
 .bandera {
@@ -33,6 +31,15 @@
     color: white;
 }
 
+.iconos-header i{
+    margin: 0 .7rem;
+}
+
+.idiomas {
+    margin-right: 0;
+
+}
+
 
 .sin-padding{
     padding: 0;
@@ -42,9 +49,139 @@
     display: flex;
 }
 
-.carousel-item img{
-    height: 80vh;
+// Estilos carrito
+
+.submenu {
+    position: relative;
 }
+
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+
+
+
+
+
+// banner
+
+.dj-banner {
+    margin: 30px 0;
+    position: relative;
+}
+
+#background-banner {
+    background-color: $color-marron-light;
+}
+
+// .dj-banner .dj-bg {
+//     background-image: linear-gradient(35deg, #4F4846, #DDAF94, #E8CEBF);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     width: 100%;
+// }
+
+.dj-banner .dj-bg img {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 0;
+}
+
+.dj-banner .dj-text {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+// banner-style
+
+.banner-style{
+    border-radius: 5px;
+    background: $color-verde;
+    border-color: $color-verde;
+    height: 44px;
+    color: white;
+    width: 152px;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+
+// Boton formulario
+
+.contact-boton {
+    background-color: $color-verde;
+    border: 0;
+    padding: 10px 24px;
+    color: white;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+  
+  .contact-boton:hover {
+    background: $color-verde;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) {
+    .dj-banner .dj-bg img {
+        margin-right: 100px;
+    }
+
+    .dj-banner .dj-text {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(-10%, -50%);
+        width: 50%;
+        text-align: left;
+    }
+
+    .dj-banner .dj-text h1 {
+        font-size: calc(2*1.5vw);
+    }
+
+    .dj-banner .dj-text p {
+        font-size: calc(1.2*1.5vw);
+    }
+}
+
+
 
 
 // Media query
