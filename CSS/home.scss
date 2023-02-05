@@ -13,6 +13,8 @@
 
 .encabezado {
     background-color: $color-verde;
+    display: flex;
+    flex-direction: column;
 }
 
 .encabezado-3 a{
@@ -31,6 +33,11 @@
     color: white;
 }
 
+.iconos-header{
+    display: flex;
+    justify-items: flex-end;
+}
+
 .iconos-header i{
     margin: 0 .7rem;
 }
@@ -47,6 +54,23 @@
 
 .en-linea {
     display: flex;
+}
+
+
+.nav-bajo {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    
+
+    #reloj {
+        
+        margin-left: 2rem;
+    }
+
+    #saludar{
+        margin-right: 2.5rem;
+    }
 }
 
 // Estilos carrito
@@ -138,7 +162,14 @@
   }
 
 
-
+.color_botones {
+    background-color: #266150;
+    color: #fdf8f5;
+  }
+.color_botones:hover {
+    border: 1px solid #266150;
+    color: #266150;
+  }/*# sourceMappingURL=styleCatalogo.css.map */
 
 
 
@@ -162,6 +193,8 @@
     .dj-banner .dj-bg img {
         margin-right: 100px;
     }
+
+    
 
     .dj-banner .dj-text {
         position: absolute;
@@ -219,7 +252,7 @@
 @media (max-width: 920px) {
     .logo {
         margin-left: 0;
-        width: 16vw;
+        width: 12vw;
     }
 
     .ocultar{

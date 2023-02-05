@@ -8,6 +8,8 @@
 
 .encabezado {
   background-color: #266150;
+  display: flex;
+  flex-direction: column;
 }
 
 .encabezado-3 a {
@@ -20,6 +22,11 @@
 
 .navbar-toggler-icon span {
   color: white;
+}
+
+.iconos-header {
+  display: flex;
+  justify-items: flex-end;
 }
 
 .iconos-header i {
@@ -36,6 +43,18 @@
 
 .en-linea {
   display: flex;
+}
+
+.nav-bajo {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+.nav-bajo #reloj {
+  margin-left: 2rem;
+}
+.nav-bajo #saludar {
+  margin-right: 2.5rem;
 }
 
 .submenu {
@@ -103,6 +122,15 @@
   background: #266150;
 }
 
+.color_botones {
+  background-color: #266150;
+  color: #fdf8f5;
+}
+
+.color_botones:hover {
+  border: 1px solid #266150;
+  color: #266150;
+} /*# sourceMappingURL=styleCatalogo.css.map */
 @media screen and (min-width: 768px) {
   .dj-banner .dj-bg img {
     margin-right: 100px;
@@ -152,7 +180,7 @@
 @media (max-width: 920px) {
   .logo {
     margin-left: 0;
-    width: 16vw;
+    width: 12vw;
   }
   .ocultar {
     display: none;
