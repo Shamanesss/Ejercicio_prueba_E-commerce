@@ -2,107 +2,11 @@
 
 
 
-.logo {
-    width: 6vw;
-
-}
-
-.bandera {
-    width: 1.5rem;
-}
-
-.encabezado {
-    background-color: $color-verde;
-    display: flex;
-    flex-direction: column;
-}
-
-.encabezado-3 a{
-    margin: 0 .5rem;
-}
-
-.encabezado-3 a:last-child{
-    margin-right: 2rem;
-}
-
-// .contenidoBajoHeader {
-//     margin-top: 8rem;
-// }
-
-.navbar-toggler-icon span{
-    color: white;
-}
-
-.iconos-header{
-    display: flex;
-    justify-items: flex-end;
-}
-
-.iconos-header i{
-    margin: 0 .7rem;
-}
-
-.idiomas {
-    margin-right: 0;
-
-}
-
-
-.sin-padding{
-    padding: 0;
-}
-
-.en-linea {
-    display: flex;
-}
-
-
-.nav-bajo {
-    display: flex;
-    justify-content: space-between;
-    width: 80vw;
-    
-
-    #reloj {
-        
-        margin-left: 2rem;
-    }
-
-    #saludar{
-        margin-right: 2.5rem;
-    }
-}
-
-// Estilos carrito
-
-.submenu {
-    position: relative;
-}
-
-.submenu #carrito{
-    display: none;
-}
-.submenu:hover #carrito{
-    display: block;
-    position: absolute;
-    right:0;
-
-    top:100%;
-    z-index: 1;
-    background-color: white;
-    padding: 20px;
-    min-height: 400px;
-    min-width: 300px;
-}
-
-
-
-
 
 
 // banner
 
-.dj-banner {
+.promocion-banner {
     margin: 30px 0;
     position: relative;
 }
@@ -111,7 +15,7 @@
     background-color: $color-marron-light;
 }
 
-// .dj-banner .dj-bg {
+// .promocion-banner .promocion-bg {
 //     background-image: linear-gradient(35deg, #4F4846, #DDAF94, #E8CEBF);
 //     background-repeat: no-repeat;
 //     background-position: center;
@@ -119,13 +23,13 @@
 //     width: 100%;
 // }
 
-.dj-banner .dj-bg img {
+.promocion-banner .promocion-bg img {
     display: block;
     margin: 20px auto;
     padding: 20px 0;
 }
 
-.dj-banner .dj-text {
+.promocion-banner .promocion-text {
     text-align: center;
     padding-bottom: 20px;
 }
@@ -176,62 +80,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width:768px) {
-    .dj-banner .dj-bg img {
-        margin-right: 100px;
-    }
-
-    
-
-    .dj-banner .dj-text {
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        transform: translate(-10%, -50%);
-        width: 50%;
-        text-align: left;
-    }
-
-    .dj-banner .dj-text h1 {
-        font-size: calc(2*1.5vw);
-    }
-
-    .dj-banner .dj-text p {
-        font-size: calc(1.2*1.5vw);
-    }
-}
-
-
-
-
-// Media query
-
-.ocultar-login{
-    display: none;
-}
-
-.contenedor {
-    width: 80vw;
-    margin: 0 auto;
-}
-
-.bajo-header{
-    margin-top: 3.7rem;
-}
-
 .titulo-seccion-productos{
     text-transform: uppercase;
     color: $color-verde;
@@ -242,32 +90,37 @@
     background-color: aquamarine;
 }
 
-.footer-background {
-    background-color: $color-negro;
+
+
+// Media query
+
+
+@media screen and (min-width:768px) {
+    .promocion-banner .promocion-bg img {
+        margin-right: 100px;
+    }
+
+
+    .promocion-banner .promocion-text {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(-10%, -50%);
+        width: 50%;
+        text-align: left;
+    }
+
+    .promocion-banner .promocion-text h1 {
+        font-size: calc(2*1.5vw);
+    }
+
+    .promocion-banner .promocion-text p {
+        font-size: calc(1.2*1.5vw);
+    }
 }
 
 
-
-
 @media (max-width: 920px) {
-    .logo {
-        margin-left: 0;
-        width: 12vw;
-    }
-
-    .ocultar{
-        display: none;
-    }
-
-    .ocultar-login{
-        display:inline;
-        text-transform: capitalize;
-    }
-
-    .en-linea {
-        display: flex;
-        flex-direction: row;
-    }
 
     .carousel-item img{
         height: 35vh;
