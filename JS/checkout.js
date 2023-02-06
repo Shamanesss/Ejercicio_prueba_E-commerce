@@ -15,3 +15,19 @@ const slideShow = () => {
 const interval = () => {
     setInterval(slideShow, 1500)
 }
+
+
+// acceptar condiciones
+
+ let input = document.getElementById("dropdownCheck");
+ let boton = document.getElementById("boton");
+
+ boton.disabled = true;
+    
+ input.addEventListener("change",(e) => {
+    if(input.value === "checked") {
+        boton.disabled = false;
+    }else {
+        boton.disabled =true;
+    }
+})

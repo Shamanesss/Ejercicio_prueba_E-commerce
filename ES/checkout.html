@@ -18,30 +18,30 @@
             <div class="contenido">
                 <div class="nomap d-flex gap-2">
                     <div class="nombre corto">
-                        <h6>Nombre</h6>
+                        <h6 class="pt-0.5">Nombre</h6>
                         <input type="text">
                     </div>
                     <div class="apellido corto">
-                        <h6>Apellido</h6>
+                        <h6 class="pt-0.5">Apellido</h6>
                         <input type="text">
                     </div>
                 </div>
                 <div class="direccion largo">
-                    <h6>Direccion</h6>
+                    <h6 class="pt-0.5">Direccion</h6>
                     <input type="text">
                 </div>
                 <div class="ciuco d-flex gap-2">
                     <div class="ciudad corto">
-                        <h6>Ciudad</h6>
+                        <h6 class="pt-0.5">Ciudad</h6>
                         <input type="text">
                     </div>
                     <div class="codigo corto">
-                        <h6>Codigo Postal</h6>
+                        <h6 class="pt-0.5">C.P.</h6>
                         <input type="text">
                     </div>
                 </div>
                 <div class="Pais">
-                    <h6>Pais</h6>
+                    <h6 class="pt-0.5">Pais</h6>
                     <select name="Pais">
                         <option>Selecciona un Pais</option>
                         <option>España</option>
@@ -56,11 +56,11 @@
                     <!-- <input type="text"> -->
                 </div>
                 <div class="email largo">
-                    <h6>Correo electronico</h6>
-                    <input type="text">
+                    <h6 class="pt-0.5">Correo electronico</h6>
+                    <input type="text" placeholder="zapaton@gmail.com">
                 </div>
                 <div class="pago">
-                    <h6>Metodo de pago</h6>
+                    <h6 class="pt-0.5">Metodo de pago</h6>
                     <select name="Metodo de Pago">
                         <option>Metodo de Pago</option>
                         <option>Pago con tarjeta</option>
@@ -79,7 +79,12 @@
                     <i class="fa-brands fa-cc-amazon-pay"></i> -->
                     <!-- <input type="text"> -->
                 </div>
-                <button class="btn btn-success-emphasis col-12 my-5">COMPRAR</button>
+                <div class="form-check pt-3">
+                    <label class="form-check-label " for="dropdownCheck">
+                    <input type="checkbox" class="form-check-input checkgreen " id="dropdownCheck" value="checked">
+                  Aceptas la condiciones</label>
+                  </div>
+                <button id ="boton" class="btn btn-success-emphasis col-12 my-5" value="">COMPRAR</button>
 
             </div>
         </div>
