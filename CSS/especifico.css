@@ -4,6 +4,10 @@ body {
   background-attachment: fixed;
 }
 
+.spiner {
+  background-color: rgb(209, 132, 32);
+}
+
 .boton_comprar {
   background-color: #266150;
 }
@@ -12,22 +16,6 @@ body {
   background-color: #266150;
 }
 
-.talla1 {
+.talla {
   background-color: #DDAF94;
-}
-
-.talla2 {
-  background-color: #DDAF94;
-}
-
-.talla3 {
-  background-color: #DDAF94;
-}
-
-.talla4 {
-  background-color: #DDAF94;
-}
-
-.spiner {
-  background-color: rgb(128, 101, 15);
-}/*# sourceMappingURL=expecifico.css.map */
+}/*# sourceMappingURL=especifico.css.map */

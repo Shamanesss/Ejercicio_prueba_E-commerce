@@ -4,16 +4,26 @@ body{
     background-color: $color-blanco;
 
 }
-.form-color{
-    background-color: $color-marron-light;
+.form-color {
+    background-color: $color-marron;
   }
   .colour{
-    background-color: $color-verde;
+    background-color:$color-marron-light;
   }
   .btn-color{
-    background-color: $color-verde;
+    background-color:$color-verde;
   }
   #saludar{
     background-color: $color-blanco;
     font-size: large;
+    
+  }
+  .datospersonales{
+    background-color: $color-marron;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+  }
+  .datospersonales input{
+    background-color: $color-marron;
+    border: 0;
   }

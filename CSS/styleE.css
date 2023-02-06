@@ -3,11 +3,11 @@ body {
 }
 
 .form-color {
-  background-color: #E8CEBF;
+  background-color: #DDAF94;
 }
 
 .colour {
-  background-color: #266150;
+  background-color: #E8CEBF;
 }
 
 .btn-color {
@@ -17,4 +17,15 @@ body {
 #saludar {
   background-color: #fdf8f5;
   font-size: large;
+}
+
+.datospersonales {
+  background-color: #DDAF94;
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+}
+
+.datospersonales input {
+  background-color: #DDAF94;
+  border: 0;
 }/*# sourceMappingURL=styleE.css.map */

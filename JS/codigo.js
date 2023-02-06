@@ -2,7 +2,7 @@ const login = document.getElementById('btn-login');
 const names = document.getElementById('DropdownFormName');
 const password = document.getElementById('DropdownFormPassword');
 const saludar = document.getElementById('saludar')
-
+const cerrar = document.querySelector("#btn-cerrar-login");
 
 login.addEventListener('click',validar);
 
@@ -17,10 +17,23 @@ function validar(){
     // if(nombre!=null && nombre != undefined){
     //     saludar.innerHTML = nombre;
     // }
-    saludar.innerHTML = "Hola "+nombre;
+    
+   saludar.innerHTML = "Hola "+nombre;
+
+   
+    
+    
+    
+
+   // )
     }
-
-
+    
+// cerrar.addEventListener('click', cerrarLogin)
+// function cerrarLogin(){
+//     delete.localStorage.logeado
+//     localStorage.clear();
+//     localStorage.reload();
+// }
 
 
 
@@ -40,3 +53,52 @@ function validar(){
 //       });
 
 //     }
+
+
+
+
+
+// function validar(){
+// //addproducto
+// let form_nombre = names.value;
+// localStorage.setItem('logeado', form_nombre);
+//    console.log(form_nombre);
+//       let localname= localStorage.getItem('logeado');
+//      console.log(localname);
+    
+
+// sessionStorage.setItem(localname); //ó sessionStorage[producto]=precio
+
+
+
+// let saludar=document.getElementById('saludar');
+
+// saludar.innerHTML='';
+
+// for(let i=0;i<sessionStorage.length;i++){
+
+//                 let clave =sessionStorage.key(i);
+
+//                 let myname=sessionStorage.getItem(localname);
+
+//                 saludar.innerHTML = myname +clave;
+//                 }
+
+// }
+
+ 
+
+// function limpiarVista() {
+
+// var datosDisponibles=document.getElementById('datosDisponibles');
+
+// datosDisponibles.innerHTML='Limpiada vista. Los datos permanecen.';
+
+// }
+
+ 
+
+// function borrarTodo() {sessionStorage.clear(); mostrarDatos(); }
+
+ 
+

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZapatON - Tienda Online</title>
+    <link rel="icon" type="image/png" href="/img/logo-rm.ico">
     <meta
       name="description"
       content="ZapatON - Tu tienda online preferida para comprar zapatos"
@@ -20,6 +21,8 @@
 
     <!-- css custom -->
     <link rel="stylesheet" href="/CSS/home.css" />
+    <!-- <link rel="stylesheet" href="/skeleton.css"> -->
+    <link rel="stylesheet" href="/custom.css">
 
     <!-- Font Awesome -->
     <script
@@ -28,139 +31,415 @@
     ></script>
   </head>
   <body>
+
+    <!-- header -->
     <div class="container">
-      
-
-      <!-- Desplegable -->
-    <header class="encabezado-altura">
-      <nav class="encabezado navbar navbar-expand-lg fixed-top " style="padding-top: 0px;padding-bottom: 0px;">
-        <div class="container-fluid">
-
-
-          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none";>
-            <img class="logo" src="/img/logo-blanco.png"alt="Logo de ZapatON"/>
-          </a>
-          
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a href="#" class="nav-link active px-2 text-white" aria-current="page">Inicio</a>
-              </li>
-
+      <header class="    encabezado-altura contenedor">
+        <nav class="encabezado  navbar navbar-expand-lg fixed-top " style="padding-top: 0px;padding-bottom: 0px;">
+          <div class="contenedor-header container-fluid" style="width: 80vw;
+                margin: 0 auto;">
+    
+    
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" ;>
+              <img class="logo" src="/img/logo-blanco.png" alt="Logo de ZapatON" />
+            </a>
+    
+    
+    
+            <!-- Menu de paginas  -->
+            <div class=" navegacion collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="index.html" class="nav-link active px-2 text-white" aria-current="page">Inicio</a>
+                </li>
+    
                 <li class="nav-item dropdown">
-                  <a class="nav-link px-2 text-white dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link px-2 text-white dropdown-toggle" href="/ES/catalogo.html" id="navbarDropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
                     Tienda
                   </a>
-                  <ul class="dropdown-menu" >
-                    <li><a class="dropdown-item" href="#">Hombre</a></li>
-                    <li><a class="dropdown-item" href="#">Mujer</a></li>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/ES/catalogo.html#seccion-hombres">Hombre</a></li>
+                    <li><a class="dropdown-item" href="/ES/catalogo.html#seccion-mujer">Mujer</a></li>
                     <li><a class="dropdown-item" href="#">Ofertas</a></li>
                   </ul>
                 </li>
+    
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2 text-white">Servicio al cliente</a>
+                </li>
+    
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2 text-white">Sobre ZapatON</a>
+                </li>
+    
+                <li class="nav-item ocultar-login">
+                  <a href="/ES/cuenta.html" class="nav-link px-2 text-white"> <strong>Mi cuenta</strong> </a>
+                </li>
+    
+                <li class="nav-item dropdown ocultar-login">
+                  <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="idiomas fa-solid fa-globe text-white"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"
+                        style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img
+                          class="bandera bandera-es" src="/img/espana.png" alt=""> ES</a></li>
+    
+                    <li><a class="dropdown-item" href="#"
+                        style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img
+                          class="bandera bandera-en" src="/img/estados-unidos.png" alt=""> EN</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- Menu de paginas fin -->
+    
+            <!-- Iconos idiomas, login, carrito -->
+    
+            <div class="iconos-header col-md-2 text-end">
+              <!-- <a href=""><i class="idiomas fa-solid fa-globe text-white"></i></a> -->
+    
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 en-linea">
+                <li class="ocultar nav-item dropdown">
+                  <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="idiomas fa-solid fa-globe text-white"></i>
+                  </a>
+    
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"
+                        style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img
+                          class="bandera bandera-es" src="/img/espana.png" alt=""> ES</a></li>
+    
+    
+                    <li><a class="dropdown-item" href="#"
+                        style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img
+                          class="bandera bandera-en" src="/img/estados-unidos.png" alt=""> EN</a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item">
+                  <a href="/ES/cuenta.html" class="ocultar"><i class="login fa-regular fa-user  text-white"></i></a>
+                </li>
 
+                <li class="nav-item submenu">
+                  <i class=" fa-sharp fa-solid fa-cart-shopping text-white"></i>
+                  <ul id="carrito">
+                          
+                          <table id="lista-carrito" class="">
+                              <thead>
+                                  <tr>
+                                      <th>Imagen</th>
+                                      <th>Nombre</th>
+                                      <th>Precio</th>
+                                      <th></th>
+                                  </tr>
+                              </thead>
+                              <tbody></tbody>
+                          </table>
 
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-white" aria-current="page">Servicio al cliente</a>
-              </li>
-              
-              <li class="nav-item">
-                <a href="#" class="nav-link px-2 text-white" aria-current="page">Sobre ZapatON</a>
-              </li>
-
-              <li class="nav-item ocultar-login">
-                <a href="" class="nav-link px-2 text-white"> <strong>Mi cuenta</strong> </a>
-              </li>
-
-            </ul>
-
-
-          </div>
-
-<!-- MMMMMMMMMM -->
-          <div class="encabezado-3 col-md-3 text-end">
-            <!-- <a href=""><i class="idiomas fa-solid fa-globe text-white"></i></a> -->
-
-<!-- lalalalala -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 en-linea">
-            <li class="nav-item dropdown">
-              <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="idiomas fa-solid fa-globe text-white"></i>
-              </a>
-              <ul class="dropdown-menu" >
-                <li><a class="dropdown-item" href="#" style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img class="bandera" src="/img/espana.png" alt="">  ES</a></li>
-
+                          <a href="#" id="vaciar-carrito" class="button ">Vaciar Carrito</a>
+                        </ul>
+          </li>
+      </ul>
                 
 
-                <li><a class="dropdown-item" href="#" style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img class="bandera" src="/img/estados-unidos.png" alt="">  EN</a></li>
-              </ul>
-            </li>
+      
+<!-- Iconos idiomas, login, carrito -->
+            
+            </div>
 
-            <li class="nav-item">
-              <a href="" class="ocultar"><i class="login fa-regular fa-user  text-white"></i></a>
-            </li>
-
-            <li class="nav-item">
-              <a href=""><i class="carrito fa-sharp fa-solid fa-cart-shopping text-white"></i></a>
-            </li>
-
-        </ul>
-
-<!-- lalalalalala -->
-
-
-            <!-- <a href="" class="ocultar"><i class="login fa-regular fa-user  text-white"></i></a>
-            <a href=""><i class="carrito fa-sharp fa-solid fa-cart-shopping text-white"></i></a> -->
+            
+            <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+              aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=" text-white"><i class="fa-solid fa-bars"></i></span>
+            </div>
+    
           </div>
+          <div class="nav-bajo">
+            <div  id="reloj" style="color:white; font-weight: 700;">
+            
+            </div>
+            <div id="saludar" style="color:white; font-weight: 700;">
+              ¡Bienvenido!
+            </div>
 
-<!-- MMMMMMMMMM -->
-
-          <div class="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=" text-white"><i class="fa-solid fa-bars"></i></span>
           </div>
+          
+        </nav>
+        
+
+      </header>
+
+      
+    </div>
 
 
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon text-white"></span>
-          </button> -->
+    <!-- Slides -->
+<div class=" bajo-header" >
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+    </div>
+    <div class="carousel-inner" >
+      <div class="carousel-item active" >
+        <img src="/img/imgZapatos/banner.webp" class="d-block w-100" alt="..." >
+      </div>
+      <div class="carousel-item">
+        <img src="/img/imgZapatos/banner2.webp" class="d-block w-100" alt="..." >
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
 
+
+</div>
+
+<!-- tarjetas -->
+
+<div class="contenedor">
+
+  <h2 class="titulo-seccion-productos text-center mt-5">Los mejores calzados</h2>
+  
+  <div class="profile-area mt-5 mb-5" id="equipo">
+    <div class="container">
+      <div class="row">
+  
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../img/imgZapatos/hombre/zapatillas/zapatillaHombre1.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Zapatos deportivo</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div>
+                $<span>35</span>
+              </div>
+              
+              <a href="#" class="btn  color_botones ">Añadir a carrito</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../img/imgZapatos/hombre/zapatillas/zapatillaHombre2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn  color_botones ">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="../img/imgZapatos/hombre/zapatillas/zapatillaHombre3.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn  color_botones ">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+
+</div> <!-- tarjetas -->
+
+
+<!-- Promocion -->
+<div id="background-banner" >
+  <div class="contenedor dj-banner" >
+    <div class=" dj-bg" >
+      <div class="dj-text">
+        <div>
+        <h2><b>Ofertas</b></h2>
+        <p>Los mejores calzados</p>
+        <p><a href="/ES/catalogo.html"><label class="banner-style">Ir a la tienda</label>
+          </a></p>
+        </div>
+      </div>
+      <img src="/img/imgZapatos/mujer/zapatoflores.jpg" alt="" height="400px">
+    </div>
+  </div>
+</div>
+
+
+<!-- Contacto  -->
+
+<div class="container pb-4">
+  <div class="row">
+
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title text-center pt-4 pb-5">
+          <h2>Informacion de Contacto</h2>
+        </div>
+
+       <div>  <!-- Google maps -->
+
+          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2906.1883081080287!2d-2.9090969850083046!3d43.247475086590015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fa9723128c7%3A0xbc3542d2f3c75723!2sPe%C3%B1ascal%20Kooperatiba!5e0!3m2!1ses-419!2ses!4v1675508241771!5m2!1ses-419!2ses"  allowfullscreen loading="lazy" frameborder="0" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         </div>
-        
-      </nav>
-    </header>
-    </div>
 
+        <div class="row mt-5">  <!-- Informacion de contacto-->
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Ubicacion:</h4>
+                <p>Calle 123, Bilbao - 45632</p>
+              </div>
 
-<div class="contenedor bajo-header">
-    <div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
-    </div>
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Correo:</h4>
+                <p>info@example.com</p>
+              </div>
 
-    <div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
-    </div>
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Telefono:</h4>
+                <p>+34 123 456789</p>
+              </div>
 
-    <div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
-    </div>
+            </div>
 
-    <div>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum molestias, amet magni rem dolorum explicabo repellendus nam totam repellat enim fuga minus vitae est nihil ea error facilis possimus.  </p>
-    </div>
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <!-- Formulario-->
+
+            <form action="forms/contact.php" method="post" role="form">  
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Correo" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Dejanos tu mensaje y nos contactaremos en un plazo de 2 dias" required style="resize: none;"></textarea>
+              </div>
+              <!-- <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div> -->
+              <div class="text-center pt-3"><button type="submit" class="contact-boton">Enviar</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
 
   </div>
+</div>
+
+<!-- Contacto -->
+
+
+<footer>
+  <div class="container-fluid">
+    <div class="footer-background row p-5 pb-2 text-white">
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h3">ZapatON</p>
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h5 mb-3">Tienda</p>
+
+            <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Zapatos Hombre</a>
+            </div>
+
+            <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Zapatos Mujer</a>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h5 mb-3">Links</p>
+            <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
+            </div>
+            <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Politicas de privacidad</a>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h5 mb-3">Contacto</p>
+            <div>
+                <a href="" class="me-4 text-white">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="" class="me-4 text-white">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="" class="me-4 text-white">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+              </div>
+            
+        </div>
+        <div class="col-xs-12 pt-4 ">
+            <p class="text-secondary text-center">Copyright - Todos los derechos reservados</a>
+        </div>
+    </div>
+</div>
+
+</footer>
 
 
     <script
@@ -168,5 +447,20 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+function startTime(){
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;}return i;}
+window.onload=function(){startTime();}
+    </script>
   </body>
 </html>
