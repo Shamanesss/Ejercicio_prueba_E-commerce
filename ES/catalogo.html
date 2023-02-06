@@ -116,6 +116,8 @@
 
                 <li class="nav-item submenu">
                   <i class=" fa-sharp fa-solid fa-cart-shopping text-white"></i>
+
+                  <!-- donde se va a colocar la lista de los productos -->
                   <ul id="carrito">
                           
                           <table id="lista-carrito" class="">
@@ -159,6 +161,7 @@
           </div>
           
         </nav>
+        
         
 
       </header>
@@ -225,7 +228,7 @@
       </section>
 
       <!-- -------------------------------SECTION GRID ZAPATILLAS-------------------------------- -->
-      <div class="container text-center mb-5">
+      <div id="lista-cursos" class="container text-center mb-5">
         <div class="row column-gap-4 row-gap-4">
           <div class="col d-flex justify-content-center">
             <div class="card" style="width: 18rem">
@@ -234,13 +237,13 @@
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+              <div class="card-body info-card">
+                <h5 class="card-title">Zapato 1</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Increible zapato 1
                 </p>
-                <a href="#" class="btn  color_botones ">Go somewhere</a>
+                <p class="precio"><span>$200</span></p>
+                <a href="#" class="btn  color_botones agregar-carrito" data-id="1"> Añadir carrito</a>
               </div>
             </div>
           </div>
@@ -251,13 +254,13 @@
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+              <div class="card-body card-info">
+                <h5 class="card-title">Zapato 2</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Increible zapato 2
                 </p>
-                <a href="#" class="btn color_botones">Go somewhere</a>
+                <p class="precio"><span>$300</span></p>
+                <a href="#" class="btn  color_botones agregar-carrito" data-id="2">Añadir carrito</a>
               </div>
             </div>
           </div>
@@ -268,13 +271,13 @@
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+              <div class="card-body card-info">
+                <h5 class="card-title">Zapato 3</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Increible zapato 3
                 </p>
-                <a href="#" class="btn color_botones">Go somewhere</a>
+                <p class="precio"><span>$400</span></p>
+                <a href="#" class="btn  color_botones agregar-carrito " data-id="3">Añadir carrito</a>
               </div>
             </div>
           </div>
@@ -607,5 +610,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="../JS/hora.js"></script>
+    <script src="../JS/app.js"></script>
   </body>
 </html>
