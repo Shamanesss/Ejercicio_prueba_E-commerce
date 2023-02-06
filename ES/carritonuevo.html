@@ -5,12 +5,158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/carrito.css">
+    <link rel="stylesheet" href="../CSS/header-footer.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
-    <div class="grande">
+
+    <div class="container">
+        <header class="    encabezado-altura contenedor">
+          <nav class="encabezado  navbar navbar-expand-lg sticky-top " style="padding-top: 0px;padding-bottom: 0px;">
+            <div class="contenedor-header container-fluid" style="width: 80vw;
+                  margin: 0 auto;">
+      
+      
+              <a href="../ES/index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" ;>
+                <img class="logo" src="../img/logo-blanco.png" alt="Logo de ZapatON" />
+              </a>
+      
+      
+      
+              <!-- Menu de paginas  -->
+              <div class=" navegacion collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a href="../ES/index.html" class="nav-link active px-2 text-white" aria-current="page">Inicio</a>
+                  </li>
+      
+                  <li class="nav-item dropdown">
+                    <a class="nav-link px-2 text-white dropdown-toggle" href="../ES/catalogo.html" id="navbarDropdownMenuLink"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Tienda
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../ES/catalogo.html#seccion-hombres">Hombre</a></li>
+                      <li><a class="dropdown-item" href="../ES/catalogo.html#seccion-mujer">Mujer</a></li>
+                      <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                    </ul>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-white">Servicio al cliente</a>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a href="#" class="nav-link px-2 text-white">Sobre ZapatON</a>
+                  </li>
+      
+                  <li class="nav-item ocultar-login">
+                    <a href="../ES/cuenta.html" class="nav-link px-2 text-white"> <strong>Mi cuenta</strong> </a>
+                  </li>
+      
+                  <li class="nav-item dropdown ocultar-login">
+                    <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="idiomas fa-solid fa-globe text-white"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#"
+                          style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img
+                            class="bandera bandera-es" src="../img/espana.png" alt=""> ES</a></li>
+      
+                      <li><a class="dropdown-item" href="#"
+                          style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img
+                            class="bandera bandera-en" src="../img/estados-unidos.png" alt=""> EN</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- Menu de paginas fin -->
+      
+              <!-- Iconos idiomas, login, carrito -->
+      
+              <div class="iconos-header col-md-2 text-end">
+                <!-- <a href=""><i class="idiomas fa-solid fa-globe text-white"></i></a> -->
+      
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 en-linea">
+                  <li class="ocultar nav-item dropdown">
+                    <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="idiomas fa-solid fa-globe text-white"></i>
+                    </a>
+      
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#"
+                          style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img
+                            class="bandera bandera-es" src="../img/espana.png" alt=""> ES</a></li>
+      
+      
+                      <li><a class="dropdown-item" href="#"
+                          style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img
+                            class="bandera bandera-en" src="../img/estados-unidos.png" alt=""> EN</a></li>
+                    </ul>
+                  </li>
+      
+                  <li class="nav-item">
+                    <a href="../ES/cuenta.html" class="ocultar"><i class="login fa-regular fa-user  text-white"></i></a>
+                  </li>
+  
+                  <li class="nav-item submenu">
+                    <i class=" fa-sharp fa-solid fa-cart-shopping text-white"></i>
+                    <ul id="carrito">
+                            
+                            <table id="lista-carrito" class="">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+  
+                            <a href="#" id="vaciar-carrito" class="button ">Vaciar Carrito</a>
+                          </ul>
+            </li>
+        </ul>
+                  
+  
+        
+  <!-- Iconos idiomas, login, carrito -->
+              
+              </div>
+  
+              
+              <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=" text-white"><i class="fa-solid fa-bars"></i></span>
+              </div>
+      
+            </div>
+            <div class="nav-bajo">
+              <div  id="reloj" >
+              
+              </div>
+              <div id="saludar" >
+                ¡Bienvenido!
+              </div>
+  
+            </div>
+            
+          </nav>
+          
+  
+        </header>
+  
+        
+      </div>
+
+
+    <div class="grande ">
         <div class="card d-flex m-5">
             <img src="../img/zapatohombre5.png" class="card-img-top" alt="...">
         
@@ -47,7 +193,64 @@
                 <button type="button" class="btn btn-success me-5">COMPRAR</button>
             </div>
         </div>
-    </div>    
+    </div>
+    
+    <footer>
+        <div class="container-fluid">
+          <div class="footer-background row p-5 pb-2 text-white">
+      
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                  <p class="h3">ZapatON</p>
+              </div>
+      
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                  <p class="h5 mb-3">Tienda</p>
+      
+                  <div class="mb-2">
+                      <a class="text-secondary text-decoration-none" href="../ES/catalogo.html#seccion-hombres">Zapatos Hombre</a>
+                  </div>
+      
+                  <div class="mb-2">
+                      <a class="text-secondary text-decoration-none" href="../ES/catalogo.html#seccion-mujer">Zapatos Mujer</a>
+                  </div>
+              </div>
+      
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                  <p class="h5 mb-3">Links</p>
+                  <div class="mb-2">
+                      <a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
+                  </div>
+                  <div class="mb-2">
+                      <a class="text-secondary text-decoration-none" href="#">Politicas de privacidad</a>
+                  </div>
+              </div>
+      
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                  <p class="h5 mb-3">Contacto</p>
+                  <div>
+                      <a href="" class="me-4 text-white">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+      
+                      <a href="" class="me-4 text-white">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+      
+                      <a href="" class="me-4 text-white">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      
+                    </div>
+                  
+              </div>
+              <div class="col-xs-12 pt-4 ">
+                  <p class="text-secondary text-center">Copyright - Todos los derechos reservados</a>
+              </div>
+          </div>
+      </div>
+      
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="../JS/hora.js"></script>
 </body>
 </html>
