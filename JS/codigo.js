@@ -14,12 +14,14 @@ function validar(){
      let nombre= localStorage.getItem('logeado');
      console.log(nombre);
     
-    // if(nombre!=null && nombre != undefined){
-    //     saludar.innerHTML = "Hola "+nombre;
-     
+    // if(nombre!=null){
+    //     return nombre;
+    //  }else{
+    //     alert('Introduce un nombre')
+    //  }
     
    
-
+     saludar.innerHTML = nombre;
    
     
     

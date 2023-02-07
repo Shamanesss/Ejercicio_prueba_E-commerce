@@ -1,78 +1,22 @@
-main .contenedor-carrito {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+body {
+  background-image: linear-gradient(35deg, #4F4846, #DDAF94, #E8CEBF);
 }
-main .contenedor-carrito .carrito-vacio {
-  color: #4F4846;
-  display: none;
+body .grande {
+  margin-top: 7rem;
+  height: 100vh;
 }
-main .contenedor-carrito .carrito-productos {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-main .contenedor-carrito .carrito-productos .disabled {
-  display: none;
-}
-main .contenedor-carrito .carrito-productos .carrito-pr {
-  display: flex;
-  justify-content: space-between;
-  background-color: #E8CEBF;
-  padding: 0.5rem;
-  padding-right: 1.5rem;
-  border-radius: 1rem;
-  align-items: center;
-}
-main .contenedor-carrito .carrito-productos .carrito-pr .carrito-producto-imagen {
-  width: 6rem;
-  border-radius: 1rem;
-}
-main .contenedor-carrito .carrito-productos .carrito-pr small {
-  font-size: 1rem;
-}
-main .contenedor-carrito .carrito-productos .carrito-pr .carrito-producto-delete {
+body .carrito-producto-delete {
   border: 0;
   background-color: transparent;
   color: #266150;
 }
-main .contenedor-carrito .carrito-acciones {
-  display: flex;
-  justify-content: space-between;
-}
-main .contenedor-carrito .carrito-acciones .disabled {
-  display: none;
-}
-main .contenedor-carrito .carrito-acciones .acciones-delete {
-  margin: 0;
-  padding: 0.5rem;
-  border-radius: 1rem;
-  background-color: #266150;
-  color: #fdf8f5;
-  margin-left: 1.5rem;
-}
-main .contenedor-carrito .carrito-acciones .carrito-acciones-comprar {
-  margin: 0;
-  padding: 0.5rem;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  background-color: #266150;
-  color: #fdf8f5;
-  margin-right: 1.5rem;
-}
-main .contenedor-carrito .carrito-acciones .carrito-acciones-dr {
-  display: flex;
-  gap: 0.5rem;
-}
-main .contenedor-carrito .carrito-acciones .carrito-acciones-dr .carrito-acciones-total {
-  margin: 0;
-  display: flex;
-  padding: 0.5rem;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+body .card {
   background-color: #E8CEBF;
-  gap: 0.5rem;
 }
-main .contenedor-carrito p .disabled {
-  display: none;
+body .card .card-img-top {
+  width: 6rem;
+}
+body .carrito-acciones-total {
+  border-radius: 0.5rem;
+  background-color: #E8CEBF;
 }/*# sourceMappingURL=carrito.css.map */

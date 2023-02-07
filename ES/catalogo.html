@@ -12,10 +12,264 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../CSS/styleCatalogo.css" />
+    <link rel="stylesheet" href="../CSS/header-footer.css" />
     <title>Catalogo</title>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/8c655d3807.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- -------Espacio Header jhonata-------- -->
+    <!-- header -->
+    <div class="container">
+      <header class="encabezado-altura contenedor">
+        <nav
+          class="encabezado navbar navbar-expand-lg fixed-top"
+          style="padding-top: 0px; padding-bottom: 0px"
+        >
+          <div
+            class="contenedor-header container-fluid"
+            style="width: 80vw; margin: 0 auto"
+          >
+            <a
+              href="/"
+              class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
+              ;
+            >
+              <img
+                class="logo"
+                src="../img/logo-blanco.png"
+                alt="Logo de ZapatON"
+              />
+            </a>
+
+            <!-- Menu de paginas  -->
+            <div
+              class="navegacion collapse navbar-collapse"
+              id="navbarTogglerDemo03"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    href="index.html"
+                    class="nav-link active px-2 text-white"
+                    aria-current="page"
+                    >Inicio</a
+                  >
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link px-2 text-white dropdown-toggle"
+                    href="/ES/catalogo.html"
+                    id="navbarDropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Tienda
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/ES/catalogo.html#seccion-hombres"
+                        >Hombre</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/ES/catalogo.html#seccion-mujer"
+                        >Mujer</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2 text-white"
+                    >Servicio al cliente</a
+                  >
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" class="nav-link px-2 text-white">Sobre ZapatON</a>
+                </li>
+
+                <li class="nav-item ocultar-login">
+                  <a href="/ES/cuenta.html" class="nav-link px-2 text-white">
+                    <strong>Mi cuenta</strong>
+                  </a>
+                </li>
+
+                <li class="nav-item dropdown ocultar-login">
+                  <a
+                    class="nav-link px-2 text-white dropdown-toggle sin-padding"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="idiomas fa-solid fa-globe text-white"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        style="
+                          margin-right: 0px;
+                          margin-left: 0px;
+                          padding-left: 16px;
+                          padding-right: 0px;
+                        "
+                        ><img
+                          class="bandera bandera-es"
+                          src="/img/espana.png"
+                          alt=""
+                        />
+                        ES</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        style="
+                          margin-right: 0px;
+                          margin-left: 0px;
+                          padding-left: 16px;
+                          padding-right: 0px;
+                        "
+                        ><img
+                          class="bandera bandera-en"
+                          src="/img/estados-unidos.png"
+                          alt=""
+                        />
+                        EN</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- Menu de paginas fin -->
+
+            <!-- Iconos idiomas, login, carrito -->
+
+            <div class="iconos-header col-md-2 text-end">
+              <!-- <a href=""><i class="idiomas fa-solid fa-globe text-white"></i></a> -->
+
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 en-linea">
+                <li class="ocultar nav-item dropdown">
+                  <a
+                    class="nav-link px-2 text-white dropdown-toggle sin-padding"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="idiomas fa-solid fa-globe text-white"></i>
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        style="
+                          margin-right: 0px;
+                          margin-left: 0px;
+                          padding-left: 16px;
+                          padding-right: 0px;
+                        "
+                        ><img
+                          class="bandera bandera-es"
+                          src="/img/espana.png"
+                          alt=""
+                        />
+                        ES</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="#"
+                        style="
+                          margin-right: 0px;
+                          margin-left: 0px;
+                          padding-left: 16px;
+                          padding-right: 0px;
+                        "
+                        ><img
+                          class="bandera bandera-en"
+                          src="/img/estados-unidos.png"
+                          alt=""
+                        />
+                        EN</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a href="/ES/cuenta.html" class="ocultar"
+                    ><i class="login fa-regular fa-user text-white"></i
+                  ></a>
+                </li>
+
+                <li class="nav-item submenu">
+                  <i class="fa-sharp fa-solid fa-cart-shopping text-white"></i>
+
+                  <!-- donde se va a colocar la lista de los productos -->
+                  <ul id="carrito">
+                    <table id="lista-carrito" class="">
+                      <thead>
+                        <tr>
+                          <th>Imagen</th>
+                          <th>Nombre</th>
+                          <th>Precio</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody></tbody>
+                    </table>
+
+                    <a href="#" id="vaciar-carrito" class="button"
+                      >Vaciar Carrito</a
+                    >
+                  </ul>
+                </li>
+              </ul>
+
+              <!-- Iconos idiomas, login, carrito -->
+            </div>
+
+            <div
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo03"
+              aria-controls="navbarTogglerDemo03"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="text-white"><i class="fa-solid fa-bars"></i></span>
+            </div>
+          </div>
+          <div class="nav-bajo">
+            <div id="reloj" style="color: white; font-weight: 700"></div>
+            <div id="saludar" style="color: white; font-weight: 700">
+              ¡Bienvenido!
+            </div>
+          </div>
+        </nav>
+      </header>
+    </div>
 
     <!-- -------Espacio Header jhonata-------- -->
 
@@ -75,7 +329,7 @@
       </section>
 
       <!-- -------------------------------SECTION GRID ZAPATILLAS-------------------------------- -->
-      <div class="container text-center mb-5">
+      <div id="lista-zapatos" class="container text-center mb-5">
         <div class="row column-gap-4 row-gap-4">
           <div class="col d-flex justify-content-center">
             <div class="card" style="width: 18rem">
@@ -84,13 +338,17 @@
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn  color_botones ">Go somewhere</a>
+              <div class="card-body info-card">
+                <h5 class="card-title">Colorido Stack</h5>
+                <p class="card-text">Increible zapatilla</p>
+                <p class="precio"><span>$200</span></p>
+                <a
+                  href="#"
+                  class="btn color_botones agregar-carrito"
+                  data-id="1"
+                >
+                  Añadir carrito</a
+                >
               </div>
             </div>
           </div>
@@ -101,13 +359,16 @@
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn color_botones">Go somewhere</a>
+              <div class="card-body card-info">
+                <h5 class="card-title">Black Code</h5>
+                <p class="card-text">Increible zapatilla</p>
+                <p class="precio"><span>$300</span></p>
+                <a
+                  href="#"
+                  class="btn color_botones agregar-carrito"
+                  data-id="2"
+                  >Añadir carrito</a
+                >
               </div>
             </div>
           </div>
@@ -118,156 +379,186 @@
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn color_botones">Go somewhere</a>
+              <div class="card-body card-info">
+                <h5 class="card-title">Run Js</h5>
+                <p class="card-text">Increible zapatilla</p>
+                <p class="precio"><span>$400</span></p>
+                <a
+                  href="#"
+                  class="btn color_botones agregar-carrito"
+                  data-id="3"
+                  >Añadir carrito</a
+                >
               </div>
             </div>
           </div>
-        </div>
-      </div>
+          <!-- -------------------------------------------------------------------------------------------------- -->
+          <!-- --------------------------SECTION TITULO --------------------------->
+          <section class="titulos text-center">
+            <h2>HOMBRE</h2>
+            <p>Botas</p>
+          </section>
 
-      <!-- --------------------------SECTION TITULO --------------------------->
-      <section class="titulos text-center">
-        <h2>HOMBRE</h2>
-        <p>Botas</p>
-      </section>
+          <!-- -------------------------------SECTION GRID BOTAS-------------------------------- -->
+          <div class="row column-gap-4 row-gap-4">
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../img/imgZapatos/hombre/botas/botaHombre1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body info-card">
+                  <h5 class="card-title">Big Css</h5>
+                  <p class="card-text">
+                   Lorem ipsum dolor sit amet.
+                  </p>
+                  <p class="precio"><span>$450</span></p>
+                  <a
+                    href="#"
+                    class="btn color_botones agregar-carrito"
+                    data-id="4"
+                    >Añadir carrito</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../img/imgZapatos/hombre/botas/botaHombre2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body info-card">
+                  <h5 class="card-title">Cool Stack</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                  <p class="precio"><span>$500</span></p>
+                  <a
+                    href="#"
+                    class="btn color_botones agregar-carrito"
+                    data-id="5"
+                    >Añadir carrito</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../img/imgZapatos/hombre/botas/botaHombre3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body info-card">
+                  <h5 class="card-title">Amazing Front</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                  <p class="precio"><span>$400</span></p>
+                  <a
+                    href="#"
+                    class="btn color_botones agregar-carrito"
+                    data-id="6"
+                    >Añadir carrito</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- -------------------------------SECTION GRID BOTAS-------------------------------- -->
 
-      <!-- -------------------------------SECTION GRID BOTAS-------------------------------- -->
-      <div class="container text-center mb-5">
-        <div class="row column-gap-4 row-gap-4">
-          <div class="col d-flex justify-content-center">
-            <div class="card" style="width: 18rem">
-              <img
-                src="../img/imgZapatos/hombre/botas/botaHombre1.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn color_botones">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <div class="card" style="width: 18rem">
-              <img
-                src="../img/imgZapatos/hombre/botas/botaHombre2.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn color_botones">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <div class="card" style="width: 18rem">
-              <img
-                src="../img/imgZapatos/hombre/botas/botaHombre3.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn color_botones">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+          <!-- --------------------------SECTION TITULO --------------------------->
+          <section class="titulos text-center">
+            <h2>HOMBRE</h2>
+            <p>Sandalias</p>
+          </section>
 
-      <!-- --------------------------SECTION TITULO --------------------------->
-      <section class="titulos text-center">
-        <h2>HOMBRE</h2>
-        <p>Sandalias</p>
-      </section>
+          <!-- -------------------------------SECTION GRID SANDALIAS-------------------------------- -->
+          <div class="row column-gap-4 row-gap-4">
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../img/imgZapatos/hombre/sandalias/saldaliaHombre1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body info-card">
+                  <h5 class="card-title">Surf Sanadal</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                  <p class="precio"><span>$100</span></p>
+                  <a
+                    href="#"
+                    class="btn color_botones agregar-carrito"
+                    data-id="7"
+                  >
+                    Añadir carrito</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../img/imgZapatos/hombre/sandalias/saldaliaHombre2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body info-card">
+                  <h5 class="card-title">Sand shake</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                  <p class="precio"><span>$150</span></p>
+                  <a
+                    href="#"
+                    class="btn color_botones agregar-carrito"
+                    data-id="8"
+                  >
+                    Añadir carrito</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div class="card" style="width: 18rem">
+                <img
+                  src="../img/imgZapatos/hombre/sandalias/saldaliaHombre3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body info-card">
+                  <h5 class="card-title">Realax Sun</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                  <p class="precio"><span>$250</span></p>
+                  <a
+                    href="#"
+                    class="btn color_botones agregar-carrito"
+                    data-id="9"
+                  >
+                    Añadir carrito</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- -------------------------------SECTION GRID SANDALIAS-------------------------------- -->
 
-      <!-- -------------------------------SECTION GRID SANDALIAS-------------------------------- -->
-      <div class="container text-center mb-5">
-        <div class="row column-gap-4 row-gap-4">
-          <div class="col d-flex justify-content-center">
-            <div class="card" style="width: 18rem">
-              <img
-                src="../img/imgZapatos/hombre/sandalias/saldaliaHombre1.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn color_botones">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <div class="card" style="width: 18rem">
-              <img
-                src="../img/imgZapatos/hombre/sandalias/saldaliaHombre2.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn color_botones">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col d-flex justify-content-center">
-            <div class="card" style="width: 18rem">
-              <img
-                src="../img/imgZapatos/hombre/sandalias/saldaliaHombre3.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn color_botones">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+          <!-- ---------------------------------------MUJERES ------------------------------------------->
 
-    <!-- -----------------------------------SECCION MUJERES------------------------------->
-    <section class="contenido-mujeres">
-        <!-- --------------------------SECTION TITULO --------------------------->
-        <section class="titulos text-center" >
-          <h2 id="seccion-mujer">MUJER</h2>
-          <p>Zapatillas</p>
-        </section>
-  
-        <!-- -------------------------------SECTION GRID ZAPATILLAS-------------------------------- -->
-        <div class="container text-center mb-5">
+          <!-- --------------------------SECTION TITULO MUJERES --------------------------->
+          <section class="titulos text-center">
+            <h2 id="seccion-mujer">MUJER</h2>
+            <p>Zapatillas</p>
+          </section>
+
+          <!-- -------------------------------SECTION GRID ZAPATILLAS MUJERES-------------------------------- -->
           <div class="row column-gap-4 row-gap-4">
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem">
@@ -276,13 +567,18 @@
                   class="card-img-top"
                   alt="..."
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                <div class="card-body info-card">
+                  <h5 class="card-title">Black Verse</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Lorem ipsum dolor sit amet..
                   </p>
-                  <a href="#" class="btn color_botones">Go somewhere</a>
+                  <p class="precio"><span>$80</span></p>
+                  <a
+                    href="#"
+                    class="btn color_botones agregar-carrito"
+                    data-id="10"
+                    >Añadir carrito</a
+                  >
                 </div>
               </div>
             </div>
@@ -293,13 +589,18 @@
                   class="card-img-top"
                   alt="..."
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                <div class="card-body info-card">
+                  <h5 class="card-title">Yellow Verse</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Lorem ipsum dolor sit amet.
                   </p>
-                  <a href="#" class="btn color_botones">Go somewhere</a>
+                  <p class="precio"><span>$80</span></p>
+                  <a
+                    href="#"
+                    class="btn color_botones agregar-carrito"
+                    data-id="11"
+                    >Añadir carrito</a
+                  >
                 </div>
               </div>
             </div>
@@ -310,27 +611,29 @@
                   class="card-img-top"
                   alt="..."
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                <div class="card-body info-card">
+                  <h5 class="card-title">Orange End</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Lorem ipsum dolor sit amet.
                   </p>
-                  <a href="#" class="btn color_botones">Go somewhere</a>
+                  <p class="precio"><span>$150</span></p>
+                  <a
+                    href="#"
+                    class="btn color_botones agregar-carrito"
+                    data-id="12"
+                    >Añadir carrito</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-        </div>
-  
-        <!-- --------------------------SECTION TITULO --------------------------->
-        <section class="titulos text-center">
-          <h2>MUJER</h2>
-          <p>Botas</p>
-        </section>
-  
-        <!-- -------------------------------SECTION GRID BOTAS-------------------------------- -->
-        <div class="container text-center mb-5">
+
+          <!-- --------------------------SECTION TITULO MUJERES --------------------------->
+          <section class="titulos text-center">
+            <h2 id="seccion-mujer">MUJER</h2>
+            <p>Botas</p>
+          </section>
+          <!-- -------------------------------SECTION GRID BOTAS MUJERES-------------------------------- -->
           <div class="row column-gap-4 row-gap-4">
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem">
@@ -339,13 +642,18 @@
                   class="card-img-top"
                   alt="..."
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                <div class="card-body info-card">
+                  <h5 class="card-title">Short Blaky</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Lorem ipsum dolor sit amet.
                   </p>
-                  <a href="#" class="btn color_botones">Go somewhere</a>
+                  <p class="precio"><span>$100</span></p>
+                  <a
+                    href="#"
+                    class="btn color_botones agregar-carrito"
+                    data-id="13"
+                    >Añadir carrito</a
+                  >
                 </div>
               </div>
             </div>
@@ -356,13 +664,18 @@
                   class="card-img-top"
                   alt="..."
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                <div class="card-body info-card">
+                  <h5 class="card-title">Git Brown</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Lorem ipsum dolor sit amet.
                   </p>
-                  <a href="#" class="btn color_botones">Go somewhere</a>
+                  <p class="precio"><span>$150</span></p>
+                  <a
+                    href="#"
+                    class="btn color_botones agregar-carrito"
+                    data-id="14"
+                    >Añadir carrito</a
+                  >
                 </div>
               </div>
             </div>
@@ -373,27 +686,29 @@
                   class="card-img-top"
                   alt="..."
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                <div class="card-body info-card">
+                  <h5 class="card-title">Mountain Back</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Lorem ipsum dolor sit amet.
                   </p>
-                  <a href="#" class="btn color_botones">Go somewhere</a>
+                  <p class="precio"><span>$350</span></p>
+                  <a
+                    href="#"
+                    class="btn color_botones agregar-carrito"
+                    data-id="15"
+                    >Añadir carrito</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-        </div>
-  
-        <!-- --------------------------SECTION TITULO --------------------------->
-        <section class="titulos text-center">
-          <h2>MUJER</h2>
-          <p>Sandalias</p>
-        </section>
-  
-        <!-- -------------------------------SECTION GRID SANDALIAS-------------------------------- -->
-        <div class="container text-center mb-5">
+
+          <!-- --------------------------SECTION TITULO MUJERES --------------------------->
+          <section class="titulos text-center">
+            <h2 id="seccion-mujer">MUJER</h2>
+            <p>Sandalias</p>
+          </section>
+          <!-- -------------------------------SECTION GRID SANDALIAS MUJERES-------------------------------- -->
           <div class="row column-gap-4 row-gap-4">
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem">
@@ -402,13 +717,18 @@
                   class="card-img-top"
                   alt="..."
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                <div class="card-body info-card">
+                  <h5 class="card-title">Pink Flow</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Lorem ipsum dolor sit amet.
                   </p>
-                  <a href="#" class="btn color_botones">Go somewhere</a>
+                  <p class="precio"><span>$150</span></p>
+                  <a
+                    href="#"
+                    class="btn color_botones agregar-carrito"
+                    data-id="16"
+                    >Añadir carrito</a
+                  >
                 </div>
               </div>
             </div>
@@ -419,43 +739,54 @@
                   class="card-img-top"
                   alt="..."
                 />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                <div class="card-body info-card">
+                  <h5 class="card-title">Serious Queen</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Lorem ipsum dolor sit amet.
                   </p>
-                  <a href="#" class="btn color_botones">Go somewhere</a>
+                  <p class="precio"><span>$200</span></p>
+                  <a
+                    href="#"
+                    class="btn color_botones agregar-carrito"
+                    data-id="17"
+                    >Añadir carrito</a
+                  >
                 </div>
               </div>
             </div>
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem">
-                <img
-                  src="../img/imgZapatos/mujer/sandalias/sandaliaMujer3.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                <img src="../img/imgZapatos/mujer/sandalias/sandaliaMujer3.jpg"
+                alt="..." />
+                <div class="card-body info-card">
+                  <h5 class="card-title">Wakanda Front</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
+                    Lorem ipsum dolor sit amet.
                   </p>
-                  <a href="#" class="btn color_botones">Go somewhere</a>
+                  <p class="precio"><span>$150</span></p>
+                  <a
+                    href="#"
+                    class="btn color_botones agregar-carrito"
+                    data-id="18"
+                    >Añadir carrito</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    <!-- -------Espacio footer jhonata-------- -->
+      </div>
+    </section>
 
-    <!-- -------Espacio footer jhonata-------- -->
+    <!-- -------Espacio footer jhonatan-------- -->
+
+    <!-- -------Espacio footer jhonatan-------- -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="../JS/hora.js"></script>
+    <script src="../JS/app.js"></script>
   </body>
 </html>
