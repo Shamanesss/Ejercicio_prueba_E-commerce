@@ -3,6 +3,10 @@
 
 
 // -----------------header--------------------------
+body {
+    position: relative;
+}
+
 
 .logo {
     width: 6vw;
@@ -120,6 +124,11 @@
 
 // Footer
 
+footer {
+    position:;
+    width: 100%;
+    
+}
 
 .footer-background {
     background-color: $color-negro;

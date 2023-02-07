@@ -1,8 +1,14 @@
 @import "_parcial";
 
 body {
-    background-image: $fondo;
-    background-attachment: fixed;
+    border: 4px solid black;
+    
+     .grande {
+         margin-top: 7rem;
+     }
+    //background-image: $fondo;
+    //background-attachment: fixed;
+    
     .carrito-producto-delete {
         border: 0;
         background-color: transparent;
