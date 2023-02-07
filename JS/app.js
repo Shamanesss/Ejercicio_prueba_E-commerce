@@ -5,6 +5,7 @@ const carrito = document.getElementById("carrito");
 const zapatos = document.getElementById("lista-zapatos");
 // seleccionamos el Id y especificamente el tbody donde se agregara los productos
 const listaZapatos = document.querySelector("#lista-carrito tbody");
+//boton
 const vaciarCarritoBtn = document.getElementById("vaciar-carrito");
 
 
