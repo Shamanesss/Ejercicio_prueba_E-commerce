@@ -94,12 +94,6 @@
   margin-top: 3.7rem;
 }
 
-footer {
-  position: -webkit-sticky;
-  position: sticky;
-  width: 100%;
-}
-
 .footer-background {
   background-color: #4F4846;
 }
