@@ -15,10 +15,10 @@ function validar(){
      console.log(nombre);
     
     // if(nombre!=null && nombre != undefined){
-    //     saludar.innerHTML = nombre;
-    // }
+    //     saludar.innerHTML = "Hola "+nombre;
+     
     
-   saludar.innerHTML = "Hola "+nombre;
+   
 
    
     
