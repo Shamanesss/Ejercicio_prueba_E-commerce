@@ -15,7 +15,7 @@ body {
 }
 
 #saludar {
-  color: #fdf8f5;
+  background-color: #fdf8f5;
   font-size: large;
 }
 
@@ -28,4 +28,4 @@ body {
 .datospersonales input {
   background-color: #DDAF94;
   border: 0;
-}/*# sourceMappingURL=styleUsuario.css.map */
+}/*# sourceMappingURL=styleE.css.map */

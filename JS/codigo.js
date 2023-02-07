@@ -6,29 +6,23 @@ const cerrar = document.querySelector("#btn-cerrar-login");
 
 login.addEventListener('click',validar);
 
-function validar(){
+function validar(mellamo){
     let form_nombre = names.value;
     
     localStorage.setItem('logeado', form_nombre);
     console.log(form_nombre);
+ 
      let nombre= localStorage.getItem('logeado');
+     
      console.log(nombre);
-    
-    // if(nombre!=null){
-    //     return nombre;
-    //  }else{
-    //     alert('Introduce un nombre')
-    //  }
-    
-   
-     saludar.innerHTML = nombre;
-   
-    
-    
-    
-
-   // )
+     saludar.innerHTML = `¡Hola, Bienvenid@! ${nombre}`;
+  
     }
+
+
+function changepage(){
+    location.href="cuenta.html";
+}
     
 // cerrar.addEventListener('click', cerrarLogin)
 // function cerrarLogin(){
