@@ -31,17 +31,31 @@
 //     margin-top: 8rem;
 // }
 
+.contenedor-header{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    
+}
+
 .navbar-toggler-icon span{
     color: white;
 }
 
+
+
+
 .iconos-header{
     display: flex;
-    justify-items: flex-end;
+    
 }
 
 .iconos-header i{
     margin: 0 .7rem;
+}
+
+#centrar-iconos-vertical{
+    align-items: center;
 }
 
 .idiomas {
@@ -61,25 +75,24 @@
 
 .nav-bajo {
     display: flex;
-    
+    flex-direction: row;
+    align-items: center;
     width: 80vw;
+    justify-content: flex-end;
     
 
-    // #reloj {
-        
-    //     margin-left: 2rem;
-    //     color:$color-negro; 
-    //     font-weight: 700;
-    // }
+    
 
-    // #saludar{
-        
-    //     margin-right: 2.5rem;
-    //     color:white; 
-    //     font-weight: 700;
-    // }
+    #saludar{
+        color:white; 
+        font-weight: 700;
+    }
 }
 
+#reloj {
+    color:$color-negro; 
+    font-weight: 700;
+}
 
 
 .menu-banderas{
@@ -192,4 +205,15 @@
         flex-direction: row;
     }
 
+    .nav-bajo {
+        display: flex;
+        align-items: center;
+        
+        width: 80vw;
+    }
+
+    .encabezado {
+        
+        flex-direction: column;
+    }
 }

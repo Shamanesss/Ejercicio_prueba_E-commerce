@@ -20,17 +20,26 @@
   margin-right: 2rem;
 }
 
+.contenedor-header {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+
 .navbar-toggler-icon span {
   color: white;
 }
 
 .iconos-header {
   display: flex;
-  justify-items: flex-end;
 }
 
 .iconos-header i {
   margin: 0 0.7rem;
+}
+
+#centrar-iconos-vertical {
+  align-items: center;
 }
 
 .idiomas {
@@ -47,7 +56,19 @@
 
 .nav-bajo {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 80vw;
+  justify-content: flex-end;
+}
+.nav-bajo #saludar {
+  color: white;
+  font-weight: 700;
+}
+
+#reloj {
+  color: #4F4846;
+  font-weight: 700;
 }
 
 .menu-banderas {
@@ -120,5 +141,13 @@
   .en-linea {
     display: flex;
     flex-direction: row;
+  }
+  .nav-bajo {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+  }
+  .encabezado {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=header-footer.css.map */
