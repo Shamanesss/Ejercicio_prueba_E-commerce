@@ -1,8 +1,19 @@
 @import "_parcial";
 
 body {
-    background-image: $fondo;
-    background-attachment: fixed;
+    
+// Hola Mihai
+
+    background-image:$fondo;
+    
+    
+     .grande {
+         margin-top: 7rem;
+         height: 100vh;
+     }
+    //background-image: $fondo;
+    //background-attachment: fixed;
+    
     .carrito-producto-delete {
         border: 0;
         background-color: transparent;
