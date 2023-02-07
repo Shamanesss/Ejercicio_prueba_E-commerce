@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="../CSS/header-footer.css">
     <link rel="stylesheet" href="../CSS/home.css"/>
     <!-- <link rel="stylesheet" href="/skeleton.css"> -->
-    <link rel="stylesheet" href="../custom.css">
+    
 
     <!-- Font Awesome -->
     <script
@@ -33,18 +33,15 @@
   <body>
 
     <!-- header -->
-    <div class="container">
-      <header class="    encabezado-altura contenedor">
-        <nav class="encabezado  navbar navbar-expand-lg fixed-top " style="padding-top: 0px;padding-bottom: 0px;">
-          <div class="contenedor-header container-fluid" style="width: 80vw;
-                margin: 0 auto;">
+    <div class=" encabezado">
+      <header class=" encabezado-altura contenedor ">
+        <nav class="navbar navbar-expand-lg d-flex flex-column">
+          <div class="contenedor-header nav-bajo">
     
     
             <a href="../ES/index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" ;>
               <img class="logo" src="../img/logo-blanco.png" alt="Logo de ZapatON" />
             </a>
-    
-    
     
             <!-- Menu de paginas  -->
             <div class=" navegacion collapse navbar-collapse" id="navbarTogglerDemo03">
@@ -83,13 +80,14 @@
                     <i class="idiomas fa-solid fa-globe text-white"></i>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"
-                        style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img
-                          class="bandera bandera-es" src="../img/espana.png" alt=""> ES</a></li>
+                    <li><a class="dropdown-item menu-banderas" href="#">
+                      <img class="bandera bandera-es" src="../img/espana.png" alt=""> ES</a>
+                    </li>
     
-                    <li><a class="dropdown-item" href="#"
-                        style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img
-                          class="bandera bandera-en" src="../img/estados-unidos.png" alt=""> EN</a></li>
+                    <li>
+                      <a class="dropdown-item menu-banderas" href="#">
+                        <img class="bandera bandera-en" src="../img/estados-unidos.png" alt=""> EN</a>
+                      </li>
                   </ul>
                 </li>
               </ul>
@@ -109,14 +107,15 @@
                   </a>
     
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#"
-                        style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img
-                          class="bandera bandera-es" src="../img/espana.png" alt=""> ES</a></li>
+                    <li>
+                      <a class="dropdown-item menu-banderas" href="#">
+                      <img class="bandera bandera-es" src="../img/espana.png" alt=""> ES</a>
+                    </li>
     
     
-                    <li><a class="dropdown-item" href="#"
-                        style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img
-                          class="bandera bandera-en" src="../img/estados-unidos.png" alt=""> EN</a></li>
+                    <li>
+                      <a class="dropdown-item menu-banderas" href="#">
+                      <img class="bandera bandera-en" src="../img/estados-unidos.png" alt=""> EN</a></li>
                   </ul>
                 </li>
     
@@ -128,20 +127,24 @@
                   <i class=" fa-sharp fa-solid fa-cart-shopping text-white"></i>
                   <ul id="carrito">
                           
-                          <table id="lista-carrito" class="">
-                              <thead>
-                                  <tr>
-                                      <th>Imagen</th>
-                                      <th>Nombre</th>
-                                      <th>Precio</th>
-                                      <th></th>
-                                  </tr>
-                              </thead>
-                              <tbody></tbody>
-                          </table>
-                          <a href="#" id="vaciar-carrito" class="button ">Ir a carrito</a>
-                          <a href="#" id="vaciar-carrito" class="button ">Vaciar Carrito</a>
-                        </ul>
+                    <table id="lista-carrito" class="table">
+                        <thead>
+                            <tr>
+                              <th scope="col">Imagen</th>
+                              <th scope="col">Nombre</th>
+                              <th scope="col">Precio</th>
+                              <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <div class="botones-carrito">
+                      <button class="ir-carrito btn btn-success"> <a href="../ES/carritonuevo.html" id="vaciar-carrito" class="button ">Ir a carrito</a></button>
+
+                    <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito" class="button ">Vaciar Carrito</a></button>
+                    </div>
+
+                  </ul>
           </li>
       </ul>
                 
@@ -149,7 +152,7 @@
       
 <!-- Iconos idiomas, login, carrito -->
             
-            </div>
+          </div>
 
             
             <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
@@ -158,27 +161,28 @@
             </div>
     
           </div>
-          <div class="nav-bajo">
-            <div  id="reloj" >
+          <div class="nav-bajo d-flex flex-row justify-content-center">
             
-            </div>
             <div id="saludar" >
-              ¡Bienvenido!
+              ¡Hola, Bienvenido!
             </div>
-
           </div>
-          
+
+          <div class="nav-bajo d-flex flex-row justify-content-start">
+            <div id="reloj" >
+            </div>
+          </div>
+
         </nav>
-        
-
       </header>
-
-      
     </div>
 
 
     <!-- Slides -->
-<div class=" bajo-header" >
+ 
+
+<div class=" " >
+  
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -361,7 +365,7 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Dejanos tu mensaje y nos contactaremos en un plazo de 2 dias" required style="resize: none;"></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Dejanos tu mensaje y nos contactaremos en un plazo de 2 dias" required ></textarea>
               </div>
               <!-- <div class="my-3">
                 <div class="loading">Loading</div>
@@ -448,6 +452,7 @@
       crossorigin="anonymous"
     ></script>
 
-<script src="../JS/hora.js"></script>
+    <script src="../JS/hora.js"></script>
+    <script src="../JS/app.js"></script>
   </body>
 </html>
