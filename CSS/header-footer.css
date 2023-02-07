@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 .logo {
   width: 6vw;
 }
@@ -92,6 +96,12 @@
 
 .bajo-header {
   margin-top: 3.7rem;
+}
+
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
 }
 
 .footer-background {
