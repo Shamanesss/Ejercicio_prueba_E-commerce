@@ -1,0 +1,31 @@
+body {
+  background-color: #fdf8f5;
+}
+
+.form-color {
+  background-color: #DDAF94;
+}
+
+.colour {
+  background-color: #E8CEBF;
+}
+
+.btn-color {
+  background-color: #266150;
+}
+
+#saludar {
+  color: #fdf8f5;
+  font-size: large;
+}
+
+.datospersonales {
+  background-color: #DDAF94;
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+}
+
+.datospersonales input {
+  background-color: #DDAF94;
+  border: 0;
+}/*# sourceMappingURL=styleUsuario.css.map */

@@ -20,17 +20,26 @@
   margin-right: 2rem;
 }
 
+.contenedor-header {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+}
+
 .navbar-toggler-icon span {
   color: white;
 }
 
 .iconos-header {
   display: flex;
-  justify-items: flex-end;
 }
 
 .iconos-header i {
   margin: 0 0.7rem;
+}
+
+#centrar-iconos-vertical {
+  align-items: center;
 }
 
 .idiomas {
@@ -47,18 +56,26 @@
 
 .nav-bajo {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
   width: 80vw;
-}
-.nav-bajo #reloj {
-  margin-left: 2rem;
-  color: white;
-  font-weight: 700;
+  justify-content: flex-end;
 }
 .nav-bajo #saludar {
-  margin-right: 2.5rem;
   color: white;
   font-weight: 700;
+}
+
+#reloj {
+  color: #4F4846;
+  font-weight: 700;
+}
+
+.menu-banderas {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 16px;
+  padding-right: 0px;
 }
 
 .submenu {
@@ -81,6 +98,21 @@
   min-width: 300px;
 }
 
+.botones-carrito {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ir-carrito a, .vaciar-carrito a {
+  text-decoration: none;
+  color: #fdf8f5;
+  width: 50%;
+}
+
+.vaciar-carrito {
+  background-color: gray;
+}
+
 .ocultar-login {
   display: none;
 }
@@ -88,10 +120,6 @@
 .contenedor {
   width: 80vw;
   margin: 0 auto;
-}
-
-.bajo-header {
-  margin-top: 3.7rem;
 }
 
 .footer-background {
@@ -113,5 +141,13 @@
   .en-linea {
     display: flex;
     flex-direction: row;
+  }
+  .nav-bajo {
+    display: flex;
+    align-items: center;
+    width: 80vw;
+  }
+  .encabezado {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=header-footer.css.map */

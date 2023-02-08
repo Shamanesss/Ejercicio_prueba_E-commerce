@@ -31,17 +31,31 @@
 //     margin-top: 8rem;
 // }
 
+.contenedor-header{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    
+}
+
 .navbar-toggler-icon span{
     color: white;
 }
 
+
+
+
 .iconos-header{
     display: flex;
-    justify-items: flex-end;
+    
 }
 
 .iconos-header i{
     margin: 0 .7rem;
+}
+
+#centrar-iconos-vertical{
+    align-items: center;
 }
 
 .idiomas {
@@ -61,22 +75,31 @@
 
 .nav-bajo {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
     width: 80vw;
+    justify-content: flex-end;
     
 
-    #reloj {
-        
-        margin-left: 2rem;
-        color:white; 
-        font-weight: 700;
-    }
+    
 
     #saludar{
-        margin-right: 2.5rem;
         color:white; 
         font-weight: 700;
     }
+}
+
+#reloj {
+    color:$color-negro; 
+    font-weight: 700;
+}
+
+
+.menu-banderas{
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 16px;
+    padding-right: 0px
 }
 
 // Estilos carrito
@@ -92,7 +115,6 @@
     display: block;
     position: absolute;
     right:0;
-
     top:100%;
     z-index: 1;
     background-color: white;
@@ -100,6 +122,45 @@
     min-height: 400px;
     min-width: 300px;
 }
+
+.botones-carrito{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ir-carrito a, .vaciar-carrito a {
+    text-decoration: none;
+    color: $color-blanco;
+    width: 50%;
+}
+
+.vaciar-carrito {
+    background-color: gray;
+}
+
+@media screen and (max-width: 640px){
+
+    // body{
+        
+    // }
+    // .submenu:hover #carrito{
+    //     display: block;
+    //     position: absolute;
+    //     right:0;
+    
+    //     top:100%;
+    //     z-index: 1;
+    //     background-color: white;
+    //     padding: 20px;
+    //     min-height: 400px;
+    //     min-width: 300px;
+    // }
+}
+
+
+
+
+// --------Estilo carrito fin------
 
 
 .ocultar-login{
@@ -110,12 +171,6 @@
     width: 80vw;
     margin: 0 auto;
 }
-
-.bajo-header{
-    margin-top: 3.7rem;
-}
-
-
 
 
 // Footer
@@ -150,4 +205,15 @@
         flex-direction: row;
     }
 
+    .nav-bajo {
+        display: flex;
+        align-items: center;
+        
+        width: 80vw;
+    }
+
+    .encabezado {
+        
+        flex-direction: column;
+    }
 }
