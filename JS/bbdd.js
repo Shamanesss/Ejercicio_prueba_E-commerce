@@ -33,15 +33,15 @@ function dataregister(){
     usuario = JSON.parse(usuario);
     console.log(usuario);
    let nombre1=(nombre.value);
-    let apellido1=(register usapellido.value);
+    let apellido1=(apellido.value);
    let email1=(email.value);
    let direccion1=(direccion.value);
 
 }else{
     alert('no hay entradas')
 } 
-tunombre.innerHTML = nombre1;
-segundonombre.innerHTML = apellido1
+// tunombre.innerHTML = nombre1;
+// segundonombre.innerHTML = apellido1
 
-}
+ }
 
