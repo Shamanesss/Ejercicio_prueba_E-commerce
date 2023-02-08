@@ -1,8 +1,9 @@
 @import "_parcial";
 
 body {
-    background-image: $fondo;
-    background-attachment: fixed;
+    //background-image: $fondo;
+    //background-attachment: fixed;
+    border: 2px solid black;
     .carrito-producto-delete {
         border: 0;
         background-color: transparent;

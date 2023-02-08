@@ -1,6 +1,5 @@
 body {
-  background-image: linear-gradient(35deg, #4F4846, #DDAF94, #E8CEBF);
-  background-attachment: fixed;
+  border: 2px solid black;
 }
 body .carrito-producto-delete {
   border: 0;

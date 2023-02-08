@@ -10,3 +10,8 @@
 // } else {
 
 // }
+
+// $ localStorage.setItem('form1', JSON.stringify(perfilUsurio))
+ 
+
+   
