@@ -25,7 +25,6 @@ body {
   border-bottom-left-radius: 25%;
 }
 
-.datospersonales input {
-  background-color: #DDAF94;
-  border: 0;
+input:disabled {
+  background-color: rgba(0, 0, 0, 0.363);
 }/*# sourceMappingURL=styleUsuario.css.map */
