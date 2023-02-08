@@ -8,11 +8,28 @@
       //boton
       const vaciarCarritoBtn = document.getElementById("vaciar-carrito");
 
-
+      
 
 //<!-- -----------------------OBTENER VALORES-------------------------------------- -->
 
 //verificar que hay informacion en local storage y no repetir
+
+
+
+    //paso 4
+    //Cuando se elimina los objetos del carrito
+    carrito.addEventListener("click",eliminarZapato);
+
+    //Paso 5
+    // vaciar carrito
+    vaciarCarritoBtn.addEventListener("click", vaciarCarrito);
+
+    // paso 7
+    //Al cargar documento, mostrar local storage
+    document.addEventListener("DOMContentLoaded", leerLocalStorage);
+
+
+
 function obtenerProductoLocalStorage(){
     let zapatosLS;
 
@@ -82,6 +99,49 @@ function eliminarZapato(e){
     //paso 8  llamar funcion para eliminar del local storage al dar X
     // eliminarProductoLocalStorage(zapatoId);
 
+}
+
+function eliminarProductoLocalStorage(zapato){
+    //console.log(zapato);
+    let zapatosLS;
+    // obtenemos el arreglo de zapatos
+    zapatosLS = obtenerProductoLocalStorage();
+
+    //Iteramos comparando el ID del zapato borrado con los del LS    
+    zapatosLS.forEach(function(zapatoLS, index){
+        // si el zapato id de la iteracion actual es igual al zapato que estamos eliminando fuera de la funcion entonces eliminamos ese zapato...
+        //console.log(zapato.id);
+        if(zapatoLS.id === zapato){
+            zapatosLS.splice(index,1);
+        }
+    });
+    //console.log(zapatosLS);
+    //añadimos el arreglo actual a storage
+    localStorage.setItem("zapatos",JSON.stringify(zapatosLS));
+}
+
+function vaciarCarrito(){
+    // forma lenta
+   // listaZapatos.innerHTML = ""; 
+
+   // forma recomendada
+   // miestras siga habiendo elemento, lo recorro
+   while(listaZapatos.firstChild){
+    // lo que hace es ir eliminando el primer elemento mientras exista un primer elemento. hasta que quede vacio
+    listaZapatos.removeChild(listaZapatos.firstChild);
+   }
+  
+
+
+   // paso 9
+   //vaciar local storage
+   vaciarLocalStorage();
+   
+   // Evitar salto de recarga
+}
+
+function vaciarLocalStorage(){
+    localStorage.clear();
 }
 
 
