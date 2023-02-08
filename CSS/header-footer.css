@@ -3,7 +3,7 @@
 }
 
 .bandera {
-  width: 1.5rem;
+  width: 1.6rem;
 }
 
 .encabezado {
@@ -61,7 +61,7 @@
   width: 80vw;
   justify-content: flex-end;
 }
-.nav-bajo #saludar {
+.nav-bajo #saludar-home {
   color: white;
   font-weight: 700;
 }
@@ -76,6 +76,10 @@
   margin-left: 0px;
   padding-left: 16px;
   padding-right: 0px;
+}
+
+.menu-banderas .bandera {
+  margin-right: 0.5rem;
 }
 
 .submenu {
@@ -111,6 +115,17 @@
 
 .vaciar-carrito {
   background-color: gray;
+}
+
+.borrar-producto {
+  background-color: rgb(177, 43, 43);
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  padding: 0.4rem;
 }
 
 .ocultar-login {
