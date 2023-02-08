@@ -145,7 +145,7 @@
         </div>
         <div class="nav-bajo d-flex flex-row justify-content-center">
           
-          <div id="saludar" >
+          <div id="saludar2" >
             ¡Hola, Bienvenido!
           </div>
         </div>
@@ -226,6 +226,14 @@
           <button type="submit" class=" btn-cerrar-login btn btn-success btn-color align-items-center ">Desconectarte</button>
         </div>
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script  src="../JS/codigo.js"></script>
+ 
+  <script>
+    const saludar2 = document.getElementById('saludar2')
+    let nombre= localStorage.getItem('logeado');
+     
+     console.log(nombre);
+    
+     saludar2.innerHTML = `¡Hola, Bienvenid@! ${nombre}`;
+  </script>
 </body>
 </html>

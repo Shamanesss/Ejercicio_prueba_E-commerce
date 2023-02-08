@@ -21,27 +21,27 @@ let usuario = localStorage.getItem("registro");
 // console.log(usuario);
 
 
-let insertdata =[];
-const tunombre = document.getElementById('tunombre');
-const segundonombre = document.getElementById('segundonombre');
-const calle = document.getElementById('calle');
-const correo = document.getElementById('correo');
+// let insertdata =[];
+// const tunombre = document.getElementById('tunombre');
+// const segundonombre = document.getElementById('segundonombre');
+// const calle = document.getElementById('calle');
+// const correo = document.getElementById('correo');
 
 boton.addEventListener('click',dataregister());
 function dataregister(){
-    if(usuario!=null){
-    usuario = JSON.parse(usuario);
-    console.log(usuario);
-   let nombre1=(nombre.value);
-    let apellido1=(register usapellido.value);
-   let email1=(email.value);
-   let direccion1=(direccion.value);
+        if(usuario==null){
+        usuario = JSON.parse(usuario);
+        console.log(usuario);
+    //     let nombre1=(registrerUsuario.name.value);
+    //    let apellido1=(register apellido.value);
+    //     let email1=(email.value);
+    //     let direccion1=(direccion.value);
 
-}else{
-    alert('no hay entradas')
-} 
-tunombre.innerHTML = nombre1;
-segundonombre.innerHTML = apellido1
+     }else{
+         alert('no hay entradas')
+     } 
+//  tunombre.innerHTML = nombre1;
+//  segundonombre.innerHTML = apellido1
 
 }
 
