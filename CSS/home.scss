@@ -2,7 +2,13 @@
 
 
 
-
+.fecha{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+}
 
 // banner
 
@@ -29,7 +35,7 @@
     padding: 20px 0;
 }
 
-.promocion-banner .promocion-text {
+.promocion-banner, .promocion-text {
     text-align: center;
     padding-bottom: 20px;
 }
@@ -59,11 +65,11 @@
     color: white;
     transition: 0.4s;
     border-radius: 4px;
-  }
+    }
   
-  .contact-boton:hover {
+.contact-boton:hover {
     background: $color-verde;
-  }
+    }
 
 
 .color_botones {
@@ -90,6 +96,9 @@
     background-color: aquamarine;
 }
 
+textarea{
+    resize: none;
+}
 
 
 // Media query

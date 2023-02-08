@@ -1,9 +1,11 @@
 const login = document.getElementById('btn-login');
 const names = document.getElementById('DropdownFormName');
 const password = document.getElementById('DropdownFormPassword');
-const saludar = document.getElementById('saludar')
+const saludar = document.getElementById('saludar');
+const saludar2 = document.getElementById('saludar2');
 const cerrar = document.querySelector("#btn-cerrar-login");
-
+const apellido = document.querySelector('#DropdownFormlastName');
+const direccion = document.querySelector("#DropdownFormdirection");
 login.addEventListener('click',validar);
 
 function validar(){
@@ -11,22 +13,20 @@ function validar(){
     
     localStorage.setItem('logeado', form_nombre);
     console.log(form_nombre);
+ 
      let nombre= localStorage.getItem('logeado');
+     
      console.log(nombre);
-    
-    // if(nombre!=null && nombre != undefined){
-    //     saludar.innerHTML = nombre;
-    // }
-    
-   saludar.innerHTML = "Hola "+nombre;
-
-   
-    
-    
-    
-
-   // )
+     saludar.innerHTML = `¡Hola, ${nombre}`;
+     saludar2.innerHTML = `¡Hola, ${nombre}`;
+     saludar2.innerHTML = "nombre"
     }
+    
+   // saludar2.innerHTML = "nombre"
+
+// function changepage(){
+//     location.href="cuenta.html";
+// }
     
 // cerrar.addEventListener('click', cerrarLogin)
 // function cerrarLogin(){

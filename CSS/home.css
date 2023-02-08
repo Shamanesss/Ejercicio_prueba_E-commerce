@@ -1,3 +1,11 @@
+.fecha {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+}
+
 .promocion-banner {
   margin: 30px 0;
   position: relative;
@@ -13,7 +21,7 @@
   padding: 20px 0;
 }
 
-.promocion-banner .promocion-text {
+.promocion-banner, .promocion-text {
   text-align: center;
   padding-bottom: 20px;
 }
@@ -51,7 +59,7 @@
 .color_botones:hover {
   border: 1px solid #266150;
   color: #266150;
-} /*# sourceMappingURL=styleCatalogo.css.map */
+} 
 .titulo-seccion-productos {
   text-transform: uppercase;
   color: #266150;
@@ -60,6 +68,10 @@
 .promocion {
   height: 50vh;
   background-color: aquamarine;
+}
+
+textarea {
+  resize: none;
 }
 
 @media screen and (min-width: 768px) {
