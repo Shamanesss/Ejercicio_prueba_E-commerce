@@ -1,12 +1,13 @@
 const login = document.getElementById('btn-login');
 const names = document.getElementById('DropdownFormName');
 const password = document.getElementById('DropdownFormPassword');
-const saludar = document.getElementById('saludar')
+const saludar = document.getElementById('saludar');
+
 const cerrar = document.querySelector("#btn-cerrar-login");
 
 login.addEventListener('click',validar);
 
-function validar(mellamo){
+function validar(){
     let form_nombre = names.value;
     
     localStorage.setItem('logeado', form_nombre);
@@ -15,14 +16,39 @@ function validar(mellamo){
      let nombre= localStorage.getItem('logeado');
      
      console.log(nombre);
-     saludar.innerHTML = `¡Hola, Bienvenid@! ${nombre}`;
-  
+     saludar.innerHTML = `¡Hola, ${nombre}`;
+     
     }
 
+const apellido = document.querySelector('#DropdownFormlastName');
+const direccion = document.querySelector("#DropdownFormdirection");  
+const names1 = document.getElementById('DropdownFormName1');
+const password1 = document.getElementById('DropdownFormPassword1');
+const email = document.getElementById('DropdownFormEmail1');
+const btn_usuario = document.getElementById('btn-usuario')
 
-function changepage(){
-    location.href="cuenta.html";
+btn_usuario.addEventListener('click',registrousuario);
+
+function registrousuario(registro){
+    const aUsuario={
+        names1: registro.querySelector('#name1').value,
+        apellido: apellido.value,
+        direccion:direccion.value,
+        email: email.value,
+        passworwd1:password1.value
+
+    };
+    let datosusuario = JSON.stringify(aUsuario);
+    
+    localStorage.setItem("registro",datosusuario);
+    let usuario = localStorage.getItem("registro",JSON.parse(aUsuario));
+    console.log(usuario);
 }
+
+
+// function changepage(){
+//     location.href="cuenta.html";
+// }
     
 // cerrar.addEventListener('click', cerrarLogin)
 // function cerrarLogin(){

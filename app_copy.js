@@ -1,3 +1,6 @@
+// Copia de JS carrito
+
+
 // Variables
 // obtenemos el UL
 const carrito = document.getElementById("carrito");
@@ -74,6 +77,7 @@ function leerDatosZapato(zapato){
 }
 
 
+
 //Muestra el zapato seleccionado en el carrito
 
 function insertarCarrito(zapato){
@@ -96,6 +100,8 @@ function insertarCarrito(zapato){
     // parte 6  almacenar en local storage
     guardarProductoLocalStorage(zapato);
 }
+
+
 
 //continua paso 4
 // Eliminando zapato del carrito en el DOM
@@ -120,6 +126,8 @@ function eliminarZapato(e){
 
 }
 
+
+
 //continuar paso 5
 //Elimina los productos del carrito en el DOM
 
@@ -134,7 +142,7 @@ function vaciarCarrito(){
     listaZapatos.removeChild(listaZapatos.firstChild);
    }
   
-
+   
 
    // paso 9
    //vaciar local storage
@@ -171,6 +179,10 @@ function obtenerProductoLocalStorage(){
     return zapatosLS;
 }
 
+
+
+
+
 //Imprime los zapatos de local storage en el carrito
 function leerLocalStorage(){
     let zapatosLS;
@@ -194,10 +206,12 @@ function leerLocalStorage(){
         <td> <a href="#" class="borrar-producto" data-id="${zapato.id}">X</a></td>
         `;
         // arriba tambien se añadio una clase dinamicamente
-        // añadir la informacion a la lista del carrito (imrimir dentro la lista
+        // añadir la informacion a la lista del carrito (imrimir dentro la lista)
         listaZapatos.appendChild(row);
     });
 }
+
+
 
 // continua paso 8   eliminar el producto de local storage por el ID
 
@@ -220,7 +234,14 @@ function eliminarProductoLocalStorage(zapato){
     localStorage.setItem("zapatos",JSON.stringify(zapatosLS));
 }
 
+
+
 // continua paso 9 -  elimina todos los zapatos de local storage
 function vaciarLocalStorage(){
     localStorage.clear();
 }
+
+
+export {cargarEventListeners, comprarZapato, leerDatosZapato , insertarCarrito , eliminarZapato ,vaciarCarrito , guardarProductoLocalStorage, obtenerProductoLocalStorage,
+    leerLocalStorage, eliminarProductoLocalStorage ,  vaciarLocalStorage}
+
