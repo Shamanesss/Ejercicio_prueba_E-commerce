@@ -194,7 +194,7 @@ function leerLocalStorage(){
         <td> <a href="#" class="borrar-producto" data-id="${zapato.id}">X</a></td>
         `;
         // arriba tambien se añadio una clase dinamicamente
-        // añadir la informacion a la lista del carrito (imrimir dentro la lista)
+        // añadir la informacion a la lista del carrito (imrimir dentro la lista
         listaZapatos.appendChild(row);
     });
 }
