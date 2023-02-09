@@ -162,7 +162,7 @@
    
     <div class="col-lg-8 mx-auto ">
       <!-- ------ -->
-      <div id="contenido_new">
+      <div id="containerRegister">
 
       </div>
       <!-- ------------crear-------- -->
@@ -230,7 +230,7 @@
             
           </div>
           <div class="text-center">
-          <button type="submit" class=" btn-cerrar-login btn btn-success btn-color align-items-center ">Desconectarte</button>
+          <button type="button" class=" btn-cerrar-login btn btn-success btn-color align-items-center ">Desconectarte</button>
         </div>
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
  
@@ -246,35 +246,82 @@ const names1 = document.getElementById('DropdownFormName1');
 const password1 = document.getElementById('DropdownFormPassword1');
 const email = document.getElementById('DropdownFormEmail1');
 const btn_usuario = document.getElementById('btn-usuario');
-let caja_contenido = document.getElementById("contenido_new");
 
 
-let tengoUsuario = localStorage.getItem("registro",JSON.parse("registro".tengoUsuario));
-console.log(tengoUsuario);
 
+//let tengoUsuario = JSON.parse(localStorage.getItem("registro".tengoUsuario));
+//console.log(typeof (tengoUsuario));
 
-// obtenerUsuario();
+// tengoUsuario.forEach(usuario => {
+//    let div = document.createElement("div");
+//    div.innerHTML= usuario.names1;
+  
+// });
 
-// function obtenerUsuario(){
-//     let datos_persona=;
+obtenerUsuario();
+
+function obtenerUsuario(){
+    let datos_usuario;
 
 //     //comprobamos si hay algo en local storage
-//     if(localStorage.getItem("registro")===null){
-//         registro.usuario = [''];
-//         console.log("que hay aqui "+usuario);
-//     }else{
+     if(localStorage.getItem("registro")===null){
+         datos_usuario = [''];
+        console.log("que hay aqui "+usuario);
+     }else{
 //         // // lo que viene lo convierte a un arreglo porque viene como string
-//         // datos_persona = JSON.parse(localStorage.getItem("registro"));
-//         return usuario
-//     }
+    datos_usuario = JSON.parse(localStorage.getItem("registro"));
+    console.log("else"+typeof datos_usuario)
+    
+//         return usuario 
+
+   }
   
-//     // return datos_persona;
-//     // console.log ("aqui tiene que ir el objeto con datos" + datos_persona)
+   return datos_usuario;
+
+ 
    
-// }
+ }
 
-
-
+ function imprimirDatos(){
+  const containerRegister = document.getElementById("containerRegister");
+datos_usuario =obtenerUsuario();
+console.log(datos_usuario + "esto que es")
+// datos_usuario.forEach(function(usuario) {
+  
+//   containerRegister.innerHTML ="esto es un registro de apellido"  +usuario.apellido;
+//   console.log(usuario.apellido);
+   
+// });
+containerRegister.innerHTML =   `  <div class="col-7 mx-auto datospersonales p-5 ">
+              
+              <h2 class="text-center">DATOS PERSONALES</h2>
+                 <form class="px-4 py-3 ">
+                 
+                   <div class="mb-3">
+                       <label for="DropdownFormName2" class="form-label">Nombre</label>
+                       <input type="text" class="form-control" id="DropdownFormName2" disabled placeholder="${datos_usuario.names1}">
+                     </div>
+                     <div class="mb-3">
+                       <label for="DropdownFormlastName" class="form-label" >Apellidos</label>
+                       <input type="text" class="form-control" id="DropdownFormlastName2"  disabled placeholder="${datos_usuario.apellido}">
+                     </div>
+                     <div class="mb-3">
+                       <label for="DropdownFormlastaddress" class="form-label" disable>Direccion</label>
+                       <input type="text" class="form-control" id="DropdownFormlastaddress"  disabled placeholder="${datos_usuario.direccion}">
+                     </div>
+                   <div class="mb-3">
+                     <label for="DropdownFormEmail1" class="form-label" disabled>Email</label>
+                     <input type="email" class="form-control" id="DropdownFormEmail2" disabled placeholder="${datos_usuario.email}">
+                   </div>
+                   <div class="mb-3">
+                     <label for="DropdownFormPassword1" class="form-label"readonly>Contraseña</label>
+                     <input type="password" class="form-control" id="DropdownFormPassword2" disabled placeholder="${datos_usuario.password1}">
+                   </div>
+                 
+             </div> `
+   console.log(datos_usuario.apellido);
+  }
+  imprimirDatos();
 //<!-- ----------------------- MOSTRAR VALORES-------MODIFICAR PLANTILLA------------------------------- -->
 
 
@@ -294,52 +341,52 @@ console.log(tengoUsuario);
     // //     console.log(zapato.titulo);
     //    const div = document.createElement("div");
     //     Construiremos una plantilla para cada uno de los zapatos
-    let registrofinalizado= '';   
-   caja_contenido.innerHTML = `
+//     let registrofinalizado= '';   
+//    caja_contenido.innerHTML = `
 
-        <div class="col-7 mx-auto datospersonales p-5 ">
+//         <div class="col-7 mx-auto datospersonales p-5 ">
               
-              <h2 class="text-center">DATOS PERSONALES</h2>
-                 <form class="px-4 py-3 ">
+//               <h2 class="text-center">DATOS PERSONALES</h2>
+//                  <form class="px-4 py-3 ">
                  
-                   <div class="mb-3">
-                       <label for="DropdownFormName2" class="form-label">Nombre</label>
-                       <input type="text" class="form-control" id="DropdownFormName2" disabled>
-                     </div>
-                     <div class="mb-3">
-                       <label for="DropdownFormlastName" class="form-label" >Apellidos</label>
-                       <input type="text" class="form-control" id="DropdownFormlastName2" disabled>
-                     </div>
-                     <div class="mb-3">
-                       <label for="DropdownFormlastaddress" class="form-label" disable>Direccion</label>
-                       <input type="text" class="form-control" id="DropdownFormlastaddress" >
-                     </div>
-                   <div class="mb-3">
-                     <label for="DropdownFormEmail1" class="form-label" disabled>Email</label>
-                     <input type="email" class="form-control" id="DropdownFormEmail2">
-                   </div>
-                   <div class="mb-3">
-                     <label for="DropdownFormPassword1" class="form-label"readonly>Contraseña</label>
-                     <input type="password" class="form-control" id="DropdownFormPassword2">
-                   </div>
+//                    <div class="mb-3">
+//                        <label for="DropdownFormName2" class="form-label">Nombre</label>
+//                        <input type="text" class="form-control" id="DropdownFormName2" disabled>
+//                      </div>
+//                      <div class="mb-3">
+//                        <label for="DropdownFormlastName" class="form-label" >Apellidos</label>
+//                        <input type="text" class="form-control" id="DropdownFormlastName2" disabled>
+//                      </div>
+//                      <div class="mb-3">
+//                        <label for="DropdownFormlastaddress" class="form-label" disable>Direccion</label>
+//                        <input type="text" class="form-control" id="DropdownFormlastaddress" >
+//                      </div>
+//                    <div class="mb-3">
+//                      <label for="DropdownFormEmail1" class="form-label" disabled>Email</label>
+//                      <input type="email" class="form-control" id="DropdownFormEmail2">
+//                    </div>
+//                    <div class="mb-3">
+//                      <label for="DropdownFormPassword1" class="form-label"readonly>Contraseña</label>
+//                      <input type="password" class="form-control" id="DropdownFormPassword2">
+//                    </div>
                  
-             </div>
+//              </div>
         
         
 
         
-        `;
+//         `;
         
         
         
-      //   caja_contenido.appendChild(div);
-      // });
-    //}
+//       //   caja_contenido.appendChild(div);
+//       // });
+//     //}
 
-    //<!-- -----------------------LEER FUNCION AUTOMATICAMENTE-------------------------------------- -->
-    // leerLocalStorage();
+//     //<!-- -----------------------LEER FUNCION AUTOMATICAMENTE-------------------------------------- -->
+//     // leerLocalStorage();
 
   </script>
  
-</body>
-</html>
+ </body>
+ </html>
