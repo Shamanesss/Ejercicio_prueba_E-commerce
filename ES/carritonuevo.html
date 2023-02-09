@@ -17,149 +17,158 @@
 </head>
 <body>
 
-    <div class="container">
-        <header class="    encabezado-altura contenedor">
-          <nav class="encabezado  navbar navbar-expand-lg fixed-top " style="padding-top: 0px;padding-bottom: 0px;">
-            <div class="contenedor-header container-fluid" style="width: 80vw;
-                  margin: 0 auto;">
-      
-      
-              <a href="../ES/index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" ;>
-                <img class="logo" src="../img/logo-blanco.png" alt="Logo de ZapatON" />
-              </a>
-      
-      
-      
-              <!-- Menu de paginas  -->
-              <div class=" navegacion collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a href="../ES/index.html" class="nav-link active px-2 text-white" aria-current="page">Inicio</a>
-                  </li>
-      
-                  <li class="nav-item dropdown">
-                    <a class="nav-link px-2 text-white dropdown-toggle" href="../ES/catalogo.html" id="navbarDropdownMenuLink"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      Tienda
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../ES/catalogo.html#seccion-hombres">Hombre</a></li>
-                      <li><a class="dropdown-item" href="../ES/catalogo.html#seccion-mujer">Mujer</a></li>
-                      <li><a class="dropdown-item" href="#">Ofertas</a></li>
-                    </ul>
-                  </li>
-      
-                  <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-white">Servicio al cliente</a>
-                  </li>
-      
-                  <li class="nav-item">
-                    <a href="#" class="nav-link px-2 text-white">Sobre ZapatON</a>
-                  </li>
-      
-                  <li class="nav-item ocultar-login">
-                    <a href="../ES/cuenta.html" class="nav-link px-2 text-white"> <strong>Mi cuenta</strong> </a>
-                  </li>
-      
-                  <li class="nav-item dropdown ocultar-login">
-                    <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="idiomas fa-solid fa-globe text-white"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#"
-                          style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img
-                            class="bandera bandera-es" src="../img/espana.png" alt=""> ES</a></li>
-      
-                      <li><a class="dropdown-item" href="#"
-                          style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img
-                            class="bandera bandera-en" src="../img/estados-unidos.png" alt=""> EN</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <!-- Menu de paginas fin -->
-      
-              <!-- Iconos idiomas, login, carrito -->
-      
-              <div class="iconos-header col-md-2 text-end">
-                <!-- <a href=""><i class="idiomas fa-solid fa-globe text-white"></i></a> -->
-      
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 en-linea">
-                  <li class="ocultar nav-item dropdown">
-                    <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
-                      data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="idiomas fa-solid fa-globe text-white"></i>
-                    </a>
-      
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#"
-                          style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img
-                            class="bandera bandera-es" src="../img/espana.png" alt=""> ES</a></li>
-      
-      
-                      <li><a class="dropdown-item" href="#"
-                          style="margin-right: 0px;margin-left: 0px;padding-left: 16px;padding-right: 0px;"><img
-                            class="bandera bandera-en" src="../img/estados-unidos.png" alt=""> EN</a></li>
-                    </ul>
-                  </li>
-      
-                  <li class="nav-item">
-                    <a href="../ES/cuenta.html" class="ocultar"><i class="login fa-regular fa-user  text-white"></i></a>
-                  </li>
-  
-                  <li class="nav-item submenu">
-                    <i class=" fa-sharp fa-solid fa-cart-shopping text-white"></i>
-                    <ul id="carrito">
-                            
-                            <table id="lista-carrito" class="">
-                                <thead>
-                                    <tr>
-                                        <th>Imagen</th>
-                                        <th>Nombre</th>
-                                        <th>Precio</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody></tbody>
-                            </table>
-  
-                            <a href="#" id="vaciar-carrito" class="button ">Vaciar Carrito</a>
-                          </ul>
+  <header class=" encabezado-altura  encabezado">
+    <nav class="contenedor navbar navbar-expand-lg d-flex flex-column">
+      <div class="contenedor-header ">
+
+<!-- 1. Logo -->
+        <a href="../ES/index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" ;>
+          <img class="logo" src="../img/logo-blanco.png" alt="Logo de ZapatON" />
+        </a>
+
+<!--2. Menu de paginas  -->
+        <div class=" navegacion collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="../ES/index.html" class="nav-link active px-2 text-white" aria-current="page">Inicio</a>
             </li>
-        </ul>
-                  
-  
+
+            <li class="nav-item dropdown">
+              <a class="nav-link px-2 text-white dropdown-toggle" href="../ES/catalogo.html" id="navbarDropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Tienda
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../ES/catalogo.html#seccion-hombres">Hombre</a></li>
+                <li><a class="dropdown-item" href="../ES/catalogo.html#seccion-mujer">Mujer</a></li>
+                <li><a class="dropdown-item" href="#">Ofertas</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-white">Servicio al cliente</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-white">Sobre ZapatON</a>
+            </li>
+
+            <li class="nav-item ocultar-login">
+              <a href="../ES/cuenta.html" class="nav-link px-2 text-white"> <strong>Mi cuenta</strong> </a>
+            </li>
+
+            <li class="nav-item dropdown ocultar-login">
+              <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="idiomas fa-solid fa-globe text-white"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item menu-banderas" href="#">
+                  <img class="bandera bandera-es" src="../img/espana.png" alt=""> ES</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item menu-banderas" href="#">
+                    <img class="bandera bandera-en" src="../img/reino-unido.png" alt=""> EN</a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item menu-banderas" href="#">
+                    <img class="bandera bandera-eus" src="../img/euskadi.png" alt=""> EUS</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+<!-- Menu de paginas fin -->
+
+<!-- 3. Iconos idiomas, login, carrito -->
+
+        <div class="d-flex align-items-center iconos-header col-md-2 text-end">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 en-linea">
+            <li class="ocultar nav-item dropdown">
+              <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="idiomas fa-solid fa-globe text-white"></i>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item menu-banderas" href="#">
+                  <img class="bandera bandera-es" src="../img/espana.png" alt=""> ES
+                </a>
+                </li>
+
+
+                <li>
+                  <a class="dropdown-item menu-banderas" href="#">
+                  <img class="bandera bandera-en" src="../img/reino-unido.png" alt=""> EN
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item menu-banderas" href="#">
+                    <img class="bandera bandera-eus" src="../img/euskadi.png" alt=""> EUS</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="../ES/cuenta.html" class="ocultar"><i class="login fa-regular fa-user  text-white"></i></a>
+            </li>
+
+            <li class="nav-item submenu">
+              <i class=" fa-sharp fa-solid fa-cart-shopping text-white"></i>
+              <ul id="carrito">
+
+                <table id="lista-carrito-home" class="table">
+                    <thead>
+                        <tr>
+                          <th scope="col">Imagen</th>
+                          <th scope="col">Nombre</th>
+                          <th scope="col">Precio</th>
+                          <th></th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+                  <div class="botones-carrito">
+                    <button class="ir-carrito btn btn-success"> <a href="../ES/carritonuevo.html" id="vaciar-carrito" class="button ">Ir a carrito</a></button>
+
+                    <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito" class="button ">Vaciar Carrito</a></button>
+                  </div>
+
+                </ul>
+            </li>
+          </ul>
+        </div>
+<!--Fin Iconos idiomas, login, carrito -->
+
+
+<!-- Icono de menu en movil y tablet -->
+        <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=" text-white"><i class="fa-solid fa-bars"></i></span>
+        </div>
+
+      </div> <!-- contenedor header fin -->
+
+      <div class="nav-bajo " >
         
-                    <!-- Iconos idiomas, login, carrito -->
-              
-              </div>
-  
-              
-              <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class=" text-white"><i class="fa-solid fa-bars"></i></span>
-              </div>
-      
-            </div>
-            <div class="nav-bajo">
-              <div  id="reloj" >
-              
-              </div>
-              <div id="saludar" >
-                ¡Bienvenido!
-              </div>
-  
-            </div>
-            
-          </nav>
-          
-  
-        </header>
-  
-        
+        <div id="saludar-home" >
+          <p>¡Bienvenid@ a nuestra tienda! </p>
+        </div>
       </div>
-      <div>
+
+      <!-- <div class="nav-bajo d-flex flex-row justify-content-start">
+        <div id="reloj" >
+        </div>
+      </div> -->
+
+    </nav>
+  </header>
+    <div class="grande">
                          <!-- donde se va a colocar la lista de los productos -->
                          <ul id="carrito">
                           <table id="lista-carrito-nuevo" class="">
@@ -186,7 +195,7 @@
                 </div>
                 <div class="carrito-pr-cantidad">
                     <h5>cantidad</h5>
-                    <input class="w-25 pl-1" value="0" type="number">
+                    <input class="cantidad-producto w-25 pl-1" value="0" type="number">
                 </div>
                 <div class="carrito-pr-precio">
                     <h5>Precio</h5>
@@ -214,6 +223,20 @@
             </div>
         </div>
     </div> -->
+
+    <div id="carrito-acciones" class="carrito-acciones disabled d-flex justify-content-between flex-wrap align-items-center gap-2">
+      <div class="carrito-acciones-izq d-flex gap-2">
+          <button type="button" class="btn btn-success ms-5">VACIAR</button>
+          <button type="button" class="btn btn-success me-5">COMPRAR</button>
+      </div>
+      <div class="carrito-acciones-dr d-flex me-5 ms-5">
+          <div class="carrito-acciones-total d-flex p-2">
+              <p>Total:</p>
+              <p id="total">0$</p>
+          </div>
+         
+      </div>
+  </div>
     
     <footer>
         <div class="container-fluid">
@@ -312,67 +335,58 @@ function leerLocalStorage(){
         //Construiremos una plantilla para cada uno de los zapatos
         row.innerHTML=
         `
-        <div class="grande">
+        
         <div class="card d-flex m-5 ">
-            <img src="../img/zapatohombre5.png" class="card-img-top" alt="...">
+            <img src="${zapato.imagen}" class="card-img-top" alt="...">
         
             <div class="card-body d-flex flex-row justify-content-between align-items-center rounded p-2 flex-wrap">
                 <div class="carrito-nombre">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title">${zapato.titulo}</h5>
                     <p class="card-text">description goes here</p>
                 </div>
                 <div class="carrito-pr-cantidad">
                     <h5>cantidad</h5>
-                    <input class="w-25 pl-1" value="0" type="number">
+                    <input class="cantidad-producto w-25 pl-1" value="1" type="number">
                 </div>
                 <div class="carrito-pr-precio">
                     <h5>Precio</h5>
-                    <p>200$</p>
+                    <p>${zapato.precio}</p>
                 </div>
                 <div class="carrito-pr-subtotal">
                     <h5>Subtotal</h5>
-                    <p>400$</p>
+                    <p>0</p>
                 </div>
-                <button class="carrito-producto-delete"><i class="fa-solid fa-trash"></i></button>
+                <button class="carrito-producto-delete borrar-producto" data-id="${zapato.id}"><i class="fa-solid fa-trash "></i></button>
                 
             </div>
         </div>
-        <div id="carrito-acciones" class="carrito-acciones disabled d-flex justify-content-between flex-wrap align-items-center gap-2">
-            <div class="carrito-acciones-izq d-flex gap-2">
-                <button type="button" class="btn btn-success ms-5">VACIAR</button>
-                <button type="button" class="btn btn-success me-5">COMPRAR</button>
-            </div>
-            <div class="carrito-acciones-dr d-flex me-5 ms-5">
-                <div class="carrito-acciones-total d-flex p-2">
-                    <p>Total:</p>
-                    <p id="total">900$</p>
-                </div>
-               
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-         <td> 
-             <img src="${zapato.imagen}" width=100px >
         
-         </td>
-         <td> ${zapato.titulo}</td>
-         <td> ${zapato.precio}</td>
-         <td> <a href="#" class="borrar-producto" data-id="${zapato.id}">X</a></td>
+ 
+
+
+
+
+
+
+         
         `;
         // arriba tambien se añadio una clase dinamicamente
         // añadir la informacion a la lista del carrito (imrimir dentro la lista)
         listaZapatos.appendChild(row);
+
+
+
     });
 }
 
 leerLocalStorage()
 
+
+
+
+
+
     </script>
+    <script src="../JS/carrito.js"></script>
 </body>
 </html>
