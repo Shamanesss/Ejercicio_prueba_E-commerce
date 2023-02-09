@@ -8,3 +8,5 @@ const saludar2 = document.getElementById('saludar2');
     
      saludar2.innerHTML = `¡Hola, Bienvenid@! ${nombre}`;
     }
+    
+

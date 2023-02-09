@@ -1,0 +1,6 @@
+body section {
+  background-image: url(../img/bilbaoZapato.jpeg), linear-gradient(35deg, black, gray, white);
+  height: 45rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=sobreZapatON.css.map */

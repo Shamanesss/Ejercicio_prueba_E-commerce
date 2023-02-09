@@ -7,9 +7,12 @@ body {
     background-image:$fondo;
     
     
-     .grande {
+     .grande  {
          margin-top: 7rem;
          height: 100vh;
+         width: 100%;
+         border: 2px solid black;
+         
      }
     //background-image: $fondo;
     //background-attachment: fixed;
