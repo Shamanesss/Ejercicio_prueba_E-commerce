@@ -45,9 +45,10 @@ function registrousuario(){
     console.log(jsonUsuario);
 
     //console.log(aUsuario.apellido);
+   
 }
 
-
+  
 // function changepage(){
 //     location.href="cuenta.html";
 // }
