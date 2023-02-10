@@ -28,11 +28,7 @@ const email = document.getElementById('DropdownFormEmail1');
 const btn_usuario = document.getElementById('btn-usuario')
 
 btn_usuario.addEventListener('click',registrousuario);
-
-
-
-        
-
+      
 
 function registrousuario(){
     const aUsuario={

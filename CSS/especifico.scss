@@ -3,6 +3,8 @@
 body{
     background: $fondo;
     background-attachment: fixed;
+    
+    
 }
 
 .spiner{
@@ -19,6 +21,9 @@ body{
 
 .talla{
     background-color: $color-marron;
+}
+.contiene-tarejeta{
+    margin: 6rem auto 0 10rem;
 }
 
 
