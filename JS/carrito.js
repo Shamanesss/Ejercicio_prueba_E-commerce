@@ -76,6 +76,7 @@
 let cantidad = document.querySelector(".cantidad-producto");
 let precio = document.querySelector(".carrito-pr-precio p");
 let subtotal = document.querySelector(".carrito-pr-subtotal p");
+let delete = document.getElementsByClassName(".carrito-producto-delete");
 
 
 aa()
@@ -92,9 +93,9 @@ aa()
     let precioProducto = parseInt((precio.textContent).slice(1));
     let subtotalPrecio = parseInt(subtotal.textContent);
 
-    console.log(cantidadSeleccionada)
-    console.log(precioProducto)
-    console.log(subtotalPrecio)
+    // console.log(cantidadSeleccionada)
+    // console.log(precioProducto)
+    // console.log(subtotalPrecio)
 
     let suma = cantidadSeleccionada * precioProducto;
 
@@ -106,3 +107,8 @@ let tarjetas = [document.querySelectorAll("card")];
 tarjetas.forEach((tarjeta) => {
  
 })
+
+delete.addEventListener("click" deleteProduct);
+ function deleteProduct {
+  
+ }
