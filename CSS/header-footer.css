@@ -82,6 +82,15 @@
   margin-right: 0.5rem;
 }
 
+#carrito {
+  overflow: scroll;
+  max-height: 200px;
+}
+
+ul#carrito table {
+  width: 300px;
+}
+
 .submenu {
   position: relative;
 }
@@ -98,7 +107,7 @@
   z-index: 1;
   background-color: white;
   padding: 20px;
-  min-height: 400px;
+  max-height: 400px;
   min-width: 300px;
 }
 
