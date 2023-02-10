@@ -23,8 +23,4 @@ body {
   background-color: #DDAF94;
   border-top-right-radius: 25%;
   border-bottom-left-radius: 25%;
-}
-
-input:disabled {
-  background-color: rgba(0, 0, 0, 0.363);
 }/*# sourceMappingURL=styleUsuario.css.map */
