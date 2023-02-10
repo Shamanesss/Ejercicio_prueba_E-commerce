@@ -9,12 +9,13 @@
       const vaciarCarritoBtn = document.getElementById("vaciar-carrito");
 
       
-
+      cargarEventListeners();
+      
 //<!-- -----------------------OBTENER VALORES-------------------------------------- -->
 
 //verificar que hay informacion en local storage y no repetir
 
-
+    function cargarEventListeners(){
 
     //paso 4
     //Cuando se elimina los objetos del carrito
@@ -27,6 +28,10 @@
     // paso 7
     //Al cargar documento, mostrar local storage
     document.addEventListener("DOMContentLoaded", leerLocalStorage);
+    
+    }
+
+
 
 
 
@@ -51,7 +56,7 @@ function obtenerProductoLocalStorage(){
 function leerLocalStorage(){
     let zapatosLS;
     zapatosLS = obtenerProductoLocalStorage();
-    console.log("leer"+zapatosLS);
+    //console.log("leer"+zapatosLS);
 
     //console.log(zapatosLS)
     //RECORRER EL RREGLO
@@ -82,7 +87,7 @@ function leerLocalStorage(){
 // Eliminando zapato del carrito en el DOM
 //acceder al elemento con  e
 function eliminarZapato(e){
-    e.preventDefault();
+    // e.preventDefault();
     
     let zapato, zapatoId;
     //identificamos el enlace que tiene la clase borrar producto, en este caso la X
