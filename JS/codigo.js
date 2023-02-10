@@ -28,21 +28,23 @@ const email = document.getElementById('DropdownFormEmail1');
 const btn_usuario = document.getElementById('btn-usuario')
 
 btn_usuario.addEventListener('click',registrousuario);
+      
 
-function registrousuario(registro){
+function registrousuario(){
     const aUsuario={
-        names1: registro.querySelector('#name1').value,
+        names1:names1.value,
         apellido: apellido.value,
         direccion:direccion.value,
         email: email.value,
         passworwd1:password1.value
 
     };
-    let datosusuario = JSON.stringify(aUsuario);
-    
-    localStorage.setItem("registro",datosusuario);
-    let usuario = localStorage.getItem("registro",JSON.parse(aUsuario));
-    console.log(usuario);
+    console.log(aUsuario);
+    let jsonUsuario = localStorage.setItem("registro",JSON.stringify(aUsuario));
+    // let usuario = localStorage.getItem("registro",JSON.parse(jsonUsuario));
+    console.log(jsonUsuario);
+
+    //console.log(aUsuario.apellido);
 }
 
 

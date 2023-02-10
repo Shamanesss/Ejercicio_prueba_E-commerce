@@ -48,7 +48,7 @@ function comprarZapato(e){
         //Escalamos hacia arriba dos posiciones en los padres (Toda la info de la card)
         //zapato
         const zapato= e.target.parentElement.parentElement;
-        console.log("asignar zapato e"+ zapato)
+        
         //LOs datos que hemos seleccionado, los Enviamos a otra funcion
         //leerDatosZapato
         leerDatosZapato(zapato);
