@@ -9,6 +9,8 @@
 
 }
 
+
+
 .bandera {
     width: 1.6rem;
 }
@@ -109,6 +111,16 @@
 // Estilos carrito
 
 
+#carrito {
+    overflow:scroll;
+    max-height:200px;
+}
+
+ul#carrito table {
+    width:500px;
+    background-color:lightgray;
+}
+
 .submenu {
     position: relative;
 }
@@ -124,7 +136,7 @@
     z-index: 1;
     background-color: white;
     padding: 20px;
-    min-height: 400px;
+    max-height: 400px;
     min-width: 300px;
 }
 
