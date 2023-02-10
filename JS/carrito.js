@@ -104,5 +104,5 @@ aa()
 
 let tarjetas = [document.querySelectorAll("card")];
 tarjetas.forEach((tarjeta) => {
-    
+ 
 })
