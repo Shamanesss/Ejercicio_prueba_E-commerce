@@ -3,9 +3,8 @@ body {
 }
 body .grande {
   margin-top: 7rem;
-  height: 100vh;
+  height: auto;
   width: 100%;
-  border: 2px solid black;
 }
 body .carrito-producto-delete {
   border: 0;
@@ -16,7 +15,7 @@ body .card {
   background-color: #E8CEBF;
 }
 body .card .card-img-top {
-  width: 6rem;
+  width: 7rem;
 }
 body .carrito-acciones-total {
   border-radius: 0.5rem;
