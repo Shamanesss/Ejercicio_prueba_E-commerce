@@ -111,8 +111,14 @@
 // Estilos carrito
 
 
-.table tbody{
+#carrito {
     overflow:scroll;
+    max-height:200px;
+}
+
+ul#carrito table {
+    width:500px;
+    background-color:lightgray;
 }
 
 .submenu {
