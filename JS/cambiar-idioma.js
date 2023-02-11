@@ -2,17 +2,23 @@
 
 
 let idiomas = [document.querySelectorAll(".menu-banderas")];
+
 idiomas.forEach((idioma) => {
 
-     let espanol = document.querySelectorAll(".menu-banderas .bandera-es");
-     espanol.addEventListener("click", cambioIdioma);
+     function seleccionarIdioma(event) {
+          
+     } 
 
-     function cambioIdioma(){
-          console.log(espanol);
-     }
+
+
+
+//      let espanol = document.querySelector(".menu-banderas .bandera-es");
+//      espanol.addEventListener("click", function(event) {
+//          alert("Bandera is clicked!");
+     
+// })
+
 })
-
-
 
 
 // .addEventListener("click", function(event) {

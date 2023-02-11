@@ -44,7 +44,7 @@ function obtenerProductoLocalStorage(){
     }else{
         // lo que viene lo convierte a un arreglo porque viene como string
         zapatosLS = JSON.parse(localStorage.getItem("zapatos"));
-        console.log(zapatosLS);
+    //console.log(zapatosLS);
     }
     return zapatosLS;
 }
