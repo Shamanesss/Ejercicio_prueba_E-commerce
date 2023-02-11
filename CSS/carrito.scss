@@ -1,22 +1,21 @@
 @import "_parcial";
 
 body {
-    
+
 // Hola Mihai
 
     background-image:$fondo;
-    
-    
+
+
      .grande  {
          margin-top: 7rem;
-         height: 100vh;
+         height: auto;
          width: 100%;
-         border: 2px solid black;
-         
+      
      }
     //background-image: $fondo;
     //background-attachment: fixed;
-    
+
     .carrito-producto-delete {
         border: 0;
         background-color: transparent;
@@ -25,7 +24,7 @@ body {
     .card {
         background-color: $color-marron-light;
         .card-img-top {
-        width: 6rem;
+        width: 7rem;
         }
     }
     .carrito-acciones-total {

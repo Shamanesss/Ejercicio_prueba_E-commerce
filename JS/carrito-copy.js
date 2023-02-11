@@ -73,53 +73,53 @@
 //     updatetotal();
 // }
 
- let cantidad = document.querySelector(".cantidad-producto");
- let precio = document.querySelector(".carrito-pr-precio p");
- let subtotal = document.querySelector(".carrito-pr-subtotal p");
 
 
 
- aa()
+// aa()
 
-  cantidad.addEventListener('change',
-     function(){
-         aa()
+//  cantidad.addEventListener('change',
+//     function(){
+//         aa()
 
-   });
+//   });
 
 
-   function aa(){
-     let cantidadSeleccionada = parseInt(cantidad.value);
-     let precioProducto = parseInt((precio.textContent).slice(1));
-     let subtotalPrecio = parseInt(subtotal.textContent);
-
-     let suma = cantidadSeleccionada * precioProducto;
-
-     subtotal.innerHTML="$"+suma;
-     subtotal.value=suma;
-   }
-
- let tarjetas = [document.querySelectorAll("card")];
- tarjetas.forEach((tarjeta) => {
- 
- })
+  
 
 
 
- 
-//  let cardcontainer = document.getElementById("carrito");
-//  rellenarTarjetas()
-//  function rellenarTarjetas(){
+let productosEnCarrito = [document.querySelectorAll(".contenidoAqui")];
 
-//  }
 
-//  cambiarCantidad()
-//  function cambiarCantidad() {
-//   cardcontainer.addEventListener("change", (eventCambio) => {
-//     console.log(eventCambio);
-//      let nuevaCantidad = eventCambio.target.value;
-//      let precio = eventCambio.target.parentElement.parentElement.childNodes[5].childNodes[0].innerText;
-//      let multiplicacion = (nuevaCantidad*precio).toFixed(2);
-//      eventCambio.target.parentElement.parentElement.childNodes[9].childNodes[0].innerText= Total ${multiplicacion};
-//   })
-//  }
+
+productosEnCarrito.forEach((productoEnCarrito) => {
+
+let cantidad = document.querySelectorAll(".cantidad-producto");
+let precio = document.querySelectorAll(".carrito-pr-precio p");
+let subtotal = document.querySelectorAll(".carrito-pr-subtotal p");
+
+aa()
+
+  productoEnCarrito.cantidad.addEventListener('change',
+    function(){
+        aa()
+
+  });
+
+  function aa(){
+    let cantidadSeleccionada = parseInt(cantidad.value);
+    let precioProducto = parseInt((precio.textContent).slice(1));
+    let subtotalPrecio = parseInt(subtotal.textContent);
+
+    // console.log(cantidadSeleccionada)
+    // console.log(precioProducto)
+    // console.log(subtotalPrecio)
+
+    let suma = cantidadSeleccionada * precioProducto;
+
+    subtotal.innerHTML="$"+suma;
+    subtotal.value=suma;
+  }
+
+})
