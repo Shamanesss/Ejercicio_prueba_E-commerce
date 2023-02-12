@@ -1,16 +1,33 @@
+const idiomas = document.querySelectorAll(".menu-banderas-idiomas");
 
 
 
-let idiomas = [document.querySelectorAll(".menu-banderas")];
+cargarEventListenersMenuIdiomas();
 
-idiomas.forEach((idioma) => {
-
-     function seleccionarIdioma(event) {
+function cargarEventListenersMenuIdiomas(){
           
-     } 
+          // cuando el elemento que hace clic contenga esta.... algo se ejecutara
+          if(idiomas.target.classList.contains("bandera-es")){
+              
+              //Escalamos hacia arriba dos posiciones en los padres (Toda la info de la card)
+              //zapato
+             // const zapato= e.target.parentElement.parentElement;
+              console.log("Espanol");
+     
+     
+          } else{
+               console.log("otro idioma");
+          };
+      }
 
 
 
+
+
+
+
+
+// idiomas.forEach((idioma) => {
 
 //      let espanol = document.querySelector(".menu-banderas .bandera-es");
 //      espanol.addEventListener("click", function(event) {
@@ -18,7 +35,9 @@ idiomas.forEach((idioma) => {
      
 // })
 
-})
+// })
+
+
 
 
 // .addEventListener("click", function(event) {
