@@ -78,7 +78,7 @@ html {
   width: 80vw;
   justify-content: flex-end;
 }
-.nav-bajo #saludar-home {
+.nav-bajo .saludar {
   color: white;
   font-weight: 700;
 }
