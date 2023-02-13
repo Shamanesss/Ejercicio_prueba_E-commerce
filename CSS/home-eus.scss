@@ -1,0 +1,67 @@
+body {
+     margin: 0;
+   }
+
+//    .sect {
+//      width: 100%;
+//      min-height: 500px;
+//    }
+
+
+
+//    #sect1 {
+//      background-color: #3333337d;
+//      color: #fff;
+//      position: relative;
+//      overflow: hidden;
+//      width: 100vw;
+//      height: 100vh;
+//    }
+//    video {
+//      position: absolute;
+//      left: 0;
+//      top: 0;
+
+//      z-index: -1;
+//    }
+//    h1 {
+//      margin: 0;
+//      padding-top: 3rem;
+//      padding-left: 2rem;
+//    }
+//    h2 {
+//      margin: 0;
+//      padding-top: 3rem;
+//      padding-left: 2rem;
+//    }
+
+
+
+
+//    2do video
+
+
+#index-video {
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     
+     right: 0;
+     bottom: 0;
+     // background: url(../img/index-image.jpg) no-repeat center center;
+     background-size: cover;
+     overflow: hidden;
+ }
+ 
+ .index-video-wrapper {
+     height: 100%;
+     width: 100%;
+     // background: url(../img/index-image.jpg) no-repeat center center;
+
+ }
+
+ h1 {
+          margin: 0;
+          padding-top: 3rem;
+          padding-left: 2rem;
+        }
