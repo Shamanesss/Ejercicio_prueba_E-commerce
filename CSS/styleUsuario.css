@@ -21,6 +21,21 @@ body {
 
 .datospersonales {
   background-color: #DDAF94;
-  border-top-right-radius: 25%;
-  border-bottom-left-radius: 25%;
+  border-radius: 10% 25%;
+}
+
+.imagen {
+  width: 70rem;
+  margin: 0 auto;
+}
+
+.foto {
+  display: flex;
+  margin: 0 auto;
+  width: 50rem;
+}
+
+.construcion {
+  font-size: 5rem;
+  text-align: center;
 }/*# sourceMappingURL=styleUsuario.css.map */

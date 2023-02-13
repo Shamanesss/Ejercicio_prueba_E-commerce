@@ -36,6 +36,7 @@ const saludar2 = document.getElementById('saludar2');
      }
     
      function imprimirDatos(){
+    
       const containerRegister = document.getElementById("containerRegister");
     datos_usuario =obtenerUsuario();
     console.log(datos_usuario + "esto que es")
@@ -68,17 +69,20 @@ const saludar2 = document.getElementById('saludar2');
                      
                  </div> `
        console.log(datos_usuario.apellido);
+      
       }
       imprimirDatos();
-let btn_cerrar = document.getElementById('btn-cerrar-login')
+
+      let btn_cerrar = document.getElementById('btn-cerrar-login')
       btn_cerrar.addEventListener('click', cerrarLogin)
       function cerrarLogin(){
         
       console.log("he hecho click")
       delete localStorage.registro;
            localStorage.clear();
+           location.reload();
            
-           
+        
      
 
  }

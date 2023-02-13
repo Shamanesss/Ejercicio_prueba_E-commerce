@@ -3,22 +3,32 @@ body {
 }
 body .grande {
   margin-top: 7rem;
-  height: 100vh;
+  height: auto;
   width: 100%;
-  border: 2px solid black;
+}
+body .cantidad-producto {
+  border: none;
+  background-color: #E8CEBF;
 }
 body .carrito-producto-delete {
   border: 0;
   background-color: transparent;
   color: #266150;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
 }
 body .card {
   background-color: #E8CEBF;
 }
 body .card .card-img-top {
-  width: 6rem;
+  width: 7rem;
 }
 body .carrito-acciones-total {
   border-radius: 0.5rem;
+  height: 2.5rem;
   background-color: #E8CEBF;
+  margin-bottom: 2rem;
+}
+body .colorbtn {
+  background-color: #266150;
 }/*# sourceMappingURL=carrito.css.map */

@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 .logo {
   width: 6vw;
+}
+
+* {
+  font-family: "Libre Baskerville", serif;
 }
 
 .bandera {
@@ -30,6 +35,10 @@
   color: white;
 }
 
+.navbar-collapse {
+  flex-grow: 0;
+}
+
 .iconos-header {
   display: flex;
 }
@@ -52,6 +61,10 @@
 
 .en-linea {
   display: flex;
+}
+
+.margen-lados {
+  margin: 0 0.5rem;
 }
 
 .nav-bajo {
@@ -82,13 +95,11 @@
   margin-right: 0.5rem;
 }
 
-#carrito {
-  overflow: scroll;
-  max-height: 200px;
-}
-
-ul#carrito table {
-  width: 300px;
+.scrollable {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .submenu {
@@ -107,7 +118,7 @@ ul#carrito table {
   z-index: 1;
   background-color: white;
   padding: 20px;
-  max-height: 400px;
+  height: 300;
   min-width: 300px;
 }
 

@@ -73,28 +73,48 @@
 //     updatetotal();
 // }
 
-let cantidad = document.querySelector(".cantidad-producto");
-let precio = document.querySelector(".carrito-pr-precio p");
-let subtotal = document.querySelector(".carrito-pr-subtotal p");
 
+
+
+// aa()
+
+//  cantidad.addEventListener('change',
+//     function(){
+//         aa()
+
+//   });
+
+
+  
+
+
+
+let productosEnCarrito = [document.querySelectorAll(".contenidoAqui")];
+
+
+
+productosEnCarrito.forEach((productoEnCarrito) => {
+
+let cantidad = document.querySelectorAll(".cantidad-producto");
+let precio = document.querySelectorAll(".carrito-pr-precio p");
+let subtotal = document.querySelectorAll(".carrito-pr-subtotal p");
 
 aa()
 
- cantidad.addEventListener('change',
+  productoEnCarrito.cantidad.addEventListener('change',
     function(){
         aa()
 
   });
-
 
   function aa(){
     let cantidadSeleccionada = parseInt(cantidad.value);
     let precioProducto = parseInt((precio.textContent).slice(1));
     let subtotalPrecio = parseInt(subtotal.textContent);
 
-    console.log(cantidadSeleccionada)
-    console.log(precioProducto)
-    console.log(subtotalPrecio)
+    // console.log(cantidadSeleccionada)
+    // console.log(precioProducto)
+    // console.log(subtotalPrecio)
 
     let suma = cantidadSeleccionada * precioProducto;
 
@@ -102,7 +122,4 @@ aa()
     subtotal.value=suma;
   }
 
-let tarjetas = [document.querySelectorAll("card")];
-tarjetas.forEach((tarjeta) => {
- 
 })
