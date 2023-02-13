@@ -1,9 +1,14 @@
 @import "_parcial";
 
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 
 // -----------------header--------------------------
 
+
+html {
+    scroll-behavior: smooth;
+  }
 
 
 .logo {
@@ -11,7 +16,9 @@
 
 }
 
-
+*{
+    font-family: 'Libre Baskerville', serif;
+}
 
 .bandera {
     width: 1.6rem;
@@ -46,6 +53,10 @@
     color: white;
 }
 
+.navbar-collapse {
+    flex-grow: 0;
+    
+}
 
 
 
@@ -76,6 +87,9 @@
     display: flex;
 }
 
+.margen-lados {
+    margin: 0 .5rem;
+}
 
 .nav-bajo {
     display: flex;
@@ -86,7 +100,7 @@
     
 
     
-    #saludar-home{
+    .saludar{
         color:white; 
         font-weight: 700;
     }
@@ -112,6 +126,12 @@
 
 // Estilos carrito
 
+.scrollable{
+    max-height: 400px;
+    overflow-y: auto;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 .submenu {
     position: relative;
@@ -128,7 +148,7 @@
     z-index: 1;
     background-color: white;
     padding: 20px;
-    min-height: 400px;
+    height: 300;
     min-width: 300px;
 }
 
@@ -147,7 +167,7 @@
     background-color: gray;
 }
 
-.borrar-producto{
+.borrar-general{
     background-color: rgb(177, 43, 43);
     color: white;
     font-weight: 700;
@@ -237,3 +257,4 @@
         flex-direction: column;
     }
 }
+

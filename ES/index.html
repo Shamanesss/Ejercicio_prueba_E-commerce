@@ -24,34 +24,33 @@
 
 <!-- header -->
 
-      <header class=" encabezado-altura  encabezado">
-        <nav class="contenedor navbar navbar-expand-lg d-flex flex-column">
-          <div class="contenedor-header ">
+<header class=" encabezado-altura  encabezado">
+  <nav class="contenedor navbar navbar-expand-lg d-flex flex-column">
+    <div class="contenedor-header ">
 
 <!-- 1. Logo -->
-            <div class="logo-menu-movil">
-              <a href="../ES/index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" ;>
-                <img class="logo" src="../img/logo-blanco.png" alt="Logo de ZapatON" />
-              </a>
-  
-              <!-- Icono de menu en movil y tablet -->
-        <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class=" text-white"><i class="fa-solid fa-bars"></i></span>
+      <div class="logo-menu-movil">
+        <a href="../ES/index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" ;>
+          <img class="logo" src="../img/logo-blanco.png" alt="Logo de ZapatON" />
+        </a>
+
+        <!-- Icono de menu en movil y tablet -->
+  <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+  aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+  <span class=" text-white"><i class="fa-solid fa-bars"></i></span>
+</div>
+
       </div>
 
-            </div>
-            
 
 
 <!--2. Menu de paginas  -->
             <div class=" navegacion collapse navbar-collapse" id="navbarTogglerDemo03">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                <li class="nav-item margen-lados">
                   <a href="../ES/index.html" class="nav-link active px-2 text-white" aria-current="page">Inicio</a>
-                </li>
-
-                <li class="nav-item dropdown">
+                </li>   
+                <li class="nav-item dropdown margen-lados">
                   <a class="nav-link px-2 text-white dropdown-toggle" href="../ES/catalogo.html" id="navbarDropdownMenuLink"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     Tienda
@@ -62,15 +61,15 @@
                   </ul>
                 </li>
 
-                <li class="nav-item">
-                  <a href="#" class="nav-link px-2 text-white">Servicio al cliente</a>
+                <li class="nav- margen-lados">
+                  <a href="../ES/servicio-cliente.html" class="nav-link px-2 text-white">Servicio al cliente</a>
                 </li>
 
-                <li class="nav-item">
-                  <a href="#" class="nav-link px-2 text-white">Sobre ZapatON</a>
+                <li class="nav-item margen-lados">
+                  <a href="../ES/sobreZapatON.html" class="nav-link px-2 text-white">Sobre ZapatON</a>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item margen-lados">
                   <a href="../ES/perfil.html" class="nav-link px-2 text-white">Inicio Sessión</a>
                 </li>
 
@@ -83,18 +82,18 @@
                     data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="idiomas fa-solid fa-globe text-white"></i>
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item menu-banderas" href="#">
+                  <ul class="dropdown-menu menu-banderas-idiomas">
+                    <li><a class="dropdown-item menu-banderas" href="../ES/index.html">
                       <img class="bandera bandera-es" id="bandera-es-movil" src="../img/espana.png" alt=""> ES</a>
                     </li>
 
                     <li>
-                      <a class="dropdown-item menu-banderas" href="#">
+                      <a class="dropdown-item menu-banderas" href="../EN/index-en.html">
                         <img class="bandera bandera-en" id="bandera-en-movil" src="../img/reino-unido.png" alt=""> EN</a>
                     </li>
 
                     <li>
-                      <a class="dropdown-item menu-banderas" href="#">
+                      <a class="dropdown-item menu-banderas" href="../eus/index-eus.html">
                         <img class="bandera bandera-eus"  id="bandera-eus-movil" src="../img/euskadi.png" alt=""> EUS</a>
                     </li>
                   </ul>
@@ -113,22 +112,22 @@
                     <i class="idiomas fa-solid fa-globe text-white"></i>
                   </a>
 
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu menu-banderas-idiomas">
                     <li>
-                      <a class="dropdown-item menu-banderas" href="#">
+                      <a class="dropdown-item menu-banderas" href="/ES/index.html">
                       <img class="bandera bandera-es" id="bandera-es-desktop"  src="../img/espana.png" alt=""> ES
                     </a>
                     </li>
 
 
                     <li>
-                      <a class="dropdown-item menu-banderas" href="#">
+                      <a class="dropdown-item menu-banderas" href="../EN/index-en.html">
                       <img class="bandera bandera-en" id="bandera-en-desktop"src="../img/reino-unido.png" alt=""> EN
                       </a>
                     </li>
 
                     <li>
-                      <a class="dropdown-item menu-banderas" href="#">
+                      <a class="dropdown-item menu-banderas" href="../eus/index-eus.html">
                         <img class="bandera bandera-eus" id="bandera-eus-desktop"src="../img/euskadi.png" alt=""> EUS</a>
                     </li>
                   </ul>
@@ -138,26 +137,27 @@
                   <a href="../ES/cuenta.html" class="ocultar"><i class="login fa-regular fa-user  text-white"></i></a>
                 </li>
 
-                <li class="nav-item submenu">
+                <li class="nav-item submenu ">
                   <i class=" fa-sharp fa-solid fa-cart-shopping text-white"></i>
                   <ul id="carrito" >
-
-                    <table id="lista-carrito-home" class="table">
-                        <thead>
-                            <tr>
-                              <th scope="col">Imagen</th>
-                              <th scope="col">Nombre</th>
-                              <th scope="col">Precio</th>
-                              <th></th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
+                    <div class="scrollable">
+                      <table id="lista-carrito-home" class="table ">
+                          <thead>
+                              <tr>
+                                <th scope="col">Imagen</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Precio</th>
+                                <th></th>
+                              </tr>
+                          </thead>
+                          <tbody ></tbody>
+                      </table>
+                    </div>
 
                       <div class="botones-carrito">
                         <button class="ir-carrito btn btn-success"> <a href="../ES/carritonuevo.html" id="vaciar-carrito" class="button ">Ir a carrito</a></button>
 
-                        <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito" class="button ">Vaciar Carrito</a></button>
+                        <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito-home" class="button ">Vaciar Carrito</a></button>
                       </div>
 
                     </ul>
@@ -173,7 +173,7 @@
 
           <div class="nav-bajo " >
             
-            <div id="saludar-home" >
+            <div id="saludar-home" class="saludar">
               <p>¡Bienvenid@ a nuestra tienda! </p>
             </div>
           </div>
@@ -314,15 +314,13 @@
 
 <!-- Promocion -->
 <div id="background-banner" >
-  <div class=" promocion-banner" >
+  <div class=" contenedor promocion-banner" >
     <div class=" contenedor promocion-bg" >
       <div class="promocion-text">
-        <div>
         <h2><b>Ofertas</b></h2>
         <p>Los mejores calzados</p>
-        <p><a href="../ES/catalogo.html"><label class="banner-style">Ir a la tienda</label>
+        <p><a href="../ES/catalogo.html"><label class="banner-boton">Ir a la tienda</label>
           </a></p>
-        </div>
       </div>
       <img src="../img/imgZapatos/mujer/zapatoflores.jpg" alt="" height="400px">
     </div>
@@ -475,7 +473,7 @@
     <script src="/reloj/reloj.js"></script>
     <script src="../JS/login-home.js"></script>
     <script src="../JS/app-home.js"></script>
-
+    <script src="../JS/cambiar-idioma.js"></script>
 
   </body>
 </html>

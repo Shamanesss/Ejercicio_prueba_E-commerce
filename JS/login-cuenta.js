@@ -36,6 +36,7 @@ const saludar2 = document.getElementById('saludar2');
      }
     
      function imprimirDatos(){
+    
       const containerRegister = document.getElementById("containerRegister");
     datos_usuario =obtenerUsuario();
     console.log(datos_usuario + "esto que es")
@@ -63,22 +64,26 @@ const saludar2 = document.getElementById('saludar2');
                        </div>
                        <div class="mb-3">
                          <label for="DropdownFormPassword1" class="form-label"readonly>Contraseña</label>
-                         <input type="password" class="form-control" id="DropdownFormPassword2" disabled value="contraseña">
+                         <input type="password" class="form-control" id="DropdownFormPassword2" disabled placeholder=${datos_usuario.password1}>
                        </div>
                      
                  </div> `
        console.log(datos_usuario.apellido);
+      
       }
       imprimirDatos();
-let btn_cerrar = document.getElementById('btn-cerrar-login')
+    
+
+      let btn_cerrar = document.getElementById('btn-cerrar-login')
       btn_cerrar.addEventListener('click', cerrarLogin)
       function cerrarLogin(){
         
       console.log("he hecho click")
       delete localStorage.registro;
            localStorage.clear();
+           location.reload();
            
+        
            
-     
 
  }

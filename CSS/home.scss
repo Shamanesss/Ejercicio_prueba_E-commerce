@@ -12,38 +12,25 @@
 
 // banner
 
-.promocion-banner {
-    margin: 30px 0;
-    position: relative;
-}
 
 #background-banner {
     background-color: $color-marron-light;
 }
 
-// .promocion-banner .promocion-bg {
-//     background-image: linear-gradient(35deg, #4F4846, #DDAF94, #E8CEBF);
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-//     width: 100%;
-// }
-
-.promocion-banner .promocion-bg img {
-    display: block;
-    margin: 20px auto;
-    padding: 20px 0;
+.contenedor .promocion-bg {
+    display: flex;
+    justify-content: space-around;
 }
 
-.promocion-banner, .promocion-text {
+.promocion-text{
     text-align: center;
-    padding-bottom: 20px;
+    align-items: center;
+    margin: auto 0;
 }
 
 
-// banner-style
 
-.banner-style{
+.banner-boton{
     border-radius: 5px;
     background: $color-verde;
     border-color: $color-verde;
@@ -53,6 +40,12 @@
     text-align: center;
     font-size: 16px;
     padding: 10px 0;
+    cursor: pointer;
+
+}
+
+.contenedor .promocion-bg img {
+    padding: 3rem;
 }
 
 
@@ -91,10 +84,7 @@
     color: $color-verde;
 }
 
-.promocion{
-    height: 50vh;
-    background-color: aquamarine;
-}
+
 
 textarea{
     resize: none;
@@ -105,19 +95,10 @@ textarea{
 
 
 @media screen and (min-width:768px) {
-    .promocion-banner .promocion-bg img {
-        margin-right: 100px;
-    }
 
 
-    .promocion-banner .promocion-text {
-        position: absolute;
-        top: 50%;
-        left: 10%;
-        transform: translate(-10%, -50%);
-        width: 50%;
-        text-align: left;
-    }
+
+
 
     .promocion-banner .promocion-text h1 {
         font-size: calc(2*1.5vw);
@@ -141,6 +122,6 @@ textarea{
 
     .promocion{
         height: 25vh;
-        background-color: aquamarine;
+
     }
   }

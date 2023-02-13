@@ -1,9 +1,10 @@
 @import "_parcial";
 
+* {
+    font-family: 'Libre Baskerville', serif;
+}
+
 body {
-
-// Hola Mihai
-
     background-image:$fondo;
 
 
@@ -13,13 +14,17 @@ body {
          width: 100%;
       
      }
-    //background-image: $fondo;
-    //background-attachment: fixed;
-
+     .cantidad-producto {
+        border: none;
+        background-color: $color-marron-light;
+     }
     .carrito-producto-delete {
         border: 0;
         background-color: transparent;
         color: $color-verde;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+        
                              }
     .card {
         background-color: $color-marron-light;
@@ -29,6 +34,12 @@ body {
     }
     .carrito-acciones-total {
         border-radius: 0.5rem;
+        height: 2.5rem;
         background-color: $color-marron-light;
+        margin-bottom: 2rem;
     }
+    .colorbtn{
+        background-color: $color-verde;
+    }
+
 }

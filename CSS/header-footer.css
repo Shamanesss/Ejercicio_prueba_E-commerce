@@ -1,5 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 .logo {
   width: 6vw;
+}
+
+* {
+  font-family: "Libre Baskerville", serif;
 }
 
 .bandera {
@@ -30,6 +39,10 @@
   color: white;
 }
 
+.navbar-collapse {
+  flex-grow: 0;
+}
+
 .iconos-header {
   display: flex;
 }
@@ -54,6 +67,10 @@
   display: flex;
 }
 
+.margen-lados {
+  margin: 0 0.5rem;
+}
+
 .nav-bajo {
   display: flex;
   flex-direction: row;
@@ -61,7 +78,7 @@
   width: 80vw;
   justify-content: flex-end;
 }
-.nav-bajo #saludar-home {
+.nav-bajo .saludar {
   color: white;
   font-weight: 700;
 }
@@ -82,6 +99,13 @@
   margin-right: 0.5rem;
 }
 
+.scrollable {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .submenu {
   position: relative;
 }
@@ -98,7 +122,7 @@
   z-index: 1;
   background-color: white;
   padding: 20px;
-  min-height: 400px;
+  height: 300;
   min-width: 300px;
 }
 
@@ -117,7 +141,7 @@
   background-color: gray;
 }
 
-.borrar-producto {
+.borrar-general {
   background-color: rgb(177, 43, 43);
   color: white;
   font-weight: 700;

@@ -6,11 +6,11 @@
       // seleccionamos el Id y especificamente el tbody donde se agregara los productos
       const listaZapatos = document.querySelector("#lista-carrito-home tbody");
       //boton
-      const vaciarCarritoBtn = document.getElementById("vaciar-carrito");
+      const vaciarCarritoBtn = document.getElementById("vaciar-carrito-home");
 
-      
+
       cargarEventListeners();
-      
+
 //<!-- -----------------------OBTENER VALORES-------------------------------------- -->
 
 //verificar que hay informacion en local storage y no repetir
@@ -19,7 +19,7 @@
 
     //paso 4
     //Cuando se elimina los objetos del carrito
-    carrito.addEventListener("click",eliminarZapato);
+    carrito.addEventListener("click", eliminarZapato);
 
     //Paso 5
     // vaciar carrito
@@ -28,7 +28,7 @@
     // paso 7
     //Al cargar documento, mostrar local storage
     document.addEventListener("DOMContentLoaded", leerLocalStorage);
-    
+
     }
 
 
@@ -44,7 +44,7 @@ function obtenerProductoLocalStorage(){
     }else{
         // lo que viene lo convierte a un arreglo porque viene como string
         zapatosLS = JSON.parse(localStorage.getItem("zapatos"));
-        console.log(zapatosLS);
+    //console.log(zapatosLS);
     }
     return zapatosLS;
 }
@@ -68,13 +68,13 @@ function leerLocalStorage(){
         //Construiremos una plantilla para cada uno de los zapatos
         row.innerHTML=
         `
-        <td> 
+        <td>
             <img src="${zapato.imagen}" width=100px >
-        
+
         </td>
         <td> ${zapato.titulo}</td>
         <td> ${zapato.precio}</td>
-        <td> <a href="#" class="borrar-producto" data-id="${zapato.id}">X</a>
+        <td> <a href="#" class="borrar-general borrar-producto-home" data-id="${zapato.id}">X</a>
         </td>`
         ;
         // arriba tambien se añadio una clase dinamicamente
@@ -86,23 +86,31 @@ function leerLocalStorage(){
 //continua paso 4
 // Eliminando zapato del carrito en el DOM
 //acceder al elemento con  e
+
+
+
+
+
+
+
+
 function eliminarZapato(e){
     // e.preventDefault();
-    
+
     let zapato, zapatoId;
     //identificamos el enlace que tiene la clase borrar producto, en este caso la X
-    if (e.target.classList.contains("borrar-producto")){
+    if (e.target.classList.contains("borrar-producto-home")){
        // console.log(e.target.parentElement.parentElement);
        //eliminamos la card
        e.target.parentElement.parentElement.remove();
-        // zapato = e.target.parentElement.parentElement;
-        // zapatoId = zapato.querySelector("a").getAttribute("data-id");
+        zapato = e.target.parentElement.parentElement;
+        zapatoId = zapato.querySelector("a").getAttribute("data-id");
         //console.log(zapatoId);
 
     }
 
     //paso 8  llamar funcion para eliminar del local storage al dar X
-    // eliminarProductoLocalStorage(zapatoId);
+    eliminarProductoLocalStorage(zapatoId);
 
 }
 
@@ -112,7 +120,7 @@ function eliminarProductoLocalStorage(zapato){
     // obtenemos el arreglo de zapatos
     zapatosLS = obtenerProductoLocalStorage();
 
-    //Iteramos comparando el ID del zapato borrado con los del LS    
+    //Iteramos comparando el ID del zapato borrado con los del LS
     zapatosLS.forEach(function(zapatoLS, index){
         // si el zapato id de la iteracion actual es igual al zapato que estamos eliminando fuera de la funcion entonces eliminamos ese zapato...
         //console.log(zapato.id);
@@ -127,7 +135,7 @@ function eliminarProductoLocalStorage(zapato){
 
 function vaciarCarrito(){
     // forma lenta
-   // listaZapatos.innerHTML = ""; 
+   // listaZapatos.innerHTML = "";
 
    // forma recomendada
    // miestras siga habiendo elemento, lo recorro
@@ -135,13 +143,13 @@ function vaciarCarrito(){
     // lo que hace es ir eliminando el primer elemento mientras exista un primer elemento. hasta que quede vacio
     listaZapatos.removeChild(listaZapatos.firstChild);
    }
-  
+
 
 
    // paso 9
    //vaciar local storage
    vaciarLocalStorage();
-   
+
    // Evitar salto de recarga
 }
 
@@ -151,4 +159,4 @@ function vaciarLocalStorage(){
 
 
 //<!-- -----------------------LEER FUNCION AUTOMATICAMENTE-------------------------------------- -->
-leerLocalStorage();
+// leerLocalStorage();
