@@ -2,21 +2,27 @@ const login = document.getElementById('btn-login');
 const names = document.getElementById('DropdownFormName');
 const password = document.getElementById('DropdownFormPassword');
 const saludar = document.getElementById('saludar');
-
+const error =document.getElementById('error')
 const cerrar = document.querySelector("#btn-cerrar-login");
 
 login.addEventListener('click',validar);
 
 function validar(){
-    let form_nombre = names.value;
-    
-    localStorage.setItem('logeado', form_nombre);
-    console.log(form_nombre);
- 
-     let nombre= localStorage.getItem('logeado');
+
+     let form_nombre = names.value;
+     let form_password= password.value;
+     if(form_nombre!=null && form_password !=undefined){
+        return swal("Uppss!!  Usuario no encontrado","Registrate" ,"error")
      
-     console.log(nombre);
-     saludar.innerHTML = `¡Hola, ${nombre}`;
+   
+    }
+    // localStorage.setItem('logeado', form_nombre);
+    // console.log(form_nombre);
+ 
+    //  let nombre= localStorage.getItem('logeado');
+     
+    //  console.log(nombre);
+    //  saludar.innerHTML = `¡Hola, ${nombre}`;
      
     }
 
@@ -28,6 +34,7 @@ const email = document.getElementById('DropdownFormEmail1');
 const btn_usuario = document.getElementById('btn-usuario')
 
 btn_usuario.addEventListener('click',registrousuario);
+
       
 
 function registrousuario(){
@@ -40,13 +47,16 @@ function registrousuario(){
 
     };
     console.log(aUsuario);
-    let jsonUsuario = localStorage.setItem("registro",JSON.stringify(aUsuario));
-    // let usuario = localStorage.getItem("registro",JSON.parse(jsonUsuario));
+    let jsonUsuario = sessionStorage.setItem("registro",JSON.stringify(aUsuario));
+    let usuario =JSON.parse(sessionStorage.getItem("registro"));
     console.log(jsonUsuario);
-
-    //console.log(aUsuario.apellido);
-   
+    saludar.innerHTML = `¡Hola, ${usuario.names1 }¡`
+    // window.location.href="../ES/cuenta.html"
+    
+    console.log(usuario.names1);
+    
 }
+// document.addEventListener("DOMContentLoaded", registrousuario);
 
   
 // function changepage(){
