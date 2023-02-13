@@ -6,6 +6,10 @@
 // -----------------header--------------------------
 
 
+html {
+    scroll-behavior: smooth;
+  }
+
 
 .logo {
     width: 6vw;
@@ -163,7 +167,7 @@
     background-color: gray;
 }
 
-.borrar-producto-home{
+.borrar-general{
     background-color: rgb(177, 43, 43);
     color: white;
     font-weight: 700;
