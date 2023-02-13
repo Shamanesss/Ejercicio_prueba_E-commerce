@@ -14,7 +14,7 @@ const contenedor=document.getElementById("lista-zapatos");
 
 
    
-    let elemento=event.target.parentNode.parentNode;   
+    let elemento=event.target.parentNode;   
     console.log(elemento) ;    
     leerDatos(elemento);
     window.open('EspecificacionesNew.html');
