@@ -73,53 +73,36 @@
 //     updatetotal();
 // }
 
- let cantidad = document.querySelector(".cantidad-producto");
- let precio = document.querySelector(".carrito-pr-precio p");
- let subtotal = document.querySelector(".carrito-pr-subtotal p");
+let cantidad = document.querySelector(".cantidad-producto");
+let precio = document.querySelector(".carrito-pr-precio p");
+let subtotal = document.querySelector(".carrito-pr-subtotal p");
 
 
+aa()
 
- aa()
+ cantidad.addEventListener('change',
+    function(){
+        aa()
 
-  cantidad.addEventListener('change',
-     function(){
-         aa()
-
-   });
+  });
 
 
-   function aa(){
-     let cantidadSeleccionada = parseInt(cantidad.value);
-     let precioProducto = parseInt((precio.textContent).slice(1));
-     let subtotalPrecio = parseInt(subtotal.textContent);
+  function aa(){
+    let cantidadSeleccionada = parseInt(cantidad.value);
+    let precioProducto = parseInt((precio.textContent).slice(1));
+    let subtotalPrecio = parseInt(subtotal.textContent);
 
-     let suma = cantidadSeleccionada * precioProducto;
+    console.log(cantidadSeleccionada)
+    console.log(precioProducto)
+    console.log(subtotalPrecio)
 
-     subtotal.innerHTML="$"+suma;
-     subtotal.value=suma;
-   }
+    let suma = cantidadSeleccionada * precioProducto;
 
- let tarjetas = [document.querySelectorAll("card")];
- tarjetas.forEach((tarjeta) => {
+    subtotal.innerHTML="$"+suma;
+    subtotal.value=suma;
+  }
+
+let tarjetas = [document.querySelectorAll("card")];
+tarjetas.forEach((tarjeta) => {
  
- })
-
-
-
- 
-//  let cardcontainer = document.getElementById("carrito");
-//  rellenarTarjetas()
-//  function rellenarTarjetas(){
-
-//  }
-
-//  cambiarCantidad()
-//  function cambiarCantidad() {
-//   cardcontainer.addEventListener("change", (eventCambio) => {
-//     console.log(eventCambio);
-//      let nuevaCantidad = eventCambio.target.value;
-//      let precio = eventCambio.target.parentElement.parentElement.childNodes[5].childNodes[0].innerText;
-//      let multiplicacion = (nuevaCantidad*precio).toFixed(2);
-//      eventCambio.target.parentElement.parentElement.childNodes[9].childNodes[0].innerText= Total ${multiplicacion};
-//   })
-//  }
+})
