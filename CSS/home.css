@@ -35,7 +35,9 @@
 }
 
 .contenedor .promocion-bg img {
-  padding: 3rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 30vw;
 }
 
 .contact-boton {
@@ -69,12 +71,20 @@ textarea {
   resize: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  .contenedor .promocion-bg {
+    display: flex;
+    flex-direction: column;
+  }
   .promocion-banner .promocion-text h1 {
     font-size: 3vw;
   }
   .promocion-banner .promocion-text p {
     font-size: 1.8vw;
+  }
+  .contenedor .promocion-bg img {
+    padding: 2rem;
+    width: 90vw;
   }
 }
 @media (max-width: 920px) {

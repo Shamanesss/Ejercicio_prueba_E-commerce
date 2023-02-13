@@ -69,7 +69,7 @@ function leerLocalStorage(){
         row.innerHTML=
         `
         <td>
-            <img src="${zapato.imagen}" width=100px >
+            <img src="${zapato.imagen}">
 
         </td>
         <td> ${zapato.titulo}</td>

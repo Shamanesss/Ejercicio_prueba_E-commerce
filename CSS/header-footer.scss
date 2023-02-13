@@ -180,9 +180,7 @@ html {
 
 @media screen and (max-width: 640px){
 
-    // body{
-        
-    // }
+    
     // .submenu:hover #carrito{
     //     display: block;
     //     position: absolute;
@@ -195,6 +193,25 @@ html {
     //     min-height: 400px;
     //     min-width: 300px;
     // }
+}
+
+@media only screen and (max-width: 600px) {
+    .submenu:hover #carrito{
+        display: block;
+        position: absolute;
+        right:-30px;
+    
+        top:100%;
+        z-index: 3;
+        background-color: white;
+        padding: 0px;
+        min-height: 400px;
+        max-width: 90vw;
+}
+
+tbody img{
+    width: 100%;
+}
 }
 
 
@@ -212,6 +229,10 @@ html {
     margin: 0 auto;
 }
 
+
+tbody img{
+    width: 100px;
+}
 
 // Footer
 

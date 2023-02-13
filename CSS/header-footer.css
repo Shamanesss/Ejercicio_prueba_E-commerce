@@ -152,6 +152,22 @@ html {
   padding: 0.4rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: -30px;
+    top: 100%;
+    z-index: 3;
+    background-color: white;
+    padding: 0px;
+    min-height: 400px;
+    max-width: 90vw;
+  }
+  tbody img {
+    width: 100%;
+  }
+}
 .ocultar-login {
   display: none;
 }
@@ -159,6 +175,10 @@ html {
 .contenedor {
   width: 80vw;
   margin: 0 auto;
+}
+
+tbody img {
+  width: 100px;
 }
 
 .footer-background {
