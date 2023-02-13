@@ -88,7 +88,7 @@
    });
 
 
-   function aa(){
+   function aa(cantidad,precio,subtotal){
      let cantidadSeleccionada = parseInt(cantidad.value);
      let precioProducto = parseInt((precio.textContent).slice(1));
      let subtotalPrecio = parseInt(subtotal.textContent);
