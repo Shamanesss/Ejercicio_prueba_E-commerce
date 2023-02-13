@@ -324,15 +324,52 @@
     <!-- -----------------------------------SECCION HOMBRES------------------------------->
     <section class="contenido-hombre">
       <!-- --------------------------SECTION TITULO --------------------------->
-      <section class="titulos text-center" id="seccion-hombres">
+      <!-- <section class="titulos text-center" id="seccion-hombres">
         <h2>HOMBRE</h2>
         <p>Zapatillas</p>
-      </section>
+      </section> -->
 
+      <!-- ----------------CREAR LOS INPUTS DE CATEGORIAS---------------- -->
+      <div class="botonesCategoria">
+        <div class="cajaRadio">
+          <p class="categoriasParrafo">Hombres</p>
+          <label for="">Zapatillas 👟</label>
+          <input type="radio" />
+          <label for="">Botas 🥾</label>
+         <input type="radio" />
+         <label for="">Sandalias 🩴</label>
+         <input type="radio" />
+        </div>
+        <div class="cajaRadio">
+          <p class="categoriasParrafo">Mujeres</p>
+          <label for="">Zapatillas 👟</label>
+          <input type="radio" />
+          <label for="">Botas 👢</label>
+         <input type="radio" />
+         <label for="">Sandalias 🩴</label>
+         <input type="radio" />
+        </div>
+        
+      </div>
+
+      <!-- ----------------CREAR LOS INPUTS DE CATEGORIAS---------------- -->
       <!-- -------------------------------SECTION GRID ZAPATILLAS-------------------------------- -->
-      <div id="lista-zapatos" class="container text-center mb-5 contenedor">
+      <!-- div PADRE que contiene TODOS los zapatos -->
+      <div
+        id="lista-zapatos"
+        class="container text-center mb-5 contenedor cajaCategoria"
+      >
+        <!-- <section class="contenido-hombre cajacard"> -->
+        <!-- --------------------------SECTION TITULO --------------------------->
+        <section
+          class="titulos text-center hombreZapatilla"
+          id="seccion-hombres"
+        >
+          <h2>HOMBRE</h2>
+          <p>Zapatillas</p>
+        </section>
         <div class="row column-gap-4 row-gap-4">
-          <div class="col d-flex justify-content-center">
+          <div class="col d-flex justify-content-center hombreZapatilla">
             <div class="card" style="width: 18rem">
               <img
                 src="../img/imgZapatos/hombre/zapatillas/zapatillaHombre1.jpg"
@@ -353,7 +390,7 @@
               </div>
             </div>
           </div>
-          <div class="col d-flex justify-content-center">
+          <div class="col d-flex justify-content-center hombreZapatilla">
             <div class="card" style="width: 18rem">
               <img
                 src="../img/imgZapatos/hombre/zapatillas/zapatillaHombre2.jpg"
@@ -373,7 +410,7 @@
               </div>
             </div>
           </div>
-          <div class="col d-flex justify-content-center">
+          <div class="col d-flex justify-content-center hombreZapatilla">
             <div class="card" style="width: 18rem">
               <img
                 src="../img/imgZapatos/hombre/zapatillas/zapatillaHombre3.jpg"
@@ -395,13 +432,13 @@
           </div>
           <!-- -------------------------------------------------------------------------------------------------- -->
           <!-- --------------------------SECTION TITULO --------------------------->
-          <section class="titulos text-center">
+          <section class="titulos text-center hombreBotas">
             <h2>HOMBRE</h2>
             <p>Botas</p>
           </section>
 
           <!-- -------------------------------SECTION GRID BOTAS-------------------------------- -->
-          <div class="row column-gap-4 row-gap-4">
+          <div class="row column-gap-4 row-gap-4 hombreBotas">
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem">
                 <img
@@ -466,13 +503,13 @@
           <!-- -------------------------------SECTION GRID BOTAS-------------------------------- -->
 
           <!-- --------------------------SECTION TITULO --------------------------->
-          <section class="titulos text-center">
+          <section class="titulos text-center hombreSandalias">
             <h2>HOMBRE</h2>
             <p>Sandalias</p>
           </section>
 
           <!-- -------------------------------SECTION GRID SANDALIAS-------------------------------- -->
-          <div class="row column-gap-4 row-gap-4">
+          <div class="row column-gap-4 row-gap-4 hombreSandalias">
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem">
                 <img
@@ -542,13 +579,13 @@
           <!-- ---------------------------------------MUJERES ------------------------------------------->
 
           <!-- --------------------------SECTION TITULO MUJERES --------------------------->
-          <section class="titulos text-center">
+          <section class="titulos text-center mujerZapatilla">
             <h2 id="seccion-mujer">MUJER</h2>
             <p>Zapatillas</p>
           </section>
 
           <!-- -------------------------------SECTION GRID ZAPATILLAS MUJERES-------------------------------- -->
-          <div class="row column-gap-4 row-gap-4">
+          <div class="row column-gap-4 row-gap-4 mujerZapatilla">
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem">
                 <img
@@ -612,12 +649,12 @@
           </div>
 
           <!-- --------------------------SECTION TITULO MUJERES --------------------------->
-          <section class="titulos text-center">
+          <section class="titulos text-center mujerBotas">
             <h2 id="seccion-mujer">MUJER</h2>
             <p>Botas</p>
           </section>
           <!-- -------------------------------SECTION GRID BOTAS MUJERES-------------------------------- -->
-          <div class="row column-gap-4 row-gap-4">
+          <div class="row column-gap-4 row-gap-4 mujerBotas">
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem">
                 <img
@@ -681,12 +718,12 @@
           </div>
 
           <!-- --------------------------SECTION TITULO MUJERES --------------------------->
-          <section class="titulos text-center">
+          <section class="titulos text-center mujerSandalias">
             <h2 id="seccion-mujer">MUJER</h2>
             <p>Sandalias</p>
           </section>
           <!-- -------------------------------SECTION GRID SANDALIAS MUJERES-------------------------------- -->
-          <div class="row column-gap-4 row-gap-4">
+          <div class="row column-gap-4 row-gap-4 mujerSandalias">
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem">
                 <img
@@ -762,6 +799,5 @@
     ></script>
     <script src="../JS/hora.js"></script>
     <script src="../JS/app.js"></script>
-    
   </body>
 </html>

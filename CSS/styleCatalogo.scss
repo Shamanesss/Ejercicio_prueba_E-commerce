@@ -30,4 +30,14 @@ body {
     border: 1px solid $color-verde;
     color: $color-verde;
   }
+  .botonesCategoria{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin: 2rem 0 5rem 0;
+    flex-wrap: wrap;
+  }
+  .cajaRadio{
+    text-align: center;
+  }
 }
