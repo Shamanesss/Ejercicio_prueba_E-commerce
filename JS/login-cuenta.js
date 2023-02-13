@@ -72,6 +72,7 @@ const saludar2 = document.getElementById('saludar2');
       
       }
       imprimirDatos();
+    
 
       let btn_cerrar = document.getElementById('btn-cerrar-login')
       btn_cerrar.addEventListener('click', cerrarLogin)
@@ -83,6 +84,6 @@ const saludar2 = document.getElementById('saludar2');
            location.reload();
            
         
-     
+           
 
  }
