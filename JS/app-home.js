@@ -19,7 +19,7 @@
 
     //paso 4
     //Cuando se elimina los objetos del carrito
-    carrito.addEventListener("click",eliminarZapato);
+    carrito.addEventListener("click", eliminarZapato);
 
     //Paso 5
     // vaciar carrito
@@ -74,7 +74,7 @@ function leerLocalStorage(){
         </td>
         <td> ${zapato.titulo}</td>
         <td> ${zapato.precio}</td>
-        <td> <a href="#" class="borrar-producto" data-id="${zapato.id}">X</a>
+        <td> <a href="#" class="borrar-producto-home" data-id="${zapato.id}">X</a>
         </td>`
         ;
         // arriba tambien se añadio una clase dinamicamente
@@ -86,17 +86,25 @@ function leerLocalStorage(){
 //continua paso 4
 // Eliminando zapato del carrito en el DOM
 //acceder al elemento con  e
+
+
+
+
+
+
+
+
 function eliminarZapato(e){
     // e.preventDefault();
 
     let zapato, zapatoId;
     //identificamos el enlace que tiene la clase borrar producto, en este caso la X
-    if (e.target.classList.contains("borrar-producto")){
+    if (e.target.classList.contains("borrar-producto-home")){
        // console.log(e.target.parentElement.parentElement);
        //eliminamos la card
        e.target.parentElement.parentElement.remove();
-        // zapato = e.target.parentElement.parentElement;
-        // zapatoId = zapato.querySelector("a").getAttribute("data-id");
+        zapato = e.target.parentElement.parentElement;
+        zapatoId = zapato.querySelector("a").getAttribute("data-id");
         //console.log(zapatoId);
 
     }
