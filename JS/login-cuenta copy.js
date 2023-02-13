@@ -1,13 +1,13 @@
 const saludar2 = document.getElementById('saludar2');
-    let nombre= localStorage.getItem('logeado');
-     if(nombre == null){
-        nombre = '';
+    // let nombre= localStorage.getItem('logeado');
+    //  if(nombre == null){
+    //     nombre = '';
 
-     }else{
-     console.log(nombre);
+    //  }else{
+    //  console.log(nombre);
     
-     saludar2.innerHTML = `¡Hola, Bienvenid@! ${nombre}`;
-    }
+    //  saludar2.innerHTML = `¡Hola, Bienvenid@! ${nombre}`;
+    // }
     
 
     const apellido = document.querySelector('#DropdownFormlastName');
@@ -21,14 +21,14 @@ const saludar2 = document.getElementById('saludar2');
     obtenerUsuario();
     
     function obtenerUsuario(){
-        let datos_usuario;
+        let datos_usuario = JSON.parse(localStorage.getItem("registro"));
     
     //     //comprobamos si hay algo en local storage
          if(localStorage.getItem("registro")===null){
-             datos_usuario = [''];
-            console.log("que hay aqui "+usuario);
+             datos_usuario =[""];
+            console.log("que hay aqui "+datos_usuario);
          }else{
-        datos_usuario = JSON.parse(localStorage.getItem("registro"));
+        
         console.log("else"+typeof datos_usuario)
        }
       
@@ -40,7 +40,7 @@ const saludar2 = document.getElementById('saludar2');
       const containerRegister = document.getElementById("containerRegister");
     datos_usuario =obtenerUsuario();
     console.log(datos_usuario + "esto que es")
-    
+    saludar2.innerHTML=`¡Hola ${datos_usuario.names1}!`;
     containerRegister.innerHTML =   `  <div class="col-7 mx-auto datospersonales p-5 ">
                   
                   <h2 class="text-center">DATOS PERSONALES</h2>
@@ -70,9 +70,8 @@ const saludar2 = document.getElementById('saludar2');
                  </div> `
        console.log(datos_usuario.apellido);
       
-      }imprimirDatos();
-      
-      
+      }
+      imprimirDatos();
     
 
       let btn_cerrar = document.getElementById('btn-cerrar-login')
