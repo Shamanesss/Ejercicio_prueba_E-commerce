@@ -26,7 +26,7 @@ const saludar2 = document.getElementById('saludar2');
     //     //comprobamos si hay algo en local storage
          if(localStorage.getItem("registro")===null){
              datos_usuario =[""];
-            console.log("que hay aqui "+usuario);
+            console.log("que hay aqui "+datos_usuario);
          }else{
         
         console.log("else"+typeof datos_usuario)
