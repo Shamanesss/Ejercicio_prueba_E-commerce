@@ -2,10 +2,11 @@
 let cantidades = document.querySelectorAll(".cantidad-producto");
 let precios = document.querySelectorAll(".carrito-pr-precio p");
 let subtotales = document.querySelectorAll(".carrito-pr-subtotal p");
+let borrar =document.querySelectorAll(".trash");
 
 total(subtotales)
 
-let cant, precio;
+let cant, precio, sterge;
 
 for (let i=0; i<cantidades.length; i++){
     cantidades[i].addEventListener("change", function(){
@@ -37,3 +38,10 @@ function total (subtotales){
     total.innerHTML = "$" + suma ;
  
 }
+
+
+for (let k=0; k<cantidades.length; k++){
+    borrar[k].addEventListener("click", function(){
+  
+    })
+};

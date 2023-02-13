@@ -1,6 +1,13 @@
+* {
+  font-family: "Libre Baskerville", serif;
+}
+
+body {
+  background-image: linear-gradient(35deg, #4F4846, #DDAF94, #E8CEBF);
+}
 body .section1 {
-  background-image: linear-gradient(to right, rgba(253, 248, 245, 0.5) 0%, rgba(232, 206, 191, 0.7) 0%, rgba(221, 175, 148, 0.8) 0%, rgba(79, 72, 70, 0.9) 100%), url(../img/bilbaoZapato.jpeg);
-  height: 45rem;
+  background-image: linear-gradient(to right, rgba(253, 248, 245, 0.5) 20%, rgba(232, 206, 191, 0.7) 40%, rgba(221, 175, 148, 0.8) 70%, rgba(79, 72, 70, 0.9) 100%), url(../img/bilbaoZapato.jpeg);
+  height: auto;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -8,9 +15,49 @@ body .section1 .contenedor {
   margin: 0;
   padding: 0;
 }
+body .section1 .contenedor .izq h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+body .section1 .contenedor .dr h2 {
+  color: #266150;
+}
 body .section1 .contenedor .card {
   height: auto;
 }
+body .section1 .contenedor .card .card-body .card-text {
+  overflow-y: scroll;
+}
 body .section1 .contenedor .card .card-img-top {
   border-radius: 50%;
+}
+body .section2 .sec2-izq {
+  width: 50%;
+}
+body .section2 .sect2-dr {
+  width: 10%;
+}
+body .section2 h2 {
+  color: #266150;
+}
+body .section2 p {
+  color: #266150;
+}
+body .section3 .contenedorsec3 .sec3-start {
+  text-align: center;
+}
+body .section3 .contenedorsec3 .sec3-end {
+  text-align: center;
+}
+body .section3 .contenedorsec3 .sec3-middle {
+  text-align: center;
+}
+body .section3 .contenedorsec3 .numero h1 {
+  color: #DDAF94;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+body .section3 .contenedorsec3 .numero p {
+  color: #266150;
+  font-weight: bolder;
 }/*# sourceMappingURL=sobreZapatON.css.map */
