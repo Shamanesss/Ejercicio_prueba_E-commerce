@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 .logo {
   width: 6vw;
 }
@@ -137,7 +141,7 @@
   background-color: gray;
 }
 
-.borrar-producto {
+.borrar-general {
   background-color: rgb(177, 43, 43);
   color: white;
   font-weight: 700;

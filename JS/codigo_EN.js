@@ -48,7 +48,6 @@ function registrousuario(){
    
 }
 
-
   
 // function changepage(){
 //     location.href="cuenta.html";

@@ -4,9 +4,9 @@
       //contenedor div de todas las card de zapatos
       const zapatos = document.getElementById("lista-zapatos");
       // seleccionamos el Id y especificamente el tbody donde se agregara los productos
-      const listaZapatos = document.querySelector("#lista-carrito-home tbody");
+      const listaZapatos = document.querySelector("#lista-carrito-detalles tbody");
       //boton
-      const vaciarCarritoBtn = document.getElementById("vaciar-carrito-home");
+      const vaciarCarritoBtn = document.getElementById("vaciar-carrito-detalles");
 
 
       cargarEventListeners();
@@ -74,7 +74,7 @@ function leerLocalStorage(){
         </td>
         <td> ${zapato.titulo}</td>
         <td> ${zapato.precio}</td>
-        <td> <a href="#" class="borrar-general borrar-producto-home" data-id="${zapato.id}">X</a>
+        <td> <a href="#" class="borrar-general borrar-producto-detalles" data-id="${zapato.id}">X</a>
         </td>`
         ;
         // arriba tambien se añadio una clase dinamicamente
@@ -99,7 +99,7 @@ function eliminarZapato(e){
 
     let zapato, zapatoId;
     //identificamos el enlace que tiene la clase borrar producto, en este caso la X
-    if (e.target.classList.contains("borrar-producto-home")){
+    if (e.target.classList.contains("borrar-producto-detalles")){
        // console.log(e.target.parentElement.parentElement);
        //eliminamos la card
        e.target.parentElement.parentElement.remove();

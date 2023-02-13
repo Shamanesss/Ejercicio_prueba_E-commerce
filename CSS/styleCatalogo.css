@@ -26,4 +26,14 @@ body .color_botones {
 body .color_botones:hover {
   border: 1px solid #266150;
   color: #266150;
+}
+body .botonesCategoria {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: 2rem 0 5rem 0;
+  flex-wrap: wrap;
+}
+body .cajaRadio {
+  text-align: center;
 }/*# sourceMappingURL=styleCatalogo.css.map */
