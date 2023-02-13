@@ -41,7 +41,7 @@ function cargarEventListeners(){
 //leer el evento
 // añade el zapato al carrito
 function comprarZapato(e){
-    e.preventDefault();
+    //e.preventDefault();
     // cuando el elemento que hace clic contenga esta.... algo se ejecutara
     if(e.target.classList.contains("agregar-carrito")){
         
