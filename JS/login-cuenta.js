@@ -64,7 +64,7 @@ const saludar2 = document.getElementById('saludar2');
                        </div>
                        <div class="mb-3">
                          <label for="DropdownFormPassword1" class="form-label"readonly>Contraseña</label>
-                         <input type="password" class="form-control" id="DropdownFormPassword2" disabled value="contraseña">
+                         <input type="password" class="form-control" id="DropdownFormPassword2" disabled placeholder=${datos_usuario.password1}>
                        </div>
                      
                  </div> `
