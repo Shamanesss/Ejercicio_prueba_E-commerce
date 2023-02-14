@@ -87,8 +87,9 @@ function insertarCarrito(zapato){
     </td>
     <td> ${zapato.titulo}</td>
     <td> ${zapato.precio}</td>
-    <td> <a href="#" class="borrar-producto" data-id="${zapato.id}">X</a></td>
+    <td> <a href="#" class="borrar-general borrar-producto" data-id="${zapato.id}">X</a></td>
     `;
+    //Jonathan - Solo agregue la clase borrar-general para que la X tenga un circulo rojo
     // arriba tambien se añadio una clase dinamicamente
     // añadir la informacion a la lista del carrito (imrimir dentro la lista)
     listaZapatos.appendChild(row);
@@ -191,8 +192,9 @@ function leerLocalStorage(){
         </td>
         <td> ${zapato.titulo}</td>
         <td> ${zapato.precio}</td>
-        <td> <a href="#" class="borrar-producto" data-id="${zapato.id}">X</a></td>
+        <td> <a href="#" class="borrar-general borrar-producto" data-id="${zapato.id}">X</a></td>
         `;
+        //Jonathan - Solo agregue la clase borrar-general para que la X tenga un circulo rojo
         // arriba tambien se añadio una clase dinamicamente
         // añadir la informacion a la lista del carrito (imrimir dentro la lista
         listaZapatos.appendChild(row);
