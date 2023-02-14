@@ -43,20 +43,25 @@ body {
     }
     }
     .section2 {
-        .sec2-izq {
+        .sec2contenedor {
+            width: 80%;
+         .sec2-izq {
             width: 50%;
-        }
-        .sect2-dr {
-            width: 10%;
-        }
+            text-align:left
+         }
+         .sect2-dr {
+             width: 50%;
+         }
         h2 {
             color: $color-verde;
+            
         }
         p {
             color: $color-verde;
+          
         }
     }
-
+    }
     .section3 {
         .contenedorsec3 {
             .sec3-start {

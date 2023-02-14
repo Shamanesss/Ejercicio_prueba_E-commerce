@@ -31,16 +31,20 @@ body .section1 .contenedor .card .card-body .card-text {
 body .section1 .contenedor .card .card-img-top {
   border-radius: 50%;
 }
-body .section2 .sec2-izq {
+body .section2 .sec2contenedor {
+  width: 80%;
+}
+body .section2 .sec2contenedor .sec2-izq {
+  width: 50%;
+  text-align: left;
+}
+body .section2 .sec2contenedor .sect2-dr {
   width: 50%;
 }
-body .section2 .sect2-dr {
-  width: 10%;
-}
-body .section2 h2 {
+body .section2 .sec2contenedor h2 {
   color: #266150;
 }
-body .section2 p {
+body .section2 .sec2contenedor p {
   color: #266150;
 }
 body .section3 .contenedorsec3 .sec3-start {
