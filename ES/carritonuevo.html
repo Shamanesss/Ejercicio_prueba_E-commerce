@@ -20,154 +20,163 @@
   <header class=" encabezado-altura  encabezado">
     <nav class="contenedor navbar navbar-expand-lg d-flex flex-column">
       <div class="contenedor-header ">
-
-<!-- 1. Logo -->
-        <a href="../ES/index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" ;>
-          <img class="logo" src="../img/logo-blanco.png" alt="Logo de ZapatON" />
-        </a>
-
-<!--2. Menu de paginas  -->
-        <div class=" navegacion collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a href="../ES/index.html" class="nav-link active px-2 text-white" aria-current="page">Inicio</a>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a class="nav-link px-2 text-white dropdown-toggle" href="../ES/catalogo.html" id="navbarDropdownMenuLink"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Tienda
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../ES/catalogo.html#seccion-hombres">Hombre</a></li>
-                <li><a class="dropdown-item" href="../ES/catalogo.html#seccion-mujer">Mujer</a></li>
-                <li><a class="dropdown-item" href="#">Ofertas</a></li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-white">Servicio al cliente</a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#" class="nav-link px-2 text-white">Sobre ZapatON</a>
-            </li>
-
-            <li class="nav-item ocultar-login">
-              <a href="../ES/cuenta.html" class="nav-link px-2 text-white"> <strong>Mi cuenta</strong> </a>
-            </li>
-
-            <li class="nav-item dropdown ocultar-login">
-              <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="idiomas fa-solid fa-globe text-white"></i>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item menu-banderas" href="#">
-                  <img class="bandera bandera-es" src="../img/espana.png" alt=""> ES</a>
-                </li>
-
-                <li>
-                  <a class="dropdown-item menu-banderas" href="#">
-                    <img class="bandera bandera-en" src="../img/reino-unido.png" alt=""> EN</a>
-                </li>
-
-                <li>
-                  <a class="dropdown-item menu-banderas" href="#">
-                    <img class="bandera bandera-eus" src="../img/euskadi.png" alt=""> EUS</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+  
+  <!-- 1. Logo -->
+        <div class="logo-menu-movil">
+          <a href="../ES/index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" ;>
+            <img class="logo" src="../img/logo-blanco.png" alt="Logo de ZapatON" />
+          </a>
+  
+          <!-- Icono de menu en movil y tablet -->
+    <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class=" text-white"><i class="fa-solid fa-bars"></i></span>
+  </div>
+  
         </div>
-<!-- Menu de paginas fin -->
-
-<!-- 3. Iconos idiomas, login, carrito -->
-
-        <div class="d-flex align-items-center iconos-header col-md-2 text-end">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 en-linea">
-            <li class="ocultar nav-item dropdown">
-              <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="idiomas fa-solid fa-globe text-white"></i>
-              </a>
-
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item menu-banderas" href="#">
-                  <img class="bandera bandera-es" src="../img/espana.png" alt=""> ES
-                </a>
-                </li>
-
-
-                <li>
-                  <a class="dropdown-item menu-banderas" href="#">
-                  <img class="bandera bandera-en" src="../img/reino-unido.png" alt=""> EN
-                  </a>
-                </li>
-
-                <li>
-                  <a class="dropdown-item menu-banderas" href="#">
-                    <img class="bandera bandera-eus" src="../img/euskadi.png" alt=""> EUS</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a href="../ES/cuenta.html" class="ocultar"><i class="login fa-regular fa-user  text-white"></i></a>
-            </li>
-
-            <li class="nav-item submenu">
-              <i class=" fa-sharp fa-solid fa-cart-shopping text-white"></i>
-              <ul id="carrito">
-
-                <table id="lista-carrito-home" class="table">
-                    <thead>
-                        <tr>
-                          <th scope="col">Imagen</th>
-                          <th scope="col">Nombre</th>
-                          <th scope="col">Precio</th>
-                          <th></th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
-
-                  <div class="botones-carrito">
-                    <button class="ir-carrito btn btn-success"> <a href="../ES/carritonuevo.html" id="vaciar-carrito" class="button ">Ir a carrito</a></button>
-
-                    <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito" class="button ">Vaciar Carrito</a></button>
-                  </div>
-
+  
+  
+  
+  <!--2. Menu de paginas  -->
+              <div class=" navegacion collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item margen-lados">
+                    <a href="../ES/index.html" class="nav-link active px-2 text-white" aria-current="page">Inicio</a>
+                  </li>   
+                  <li class="nav-item dropdown margen-lados">
+                    <a class="nav-link px-2 text-white dropdown-toggle" href="../ES/catalogo.html" id="navbarDropdownMenuLink"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Tienda
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../ES/catalogo.html#seccion-hombres">Hombre</a></li>
+                      <li><a class="dropdown-item" href="../ES/catalogo.html#seccion-mujer">Mujer</a></li>
+                    </ul>
+                  </li>
+  
+                  <li class="nav- margen-lados">
+                    <a href="../ES/servicio-cliente.html" class="nav-link px-2 text-white">Servicio al cliente</a>
+                  </li>
+  
+                  <li class="nav-item margen-lados">
+                    <a href="../ES/sobreZapatON.html" class="nav-link px-2 text-white">Sobre ZapatON</a>
+                  </li>
+  
+                  <li class="nav-item margen-lados">
+                    <a href="../ES/perfil.html" class="nav-link px-2 text-white">Inicio Sessión</a>
+                  </li>
+  
+                  <li class="nav-item ocultar-login">
+                    <a href="../ES/cuenta.html" class="nav-link px-2 text-white"> <strong>Mi cuenta</strong> </a>
+                  </li>
+  
+                  <li class="nav-item dropdown ocultar-login">
+                    <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="idiomas fa-solid fa-globe text-white"></i>
+                    </a>
+                    <ul class="dropdown-menu menu-banderas-idiomas">
+                      <li><a class="dropdown-item menu-banderas" href="../ES/carritonuevo.html">
+                        <img class="bandera bandera-es" id="bandera-es-movil" src="../img/espana.png" alt=""> ES</a>
+                      </li>
+  
+                      <li>
+                        <a class="dropdown-item menu-banderas" href="../EN/carritonuevo.html">
+                          <img class="bandera bandera-en" id="bandera-en-movil" src="../img/reino-unido.png" alt=""> EN</a>
+                      </li>
+  
+                      <li>
+                        <a class="dropdown-item menu-banderas" href="../eus/carrito.html">
+                          <img class="bandera bandera-eus"  id="bandera-eus-movil" src="../img/euskadi.png" alt=""> EUS</a>
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
-            </li>
-          </ul>
-        </div>
-<!--Fin Iconos idiomas, login, carrito -->
-
-
-<!-- Icono de menu en movil y tablet -->
-        <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class=" text-white"><i class="fa-solid fa-bars"></i></span>
-        </div>
-
-      </div> <!-- contenedor header fin -->
-
-      <div class="nav-bajo " >
-        
-        <div id="saludar-home" >
-          <p>¡Bienvenid@ a nuestra tienda! </p>
-        </div>
-      </div>
-
-      <!-- <div class="nav-bajo d-flex flex-row justify-content-start">
-        <div id="reloj" >
-        </div>
-      </div> -->
-
-    </nav>
-  </header>
+              </div>
+  <!-- Menu de paginas fin -->
+  
+  <!-- 3. Iconos idiomas, login, carrito -->
+  
+              <div class="d-flex align-items-center iconos-header col-md-2 text-end">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 en-linea">
+                  <li class="ocultar nav-item dropdown">
+                    <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="idiomas fa-solid fa-globe text-white"></i>
+                    </a>
+  
+                    <ul class="dropdown-menu menu-banderas-idiomas">
+                      <li><a class="dropdown-item menu-banderas" href="../ES/carritonuevo.html">
+                        <img class="bandera bandera-es" id="bandera-es-movil" src="../img/espana.png" alt=""> ES</a>
+                      </li>
+  
+                      <li>
+                        <a class="dropdown-item menu-banderas" href="../EN/carritonuevo.html">
+                          <img class="bandera bandera-en" id="bandera-en-movil" src="../img/reino-unido.png" alt=""> EN</a>
+                      </li>
+  
+                      <li>
+                        <a class="dropdown-item menu-banderas" href="../eus/carrito.html">
+                          <img class="bandera bandera-eus"  id="bandera-eus-movil" src="../img/euskadi.png" alt=""> EUS</a>
+                      </li>
+                    </ul>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a href="../ES/cuenta.html" class="ocultar"><i class="login fa-regular fa-user  text-white"></i></a>
+                  </li>
+  
+                  <li class="nav-item submenu ">
+                    <i class=" fa-sharp fa-solid fa-cart-shopping text-white"></i>
+                    <ul id="carrito" >
+                      <div class="scrollable">
+                        <table id="lista-carrito-home" class="table ">
+                            <thead>
+                                <tr>
+                                  <th scope="col">Imagen</th>
+                                  <th scope="col">Nombre</th>
+                                  <th scope="col">Precio</th>
+                                  <th></th>
+                                </tr>
+                            </thead>
+                            <tbody ></tbody>
+                        </table>
+                      </div>
+  
+                        <div class="botones-carrito">
+                          <button class="ir-carrito btn btn-success"> <a href="../ES/carritonuevo.html" id="vaciar-carrito" class="button ">Ir a carrito</a></button>
+  
+                          <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito-home" class="button ">Vaciar Carrito</a></button>
+                        </div>
+  
+                      </ul>
+                  </li>
+                </ul>
+              </div>
+  <!--Fin Iconos idiomas, login, carrito -->
+  
+  
+  
+  
+            </div> <!-- contenedor header fin -->
+  
+            <div class="nav-bajo " >
+              
+              <div id="saludar-home" class="saludar">
+                <p>¡Bienvenid@ a nuestra tienda! </p>
+              </div>
+            </div>
+  
+            <!-- <div class="nav-bajo d-flex flex-row justify-content-start">
+              <div id="reloj" >
+              </div>
+            </div> -->
+  
+  
+          </nav>
+  
+          
+        </header>
   <div class="grande">
     <!-- donde se va a colocar la lista de los productos -->
     <div id="carrito">
@@ -355,7 +364,7 @@ function leerLocalStorage(){
                     <h5>Subtotal</h5>
                     <p>${zapato.precio} </p>
                 </div>
-                <button class="carrito-producto-delete borrar-producto-trash" data-id="${zapato.id}"><i class="trash fa-solid fa-trash "></i></button>
+                <button class="carrito-producto-delete borrar-producto-trash" data-id="${zapato.id}"><i id="clear" class="trash fa-solid fa-trash "></i></button>
             </div>
         </div>
         `;
@@ -371,6 +380,6 @@ function leerLocalStorage(){
 leerLocalStorage()
     </script>
     <script src="../JS/miihai.js"></script>
-    <script src="../JS/app-mihai.js"></script>
+    <script src="../JS/app.js"></script>
 </body>
 </html>
