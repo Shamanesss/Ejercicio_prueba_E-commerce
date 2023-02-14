@@ -37,7 +37,7 @@
 .contenedor .promocion-bg img {
   padding: 2rem;
   width: 100%;
-  max-width: 30vw;
+  width: 30vw;
 }
 
 .contact-boton {
@@ -77,14 +77,21 @@ textarea {
     flex-direction: column;
   }
   .promocion-banner .promocion-text h1 {
-    font-size: 3vw;
+    font-size: 10vw;
   }
   .promocion-banner .promocion-text p {
-    font-size: 1.8vw;
+    font-size: 4.5vw;
   }
   .contenedor .promocion-bg img {
-    padding: 2rem;
-    width: 90vw;
+    padding: 1rem;
+    width: 100%;
+    width: 80vw;
+  }
+  .promocion-text {
+    text-align: center;
+    align-items: center;
+    margin: auto 0;
+    margin-top: 2rem;
   }
 }
 @media (max-width: 920px) {
