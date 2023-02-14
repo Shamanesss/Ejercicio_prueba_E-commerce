@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZapatON - Tienda Online</title>
+    <link rel="icon" type="image/png" href="../img/logo-rm.ico">
+    <meta name="description" content="ZapatON - Tu tienda online preferida para comprar zapatos"/>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
+
+    <!-- css custom -->
+    <link rel="stylesheet" href="../CSS/header-footer.css">
+    <link rel="stylesheet" href="../CSS/sobreZapatON.css"/>
+    <!-- <link rel="stylesheet" href="/skeleton.css"> -->
+
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8c655d3807.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class=" encabezado-altura  encabezado">
+      <nav class="contenedor navbar navbar-expand-lg d-flex flex-column">
+        <div class="contenedor-header ">
+    
+    <!-- 1. Logo -->
+          <div class="logo-menu-movil">
+            <a href="../ES/index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" ;>
+              <img class="logo" src="../img/logo-blanco.png" alt="Logo de ZapatON" />
+            </a>
+    
+            <!-- Icono de menu en movil y tablet -->
+      <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class=" text-white"><i class="fa-solid fa-bars"></i></span>
+    </div>
+    
+          </div>
+    
+    
+    
+    <!--2. Menu de paginas  -->
+                <div class=" navegacion collapse navbar-collapse" id="navbarTogglerDemo03">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item margen-lados">
+                      <a href="../ES/index.html" class="nav-link active px-2 text-white" aria-current="page">Inicio</a>
+                    </li>   
+                    <li class="nav-item dropdown margen-lados">
+                      <a class="nav-link px-2 text-white dropdown-toggle" href="../ES/catalogo.html" id="navbarDropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Tienda
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../ES/catalogo.html#seccion-hombres">Hombre</a></li>
+                        <li><a class="dropdown-item" href="../ES/catalogo.html#seccion-mujer">Mujer</a></li>
+                      </ul>
+                    </li>
+    
+                    <li class="nav- margen-lados">
+                      <a href="../ES/servicio-cliente.html" class="nav-link px-2 text-white">Servicio al cliente</a>
+                    </li>
+    
+                    <li class="nav-item margen-lados">
+                      <a href="../ES/sobreZapatON.html" class="nav-link px-2 text-white">Sobre ZapatON</a>
+                    </li>
+    
+                    <li class="nav-item margen-lados">
+                      <a href="../ES/perfil.html" class="nav-link px-2 text-white">Inicio Sessión</a>
+                    </li>
+    
+                    <li class="nav-item ocultar-login">
+                      <a href="../ES/cuenta.html" class="nav-link px-2 text-white"> <strong>Mi cuenta</strong> </a>
+                    </li>
+    
+                    <li class="nav-item dropdown ocultar-login">
+                      <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="idiomas fa-solid fa-globe text-white"></i>
+                      </a>
+                      <ul class="dropdown-menu menu-banderas-idiomas">
+                        <li><a class="dropdown-item menu-banderas" href="../ES/index.html">
+                          <img class="bandera bandera-es" id="bandera-es-movil" src="../img/espana.png" alt=""> ES</a>
+                        </li>
+    
+                        <li>
+                          <a class="dropdown-item menu-banderas" href="../EN/index-en.html">
+                            <img class="bandera bandera-en" id="bandera-en-movil" src="../img/reino-unido.png" alt=""> EN</a>
+                        </li>
+    
+                        <li>
+                          <a class="dropdown-item menu-banderas" href="../eus/index-eus.html">
+                            <img class="bandera bandera-eus"  id="bandera-eus-movil" src="../img/euskadi.png" alt=""> EUS</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+    <!-- Menu de paginas fin -->
+    
+    <!-- 3. Iconos idiomas, login, carrito -->
+    
+                <div class="d-flex align-items-center iconos-header col-md-2 text-end">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 en-linea">
+                    <li class="ocultar nav-item dropdown">
+                      <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="idiomas fa-solid fa-globe text-white"></i>
+                      </a>
+    
+                      <ul class="dropdown-menu menu-banderas-idiomas">
+                        <li>
+                          <a class="dropdown-item menu-banderas" href="/ES/index.html">
+                          <img class="bandera bandera-es" id="bandera-es-desktop"  src="../img/espana.png" alt=""> ES
+                        </a>
+                        </li>
+    
+    
+                        <li>
+                          <a class="dropdown-item menu-banderas" href="../EN/index-en.html">
+                          <img class="bandera bandera-en" id="bandera-en-desktop"src="../img/reino-unido.png" alt=""> EN
+                          </a>
+                        </li>
+    
+                        <li>
+                          <a class="dropdown-item menu-banderas" href="../eus/index-eus.html">
+                            <img class="bandera bandera-eus" id="bandera-eus-desktop"src="../img/euskadi.png" alt=""> EUS</a>
+                        </li>
+                      </ul>
+                    </li>
+    
+                    <li class="nav-item">
+                      <a href="../ES/cuenta.html" class="ocultar"><i class="login fa-regular fa-user  text-white"></i></a>
+                    </li>
+    
+                    <li class="nav-item submenu ">
+                      <i class=" fa-sharp fa-solid fa-cart-shopping text-white"></i>
+                      <ul id="carrito" >
+                        <div class="scrollable">
+                          <table id="lista-carrito-home" class="table ">
+                              <thead>
+                                  <tr>
+                                    <th scope="col">Imagen</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Precio</th>
+                                    <th></th>
+                                  </tr>
+                              </thead>
+                              <tbody ></tbody>
+                          </table>
+                        </div>
+    
+                          <div class="botones-carrito">
+                            <button class="ir-carrito btn btn-success"> <a href="../ES/carritonuevo.html" id="vaciar-carrito" class="button ">Ir a carrito</a></button>
+    
+                            <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito-home" class="button ">Vaciar Carrito</a></button>
+                          </div>
+    
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+    <!--Fin Iconos idiomas, login, carrito -->
+    
+    
+    
+    
+              </div> <!-- contenedor header fin -->
+    
+              <div class="nav-bajo " >
+                
+                <div id="saludar-home" class="saludar">
+                  <p>¡Bienvenid@ a nuestra tienda! </p>
+                </div>
+              </div>
+    
+              <!-- <div class="nav-bajo d-flex flex-row justify-content-start">
+                <div id="reloj" >
+                </div>
+              </div> -->
+    
+    
+            </nav>
+    
+            
+          </header>
+      <section class="section1 d-flex flex-wrap">
+       <div class="contenedor d-flex">
+          <div class="izq m-5">
+            <h1>ZapatON</h1>
+            <p>ZapatON Natural World is a young brand, but with great experience after years of family tradition in the world of footwear, that was born with the aim of creating a 100% ecological shoe. The essence of the brand is the love of nature and the the authenticity of our products, blending the trends with ecological philosophy
+
+              From our offices, located in Bolbao (Bolueta), we work to improve the world in which we live to guarantee a better world for our children, investing in our present to ensure their future.</p>
+          </div>
+          <div class="dr mt-5 mb-5">
+            <!-- <img src="../img/bilbaoZapato.jpeg" class="img-fluid" alt="..."> -->
+            <h2>We have an ecological vision, right in line with our shoes</h2>
+          </div>
+       </div>
+       <div class="grande">
+      </section>
+      <section class="section2">
+        <div class ="sec2contenedor d-flex flex-row flex-wrap m-5 gap-5">
+          <div class="sec2-izq d-flex flex-column">
+            <iframe width="360" height="250" src="https://www.youtube.com/embed/SWdGvH5xWtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="sec2-dr">
+            <h2>PRODUCTION SYSTEM</h2>
+            <p>All our shoes follow a production process respectful with the environment. It is a production system with more than 100 years old, which requires a specific type of machinery, known as: “Vulcanization System”.
+
+              It is a production system that respects the environment and, combined with the latest technological advances, is the key to the success of the brand. Moreover, we control the whole processes to offer the greatest of guarantees.</p>
+          </div>
+        </div>
+      </section>
+      <div class ="intersection d-flex flex-column align-items-center mt-4">
+        <p>4.9/5 rating - 5.908 reviews </p>
+        <h1>Thousounds of others loves ZapatON</h1>
+      </div>
+      <section class="section3 d-flex justify-content-evenly mb-4 mt-4">
+        <div class="card" style="width: 18rem;">
+          <img src="../img/george.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Experiencia muy positiva, he comprado unas botas UGG, que me han llegado a los 3 días de pedirlas a España. Vienen en perfecto estado y embalado, y no he tenido ningún problema en todo el proceso.
+            </p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="../img/mihai.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Realicé pedido el 27 a las 17:00 recibido el 3 a las 10:15 dentro del tiempo indicado, al no haber recibido el número para seguimiento me han atendido muy bien en atención al cliente. Las zapatillas perfectas y con impreso para posible devolución todo perfecto</p>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="../img/zucelys.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Realicé la compra de unas NB y todo perfecto. Lo realicé en plena campaña de Navidad con la de festivos en días normalmente laborales y aún así han cumplido con los plazos de entrega.
+              He sido informada en todo momento del estado de mi pedido tanto por parte de la tienda como de DHL.
+              Todo genial.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section3">
+        <div class="contenedorsec3 d-flex justify-content-evenly m-5">
+          <div class="sec3-start">
+            <div class="numero">
+              <h1>79</h1>
+              <p>Teammates</p>
+            </div>
+          </div>
+          <div class="sec3-middle">
+            <div class="numero">
+              <h1>22</h1>
+              <p>Countries</p>
+            </div>
+          </div>
+          <div class="sec3-end">
+            <div class="numero">
+              <h1>140.000+</h1>
+              <p>Users</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container-fluid">
+          <div class="footer-background row p-5 pb-2 text-white">
+      
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                  <p class="h3">ZapatON</p>
+              </div>
+      
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                  <p class="h5 mb-3">Tienda</p>
+      
+                  <div class="mb-2">
+                      <a class="text-secondary text-decoration-none" href="../ES/catalogo.html#seccion-hombres">Zapatos Hombre</a>
+                  </div>
+      
+                  <div class="mb-2">
+                      <a class="text-secondary text-decoration-none" href="../ES/catalogo.html#seccion-mujer">Zapatos Mujer</a>
+                  </div>
+              </div>
+      
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                  <p class="h5 mb-3">Links</p>
+                  <div class="mb-2">
+                      <a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
+                  </div>
+                  <div class="mb-2">
+                      <a class="text-secondary text-decoration-none" href="#">Politicas de privacidad</a>
+                  </div>
+              </div>
+      
+              <div class="col-xs-12 col-md-6 col-lg-3">
+                  <p class="h5 mb-3">Contacto</p>
+                  <div>
+                      <a href="" class="me-4 text-white">
+                        <i class="fa-brands fa-facebook"></i>
+                      </a>
+      
+                      <a href="" class="me-4 text-white">
+                        <i class="fa-brands fa-twitter"></i>
+                      </a>
+      
+                      <a href="" class="me-4 text-white">
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+      
+                    </div>
+      
+              </div>
+              <div class="col-xs-12 pt-4 ">
+                  <p class="text-secondary text-center">Copyright - All rights reserved 2023</a>
+              </div>
+          </div>
+      </div>
+    </div>
+      
+      </footer>
+  </body>
