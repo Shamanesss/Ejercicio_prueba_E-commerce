@@ -40,8 +40,10 @@ function total (subtotales){
 }
 
 
-for (let k=0; k<cantidades.length; k++){
-    borrar[k].addEventListener("click", function(){
-  
-    })
-};
+ for (let k=0; k<cantidades.length; k++){
+     borrar[k].addEventListener("click", function(){
+       
+     })
+ };
+
+
