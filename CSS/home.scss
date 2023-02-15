@@ -47,7 +47,7 @@
 .contenedor .promocion-bg img {
     padding: 2rem;
     width: 100%;
-    max-width: 30vw;
+    width: 30vw;
 }
 
 
@@ -106,16 +106,26 @@ textarea{
 
 
     .promocion-banner .promocion-text h1 {
-        font-size: calc(2*1.5vw);
+        font-size: calc(2*5vw);
     }
 
     .promocion-banner .promocion-text p {
-        font-size: calc(1.2*1.5vw);
+        font-size: calc(1.5*3vw);
     }
 
     .contenedor .promocion-bg img {
-        padding: 2rem;
-        width: 90vw;
+        padding: 1rem;
+        width: 100%;
+        width: 80vw;
+    }
+
+    
+
+    .promocion-text{
+        text-align: center;
+        align-items: center;
+        margin: auto 0;
+        margin-top: 2rem;
     }
 }
 

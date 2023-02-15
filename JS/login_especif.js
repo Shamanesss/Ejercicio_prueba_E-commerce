@@ -1,13 +1,12 @@
 // cambiar el id de saludar por saludarE
 
 const saludarE = document.getElementById('saludarE')
-let nombre= localStorage.getItem('logeado');
+let nombre= JSON.parse(localStorage.getItem('registro'));
  
 if(nombre == null){
     nombre = '';
 
  }else{
- console.log(nombre);
 
- saludarE.innerHTML = `¡Hola, ${nombre}!`;
+ saludarE.innerHTML = `¡Hola, ${nombre.names1}!`;
  }
