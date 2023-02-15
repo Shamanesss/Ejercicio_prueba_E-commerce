@@ -1,0 +1,44 @@
+@import "_parcial";
+
+
+.contenedor-servicio-cliente h3{
+     color: $color-verde;
+}
+
+.titulos-servicio-cliente{
+     margin: 2rem 0;
+     text-align: center;
+}
+
+.contenedor-servicio-cliente{
+     display: grid;
+     grid-template-columns: 3fr 2fr;
+     gap: 1rem;
+}
+
+
+
+.accordion-button:not(.collapsed) {
+     background-color: $color-verde;
+     color: white;
+
+}
+
+button.accordion-button::after {
+     color: white;
+}
+
+textarea{
+     height: 15rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+     .contenedor-servicio-cliente{
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 1rem;
+     }
+}
+
