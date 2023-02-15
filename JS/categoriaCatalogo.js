@@ -1,6 +1,6 @@
 //CATEGORIAS HOMBRES
 //Capturar caja que contiene los botones y cada id de los radios
-let selector = document.getElementById("cajaRadioHombre");
+let selectorHombre = document.getElementById("cajaRadioHombre");
 let checkZapatillaHombre = document.getElementById("checkZapatillaHombre");
 let checkBotasHombre = document.getElementById("checkBotasHombre");
 let checkSandaliasHombre = document.getElementById("checkSandaliasHombre");
@@ -16,23 +16,23 @@ let hombreBotasCard = document.querySelector(".hombreBotasCard");
 let hombreSandalias = document.querySelector(".hombreSandalias");
 let hombreSandaliasCard = document.querySelector(".hombreSandaliasCard");
 
-selector.addEventListener("change", function (event) {
-  // alert(event.target.id);
+selectorHombre.addEventListener("change", function (event) {
+   //alert(event.target.id);
 
-  let identificador = event.target.id;
+  let identificadorHombre = event.target.id;
   //alert(identificador);
 
   //const mostrado=document.getElementById(identificador);
 
   //alert(mostrado.index);
 
-  cambiarEstado(identificador);
+  cambiarEstadoHombre(identificadorHombre);
   console.log("captura id" + " " + identificador);
 });
 
-function cambiarEstado(identificador) {
-  console.log(identificador);
-  let pulsado = identificador;
+function cambiarEstadoHombre(identificadorHombre) {
+  console.log(identificadorHombre);
+  let pulsado = identificadorHombre;
   console.log("captura en funcion" + "" + +pulsado);
 
   switch (pulsado) {
