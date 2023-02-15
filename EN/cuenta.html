@@ -161,7 +161,7 @@
     
           </div> <!-- contenedor header fin -->
     
-          <div class="nav-bajo " >
+          <div class="nav-bajo text-white" >
             
             <div id="saludar2" >
               <p>Welcome to our store! </p>
@@ -182,41 +182,42 @@
     <div class="col-lg-8 mx-auto ">
 
       <div id="containerRegister">
-
+        <div class=" datospersonales bd-exampledropdown-menu mx-auto form-color col-lg-7 col-md-8" >
+          <form class="px-5 py-3 needs-validation "  id="formulario2">
+            <h3 class="text-center pb-3">Personal Information</h3>
+              <div class="mb-3 ">
+                  <label for="DropdownFormName1" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="DropdownFormName1" disabled >
+              </div>
+              <div class="mb-3">
+                  <label for="DropdownFormlastname" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="DropdownFormlastName" disabled >
+              </div>
+              <div class="mb-3">
+                  <label for="DropdownFormdirection" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="DropdownFormdirection" disabled >
+              </div>
+              <div class="mb-3">
+                <label for="DropdownFormEmail1" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="DropdownFormEmail1" disabled >
+              </div>
+              <div class="mb-3">
+                <label for="DropdownFormPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control mb-5" id="DropdownFormPassword1" disabled >
+              </div>
+          </form>
+        </div>
       </div>
-            <!-- <div class="col-9 mx-auto datospersonales p-5 ">
-              
-             <h2 class="text-center">DATOS PERSONALES</h2>
-                <form class="px-4 py-3 ">
-                
-                  <div class="mb-3">
-                      <label for="DropdownFormName2" class="form-label">Nombre</label>
-                      <input type="text" class="form-control" id="DropdownFormName2" disabled>
-                    </div>
-                    <div class="mb-3">
-                      <label for="DropdownFormlastName" class="form-label" >Apellidos</label>
-                      <input type="text" class="form-control" id="DropdownFormlastName2" disabled>
-                    </div>
-                    <div class="mb-3">
-                      <label for="DropdownFormlastaddress" class="form-label" disable>Direccion</label>
-                      <input type="text" class="form-control" id="DropdownFormlastaddress" disabled>
-                    </div>
-                  <div class="mb-3">
-                    <label for="DropdownFormEmail1" class="form-label" disabled>Email</label>
-                    <input type="email" class="form-control" id="DropdownFormEmail2" disabled>
-                  </div>
-                  <div class="mb-3">
-                    <label for="DropdownFormPassword1" class="form-label"readonly>Contraseña</label>
-                    <input type="password" class="form-control" id="DropdownFormPassword2"disabled>
-                  </div> -->
-                
-            </div>
+      
+    </div>
+    <hr>
+    <div id="pedidos">
         <div class="px-4 py-3" >
           <h2>Orders</h2>
               <table class="table">
               <thead>
                   <tr>
-                    <th scope="col">Quantity</th>
+                    <th scope="col">Order number</th>
                     <th scope="col">image</th>
                     <th scope="col">Product</th>
                     <th scope="col">Price</th>
@@ -243,12 +244,12 @@
                   </tr>
                 </tbody>
               </table>
-            </div>
-            
-          </div>
-          <div class="text-center">
-          <button type="button" id="btn-cerrar-login"class="  btn btn-success btn-color align-items-center ">Disconnect</button>
         </div>
+    </div>
+          
+    <div class="text-center">
+            <button type="button" id="btn-cerrar-login"class="  btn btn-success btn-color align-items-center ">Disconnect</button>
+    </div>
         <hr>
        
  
@@ -313,7 +314,7 @@
     
        
     
-        <script src="../JS/login-cuenta.js"></script>  
+        <script src="../JS/login-cuenta.EN.js"></script>  
          
 </body>
 </html>

@@ -43,61 +43,32 @@ const saludar2 = document.getElementById('saludar2');
     saludar2.innerHTML=`¡Hola ${datos_usuario.names1}!`;
     containerRegister.innerHTML =   `   <div class=" datospersonales bd-exampledropdown-menu mx-auto form-color col-lg-7 col-md-8" >
     <form class="px-5 py-3 needs-validation "  id="formulario2">
-      <h3 class="text-center pb-3">Registro</h3>
+      <h3 class="text-center pb-3">Personal Information</h3>
       <div class="mb-3 ">
-          <label for="DropdownFormName1" class="form-label">Nombre</label>
+          <label for="DropdownFormName1" class="form-label">Name</label>
           <input type="text" class="form-control" id="DropdownFormName1" disabled placeholder="${datos_usuario.names1}">
       </div>
       <div class="mb-3">
-          <label for="DropdownFormlastname" class="form-label">Apellido</label>
+          <label for="DropdownFormlastname" class="form-label">Last name</label>
           <input type="text" class="form-control" id="DropdownFormlastName" disabled placeholder="${datos_usuario.apellido}">
       </div>
       <div class="mb-3">
-          <label for="DropdownFormdirection" class="form-label">Direccion</label>
+          <label for="DropdownFormdirection" class="form-label">Address</label>
           <input type="text" class="form-control" id="DropdownFormdirection" disabled placeholder="${datos_usuario.direccion}">
       </div>
       <div class="mb-3">
-        <label for="DropdownFormEmail1" class="form-label">Correo Electronico</label>
+        <label for="DropdownFormEmail1" class="form-label">E-mail</label>
         <input type="email" class="form-control" id="DropdownFormEmail1" disabled placeholder="${datos_usuario.email}">
       </div>
       <div class="mb-3">
-        <label for="DropdownFormPassword1" class="form-label"></label>
+        <label for="DropdownFormPassword1" class="form-label">Password</label>
         <input type="password" class="form-control mb-5" id="DropdownFormPassword1" disabled value="${datos_usuario.password1}">
       </div>
       
       
     </form>
   </div>`
-    //` 
-    //  <div class="col-7 mx-auto datospersonales p-5 ">
-                  
-    //               <h2 class="text-center">DATOS PERSONALES</h2>
-    //                  <form class="px-4 py-3 ">
-                     
-    //                    <div class="mb-3">
-    //                        <label for="DropdownFormName2" class="form-label">Nombre</label>
-    //                        <input type="text" class="form-control" id="DropdownFormName2" disabled placeholder="${datos_usuario.names1}">
-    //                      </div>
-    //                      <div class="mb-3">
-    //                        <label for="DropdownFormlastName" class="form-label" >Apellidos</label>
-    //                        <input type="text" class="form-control" id="DropdownFormlastName2"  disabled placeholder="${datos_usuario.apellido}">
-    //                      </div>
-    //                      <div class="mb-3">
-    //                        <label for="DropdownFormlastaddress" class="form-label" disable>Direccion</label>
-    //                        <input type="text" class="form-control" id="DropdownFormlastaddress"  disabled placeholder="${datos_usuario.direccion}">
-    //                      </div>
-    //                    <div class="mb-3">
-    //                      <label for="DropdownFormEmail1" class="form-label" disabled>Email</label>
-    //                      <input type="email" class="form-control" id="DropdownFormEmail2" disabled placeholder="${datos_usuario.email}">
-    //                    </div>
-    //                    <div class="mb-3">
-    //                      <label for="DropdownFormPassword1" class="form-label"readonly>Contraseña</label>
-    //                      <input type="password" class="form-control" id="DropdownFormPassword2" disabled value=${datos_usuario.password1}>
-    //                    </div>
-                     
-    //              </div> 
-    // `
-       
+
       
       }
       imprimirDatos();
@@ -118,14 +89,14 @@ function numeropedidos(){
 
 pedidos.innerHTML=` 
 <div class="px-4 py-3 " >
-<h2>PEDIDOS</h2>
+<h2>Orders</h2>
 <table class="table ">
 <thead>
   <tr>
-    <th scope="col">Numero de pedido</th>
-    <th scope="col">Imagen</th>
-    <th class="text-center"scope="col">Producto</th>
-    <th scope="col">Precio</th>
+    <th scope="col">Order number</th>
+    <th scope="col">Image</th>
+    <th class="text-center"scope="col">Product</th>
+    <th scope="col">Price</th>
   </tr>
 </thead>
 <tbody class="align-middle ">
