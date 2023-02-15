@@ -273,11 +273,15 @@
                       <tbody></tbody>
                     </table>
                   </div>
-                  <!-- <a href="../ES/carritonuevo.html"  class="button ">Ir a carrito</a> -->
+                  <!-- <a href="../ES/carritonuevo.html"  class="button ">Ir a carrito</a>
 
-                  <a href="#" id="vaciar-carrito" class="button"
-                    >Vaciar Carrito</a
-                  >
+                  <a href="#" id="vaciar-carrito" class="button">Vaciar Carrito</a> -->
+
+                  <div class="botones-carrito">
+                        <button class="ir-carrito btn btn-success"> <a href="../ES/carritonuevo.html" class="button ">Ir a carrito</a></button>
+
+                        <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito" class="button ">Vaciar Carrito</a></button>
+                      </div>
                 </ul>
               </li>
             </ul>
@@ -389,22 +393,21 @@
             class="sandalias"
           />
         </div>
-        <!-- mujer -->
         <div id="cajaRadioMujer">
           <p class="categoriasParrafo">Mujeres</p>
           <label for="">Todo</label>
           <input
             type="radio"
-            name="categoriaMujer"
+            name="categoria"
             id="checkTodoMujer"
             class="todo"
           />
           <label for="">Zapatillas 👟</label>
-          <input type="radio" name="categoriaMujer" id="checkZapatillaMujer"/>
+          <input type="radio" />
           <label for="">Botas 👢</label>
-          <input type="radio" name="categoriaMujer" id="checkBotasMujer"/>
+          <input type="radio" />
           <label for="">Sandalias 🩴</label>
-          <input type="radio" name="categoriaMujer" id="checkSandaliasMujer"/>
+          <input type="radio" />
         </div>
       </div>
 
@@ -646,7 +649,7 @@
           <!-- -------------------------------SECTION GRID ZAPATILLAS MUJERES-------------------------------- -->
           <div class="row column-gap-4 row-gap-4 mujerZapatilla">
             <div class="col d-flex justify-content-center">
-              <div class="card mujerZapatillaCard1" style="width: 18rem">
+              <div class="card" style="width: 18rem">
                 <img
                   src="../img/imgZapatos/mujer/zapatillas/zapatillaMujer1.jpg"
                   class="card-img-top"
@@ -666,7 +669,7 @@
               </div>
             </div>
             <div class="col d-flex justify-content-center">
-              <div class="card mujerZapatillaCard2" style="width: 18rem">
+              <div class="card" style="width: 18rem">
                 <img
                   src="../img/imgZapatos/mujer/zapatillas/zapatillaMujer2.jpg"
                   class="card-img-top"
@@ -686,7 +689,7 @@
               </div>
             </div>
             <div class="col d-flex justify-content-center">
-              <div class="card mujerZapatillaCard3" style="width: 18rem">
+              <div class="card" style="width: 18rem">
                 <img
                   src="../img/imgZapatos/mujer/zapatillas/zapatillaMujer3.jpg"
                   class="card-img-top"
@@ -713,7 +716,7 @@
             <p>Botas</p>
           </section>
           <!-- -------------------------------SECTION GRID BOTAS MUJERES-------------------------------- -->
-          <div class="row column-gap-4 row-gap-4 mujerBotasCard">
+          <div class="row column-gap-4 row-gap-4 mujerBotas">
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem">
                 <img
@@ -782,7 +785,7 @@
             <p>Sandalias</p>
           </section>
           <!-- -------------------------------SECTION GRID SANDALIAS MUJERES-------------------------------- -->
-          <div class="row column-gap-4 row-gap-4 mujerSandaliasCard">
+          <div class="row column-gap-4 row-gap-4 mujerSandalias">
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem">
                 <img
