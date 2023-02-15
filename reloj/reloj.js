@@ -48,3 +48,18 @@ function startTime() {
  
  
  window.onload = startTime();
+
+
+//  PopUP
+
+
+const modelbox = document.getElementById('modelbox')
+
+
+  document.onmouseleave = function(){
+      modelbox.style.display = "block"
+  }
+
+  function closemodel() {
+    modelbox.style.display = "none"
+  }

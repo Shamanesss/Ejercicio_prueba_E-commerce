@@ -47,7 +47,7 @@
 .contenedor .promocion-bg img {
     padding: 2rem;
     width: 100%;
-    max-width: 30vw;
+    width: 30vw;
 }
 
 
@@ -93,6 +93,72 @@ textarea{
 }
 
 
+
+// POPUP
+
+#modelbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 3;
+    display: none;
+
+}
+
+.offertext {
+    padding: 20px 40px 40px 40px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.offertext h2 {
+    font-size: 38px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.offertext small {
+    display: inline-block;
+
+}
+
+.offertext form {
+    margin-top: 30px;
+    display: flex;
+    background: #efefef ;
+    border-radius: 4px;
+}
+
+.offertext input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 12px 10px;
+}
+
+.close-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+// Fin POPUP
+
+
+
+
+
 // Media query
 
 
@@ -106,16 +172,26 @@ textarea{
 
 
     .promocion-banner .promocion-text h1 {
-        font-size: calc(2*1.5vw);
+        font-size: calc(2*5vw);
     }
 
     .promocion-banner .promocion-text p {
-        font-size: calc(1.2*1.5vw);
+        font-size: calc(1.5*3vw);
     }
 
     .contenedor .promocion-bg img {
-        padding: 2rem;
-        width: 90vw;
+        padding: 1rem;
+        width: 100%;
+        width: 80vw;
+    }
+
+    
+
+    .promocion-text{
+        text-align: center;
+        align-items: center;
+        margin: auto 0;
+        margin-top: 2rem;
     }
 }
 
