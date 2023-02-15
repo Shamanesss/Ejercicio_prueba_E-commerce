@@ -4,6 +4,7 @@ let precios = document.querySelectorAll(".carrito-pr-precio p");
 let subtotales = document.querySelectorAll(".carrito-pr-subtotal p");
 let borrar =document.querySelectorAll(".trash");
 
+
 total(subtotales)
 
 let cant, precio, sterge;
@@ -40,10 +41,13 @@ function total (subtotales){
 }
 
 
- for (let k=0; k<cantidades.length; k++){
-     borrar[k].addEventListener("click", function(){
+//  for (let k=0; k<cantidades.length; k++){
+//      borrar[k].addEventListener("click", function(){
        
-     })
- };
+//      })
+//  };
 
-
+let vaciar = document.getElementById("vaciartodo")
+while(vaciar.firstChild) {
+    vaciar.removeChild(vaciar.firstChild);
+}
