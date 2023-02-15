@@ -99,6 +99,7 @@ textarea {
 
 .offertext small {
   display: inline-block;
+  border: 0;
 }
 
 .offertext form {
@@ -117,13 +118,13 @@ textarea {
 }
 
 .close-icon {
-  width: 30px;
-  height: 30px;
+  font-size: 2rem;
   border-radius: 50%;
   position: absolute;
   top: 15px;
   right: 15px;
   cursor: pointer;
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
