@@ -56,10 +56,17 @@ function startTime() {
 const modelbox = document.getElementById('modelbox')
 
 
+
   document.onmouseleave = function(){
+    
       modelbox.style.display = "block"
   }
 
   function closemodel() {
     modelbox.style.display = "none"
   }
+
+//   if (!localStorage.getItem('first-time')){
+//     setTimeout(showPopup, 1000);
+//     localStorage.setItem('first-time',1);
+//   }
