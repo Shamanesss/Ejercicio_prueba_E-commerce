@@ -53,7 +53,7 @@ function startTime() {
 //  PopUP
 
 
-const modelbox = document.getElementById('modelbox')
+const modelbox = document.getElementById('modelbox1')
 
 
 
