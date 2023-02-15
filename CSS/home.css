@@ -6,6 +6,19 @@
   font-weight: 500;
 }
 
+.coleccion-tienda {
+  display: flex;
+}
+
+.coleccion-tienda img {
+  width: 50vw;
+}
+
+.coleccion {
+  width: 50vw;
+  height: 35vh;
+}
+
 #background-banner {
   background-color: #E8CEBF;
 }
