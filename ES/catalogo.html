@@ -389,21 +389,22 @@
             class="sandalias"
           />
         </div>
+        <!-- mujer -->
         <div id="cajaRadioMujer">
           <p class="categoriasParrafo">Mujeres</p>
           <label for="">Todo</label>
           <input
             type="radio"
-            name="categoria"
+            name="categoriaMujer"
             id="checkTodoMujer"
             class="todo"
           />
           <label for="">Zapatillas 👟</label>
-          <input type="radio" />
+          <input type="radio" name="categoriaMujer" id="checkZapatillaMujer"/>
           <label for="">Botas 👢</label>
-          <input type="radio" />
+          <input type="radio" name="categoriaMujer" id="checkBotasMujer"/>
           <label for="">Sandalias 🩴</label>
-          <input type="radio" />
+          <input type="radio" name="categoriaMujer" id="checkSandaliasMujer"/>
         </div>
       </div>
 
@@ -645,7 +646,7 @@
           <!-- -------------------------------SECTION GRID ZAPATILLAS MUJERES-------------------------------- -->
           <div class="row column-gap-4 row-gap-4 mujerZapatilla">
             <div class="col d-flex justify-content-center">
-              <div class="card" style="width: 18rem">
+              <div class="card mujerZapatillaCard1" style="width: 18rem">
                 <img
                   src="../img/imgZapatos/mujer/zapatillas/zapatillaMujer1.jpg"
                   class="card-img-top"
@@ -665,7 +666,7 @@
               </div>
             </div>
             <div class="col d-flex justify-content-center">
-              <div class="card" style="width: 18rem">
+              <div class="card mujerZapatillaCard2" style="width: 18rem">
                 <img
                   src="../img/imgZapatos/mujer/zapatillas/zapatillaMujer2.jpg"
                   class="card-img-top"
@@ -685,7 +686,7 @@
               </div>
             </div>
             <div class="col d-flex justify-content-center">
-              <div class="card" style="width: 18rem">
+              <div class="card mujerZapatillaCard3" style="width: 18rem">
                 <img
                   src="../img/imgZapatos/mujer/zapatillas/zapatillaMujer3.jpg"
                   class="card-img-top"
@@ -712,7 +713,7 @@
             <p>Botas</p>
           </section>
           <!-- -------------------------------SECTION GRID BOTAS MUJERES-------------------------------- -->
-          <div class="row column-gap-4 row-gap-4 mujerBotas">
+          <div class="row column-gap-4 row-gap-4 mujerBotasCard">
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem">
                 <img
@@ -781,7 +782,7 @@
             <p>Sandalias</p>
           </section>
           <!-- -------------------------------SECTION GRID SANDALIAS MUJERES-------------------------------- -->
-          <div class="row column-gap-4 row-gap-4 mujerSandalias">
+          <div class="row column-gap-4 row-gap-4 mujerSandaliasCard">
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem">
                 <img
