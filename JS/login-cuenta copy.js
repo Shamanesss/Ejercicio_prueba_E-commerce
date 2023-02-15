@@ -23,17 +23,17 @@ const saludar2 = document.getElementById('saludar2');
     function obtenerUsuario(){
         let datos_usuario = JSON.parse(localStorage.getItem("registro"));
     
-    //     //comprobamos si hay algo en local storage
+       //comprobamos si hay algo en local storage
          if(localStorage.getItem("registro")===null){
-             datos_usuario =[""];
-            console.log("que hay aqui "+datos_usuario);
+             datos_usuario =[" "];
+            console.log("que hay  aqui "+datos_usuario);
          }else{
         
         console.log("else"+typeof datos_usuario)
-       }
+       
       
        return datos_usuario;  
-     }
+     }}
     
      function imprimirDatos(){
     
@@ -64,11 +64,11 @@ const saludar2 = document.getElementById('saludar2');
                        </div>
                        <div class="mb-3">
                          <label for="DropdownFormPassword1" class="form-label"readonly>Contraseña</label>
-                         <input type="password" class="form-control" id="DropdownFormPassword2" disabled placeholder=${datos_usuario.password1}>
+                         <input type="password" class="form-control" id="DropdownFormPassword2" disabled value=${datos_usuario.password1}>
                        </div>
                      
                  </div> `
-       console.log(datos_usuario.apellido);
+       
       
       }
       imprimirDatos();

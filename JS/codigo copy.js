@@ -43,97 +43,24 @@ function registrousuario(){
         apellido: apellido.value,
         direccion:direccion.value,
         email: email.value,
-        passworwd1:password1.value
+        passwowd1:password1.value
 
     };
+    window.location.href="../ES/cuenta.html"
     console.log(aUsuario);
-    let jsonUsuario = sessionStorage.setItem("registro",JSON.stringify(aUsuario));
-    let usuario =JSON.parse(sessionStorage.getItem("registro"));
-    console.log(jsonUsuario);
-    saludar.innerHTML = `¡Hola, ${usuario.names1 }¡`
-    // window.location.href="../ES/cuenta.html"
+    let jsonUsuario = localStorage.setItem("registro",JSON.stringify(aUsuario));
     
-    console.log(usuario.names1);
+    console.log(jsonUsuario);
+    
+    cargar();
     
 }
-// document.addEventListener("DOMContentLoaded", registrousuario);
-
-  
-// function changepage(){
-//     location.href="cuenta.html";
-// }
-    
-// cerrar.addEventListener('click', cerrarLogin)
-// function cerrarLogin(){
-//     delete.localStorage.logeado
-//     localStorage.clear();
-//     localStorage.reload();
-// }
-
-
-
-// $('#login form').submit(function(){
-//     var form_name =$('#name').val();
-//     localStorage.setItem("resultado", form_name);
-  
-//   });
-
-//   var nombre = localStorage.getItem('resultado');
-//     if(nombre !=null && nombre != undefined){
-//       $('#datosform').html('Bienvenid@, '+ nombre);
-//       $('#login').hide();
-//       $('#cerrar').click(function(){
-//         localStorage.clear();
-//         location.reload();
-//       });
-
-//     }
-
-
-
-
-
-// function validar(){
-// //addproducto
-// let form_nombre = names.value;
-// localStorage.setItem('logeado', form_nombre);
-//    console.log(form_nombre);
-//       let localname= localStorage.getItem('logeado');
-//      console.log(localname);
-    
-
-// sessionStorage.setItem(localname); //ó sessionStorage[producto]=precio
-
-
-
-// let saludar=document.getElementById('saludar');
-
-// saludar.innerHTML='';
-
-// for(let i=0;i<sessionStorage.length;i++){
-
-//                 let clave =sessionStorage.key(i);
-
-//                 let myname=sessionStorage.getItem(localname);
-
-//                 saludar.innerHTML = myname +clave;
-//                 }
-
-// }
-
- 
-
-// function limpiarVista() {
-
-// var datosDisponibles=document.getElementById('datosDisponibles');
-
-// datosDisponibles.innerHTML='Limpiada vista. Los datos permanecen.';
-
-// }
-
- 
-
-// function borrarTodo() {sessionStorage.clear(); mostrarDatos(); }
-
- 
-
+function cargar(){
+    let usuario =localStorage.getItem("registro",JSON.parse);
+        if(usuario===null){
+            usuario='';
+        }else{
+            saludar.innerHTML = `¡Hola, ${usuario.names1 }¡`
+            console.log("no hago nada")
+        }
+}

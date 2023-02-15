@@ -1,11 +1,11 @@
 const saludarInicio = document.getElementById('saludar-home')
-let nombre= localStorage.getItem('logeado');
+let nombre= JSON.parse(localStorage.getItem('registro'));
  
 if(nombre == null){
     nombre = '';
 
  }else{
- console.log(nombre);
+ console.log(nombre.names1);
 
- saludarInicio.innerHTML = `¡Hola, ${nombre}!`;
+ saludarInicio.innerHTML = `¡Hola, ${nombre.names1}!`;
 }
