@@ -102,7 +102,7 @@ function insertarCarrito(zapato){
 // Eliminando zapato del carrito en el DOM
 //acceder al elemento con  e
 function eliminarZapato(e){
-    e.preventDefault();
+    //e.preventDefault();
     
     let zapato, zapatoId;
     //identificamos el enlace que tiene la clase borrar producto, en este caso la X
