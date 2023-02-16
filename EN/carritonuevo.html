@@ -316,6 +316,7 @@ const listaZapatos = document.querySelector("#lista-carrito-nuevo .contenidoAqui
 //boton
 const vaciarCarritoBtn = document.getElementById("vaciar-carrito");
 
+
 //verificar que hay informacion en local storage y no repetir
 function obtenerProductoLocalStorage(){
     let zapatosLS;
@@ -364,7 +365,7 @@ function leerLocalStorage(){
                     <h5>Subtotal</h5>
                     <p>${zapato.precio} </p>
                 </div>
-                <button class="carrito-producto-delete borrar-producto-trash" data-id="${zapato.id}"><i class="trash fa-solid fa-trash "></i></button>
+                <button class=" borrar-producto-trash" data-id="${zapato.id}"><i class="carrito-producto-delete trash fa-solid fa-trash " id="${zapato.id}"></i></button>
             </div>
         </div>
         `;
@@ -372,12 +373,87 @@ function leerLocalStorage(){
         // añadir la informacion a la lista del carrito (imrimir dentro la lista)
         listaZapatos.appendChild(row);
 
-
+        eventoBasura()
 
     });
 }
 
+function eventoBasura(){
+  let bas = document.getElementsByClassName("carrito-producto-delete")
+  
+  for(let i=0; i<bas.length;i++ ){
+    bas[i].addEventListener("click",(e)=>{
+      debugger
+      e.preventDefault();
+      let aux=e.target.id
+      eliminarZapato2(aux)
+      
+      while(listaZapatos.firstChild){
+        listaZapatos.removeChild(listaZapatos.firstChild)
+      }
+      leerLocalStorage()
+
+    })
+  }
+}
+function eliminarZapato(e){
+
+    
+    let zapato, zapatoId;
+    //identificamos el enlace que tiene la clase borrar producto, en este caso la X
+    if (e.target.classList.contains("carrito-producto-delete")){
+       // console.log(e.target.parentElement.parentElement);
+       //eliminamos la card
+       e.target.parentElement.parentElement.remove();
+        zapato = e.target.parentElement.parentElement;
+        zapatoId = zapato.querySelector("button").getAttribute("data-id");
+        //console.log(zapatoId);
+
+    }
+
+    //paso 8  llamar funcion para eliminar del local storage al dar X
+    eliminarProductoLocalStorage(zapatoId);
+
+}
+
+function eliminarProductoLocalStorage(zapato){
+  debugger
+    //console.log(zapato);
+    let zapatosLS;
+    // obtenemos el arreglo de zapatos
+    zapatosLS = obtenerProductoLocalStorage();
+
+    //Iteramos comparando el ID del zapato borrado con los del LS    
+    zapatosLS.forEach(function(zapatoLS, index){
+        // si el zapato id de la iteracion actual es igual al zapato que estamos eliminando fuera de la funcion entonces eliminamos ese zapato...
+        //console.log(zapato.id);
+        if(zapatoLS.id === zapato){
+            zapatosLS.splice(index,1);
+        }
+    });
+    //console.log(zapatosLS);
+    //añadimos el arreglo actual a storage
+    localStorage.setItem("zapatos",JSON.stringify(zapatosLS));
+}
+
+
+function eliminarZapato2(id){
+  let zapatosLS=[];
+  zapatosLS = obtenerProductoLocalStorage();
+  let nuevZapatos=[]
+  for(let i=0; i<zapatosLS.length;i++){
+    if(zapatosLS[i].id!=id){
+      let p= zapatosLS[i]
+      nuevZapatos.push(p)
+    }
+  }
+  
+  localStorage.setItem("zapatos",JSON.stringify(nuevZapatos))
+}
+
 leerLocalStorage()
+eventoBasura();
+
     </script>
     <script src="../JS/miihai.js"></script>
     <script src="../JS/app-mihai.js"></script>
