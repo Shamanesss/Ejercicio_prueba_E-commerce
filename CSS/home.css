@@ -10,13 +10,20 @@
   display: flex;
 }
 
-.coleccion-tienda img {
+.coleccion {
   width: 50vw;
 }
 
-.coleccion {
-  width: 50vw;
-  height: 35vh;
+.coleccion-mujer {
+  background-image: url("../img/imgZapatos/coleccion-mujer.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.oleccion-hombre {
+  background-image: url("../img/imgZapatos/coleccion-hombre.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 #background-banner {
