@@ -10,7 +10,35 @@
     font-weight: 500;
 }
 
-// banner
+
+
+// Coleccion
+
+
+.coleccion-tienda {
+    display: flex;
+}
+
+.coleccion{
+    width: 50vw;
+}
+
+
+
+
+.coleccion-mujer{
+    background-image: url("../img/imgZapatos/coleccion-mujer.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.oleccion-hombre {
+    background-image: url("../img/imgZapatos/coleccion-hombre.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+// banner Promocion
 
 
 #background-banner {

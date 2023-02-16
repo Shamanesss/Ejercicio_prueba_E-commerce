@@ -188,11 +188,11 @@
 <div class="d-flex flex-wrap clasepersonal">
    
     <div class="rounded-4 bd-exampledropdown-menu mx-auto form-color col-lg-5 align-self-center d-flex flex-column m-5" >
-      <form class="px-4 py-3 needs-validation "  id="formulario1">
+      <form class="px-4 py-3"  id="formulario1">
         <h3 class="text-center pb-3">Accede a tu cuenta</h3>
         <div class="mb-3 " id="grupo_usuario">
           <label for="DropdownFormName" class="form-label formulario_label"></label>
-          <input type="text" class="form-control" id="DropdownFormName" name="DropdownFormName"placeholder="Nombre"required>
+          <input type="text" class="form-control" id="DropdownFormName" pattern ="[a-zA-Z0-9]{4,16}$" title="Introduce solo numeros y letras"name="DropdownFormName"placeholder="Nombre"required>
         </div>
         <div class="mb-3" id="login-email1">
           <label for="DropdownFormEmail" class="form-label"></label>
@@ -205,12 +205,12 @@
         <div class="mb-3">
           <div class="form-check">
             <label class="form-check-label " for="dropdownCheck1">
-            <input type="checkbox" class="form-check-input checkgreen " id="dropdownCheck1">
+            <input type="checkbox" class="form-check-input " id="dropdownCheck1">
                Recuérdame
             </label>
           </div>
         </div>
-        <button type="button" class=" btn btn-success btn-color" id="btn-login">Iniciar Sesión</button>
+        <button type="submit" class=" btn btn-success btn-color" id="btn-login">Iniciar Sesión</button>
       </form>
       <div class="dropdown-divider"id="error"></div>
       
@@ -221,7 +221,7 @@
         <h3 class="text-center pb-3">Registro</h3>
         <div class="mb-3">
             <label for="DropdownFormName1" class="form-label"></label>
-            <input type="text" class="form-control" id="DropdownFormName1" placeholder="Nombre" required>
+            <input type="text" class="form-control" id="DropdownFormName1" placeholder="Nombre" pattern=""required>
         </div>
         <div class="mb-3">
             <label for="DropdownFormlastname" class="form-label"></label>
@@ -229,26 +229,26 @@
         </div>
         <div class="mb-3">
             <label for="DropdownFormdirection" class="form-label"></label>
-            <input type="text" class="form-control" id="DropdownFormdirection" placeholder="Direccion">
+            <input type="text" class="form-control" id="DropdownFormdirection" placeholder="Direccion"required>
         </div>
         <div class="mb-3">
           <label for="DropdownFormEmail1" class="form-label"></label>
-          <input type="email" class="form-control" id="DropdownFormEmail1" placeholder="Direccion de correo electronico">
+          <input type="email" class="form-control" id="DropdownFormEmail1" placeholder="Direccion de correo electronico"required>
         </div>
         <div class="mb-3">
           <label for="DropdownFormPassword1" class="form-label"></label>
-          <input type="password" class="form-control" id="DropdownFormPassword1" placeholder="Contraseña">
+          <input type="password" class="form-control" id="DropdownFormPassword1" placeholder="Contraseña"required>
         </div>
         <div class="mb-3">
           <div class="form-check">
             <label class="form-check-label " for="dropdownCheck">
-            <input type="checkbox" class="form-check-input checkgreen " id="dropdownCheck">
+            <input type="checkbox" class="form-check-input " id="dropdownCheck">
           Aceptas la condiciones</label>
           </div>
         </div>
 
           <div class="mb-3">
-            <button type="button" id="btn-usuario"class="mb-3 btn btn-success btn-color">Iniciar Sesión</button>
+            <button type="submit" id="btn-usuario"class="mb-3 btn btn-success btn-color">Iniciar Sesión</button>
           </div>
         
       </form>

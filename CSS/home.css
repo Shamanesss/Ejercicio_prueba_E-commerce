@@ -6,6 +6,26 @@
   font-weight: 500;
 }
 
+.coleccion-tienda {
+  display: flex;
+}
+
+.coleccion {
+  width: 50vw;
+}
+
+.coleccion-mujer {
+  background-image: url("../img/imgZapatos/coleccion-mujer.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.oleccion-hombre {
+  background-image: url("../img/imgZapatos/coleccion-hombre.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 #background-banner {
   background-color: #E8CEBF;
 }

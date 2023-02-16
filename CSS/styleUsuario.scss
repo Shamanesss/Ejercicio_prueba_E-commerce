@@ -43,18 +43,29 @@ body{
   text-align: center;
  }
 
- .formularioincorrecto .formulario_input{
-  border: 3px solid #bb2929;
- }
- .formularioincorrecto .formulario_label{
-  color: #bb2929;
- }
- .formularioincorrecto .formulario_validacion{
-  color: #bb2929;
-  opacity: 1;
- }
- .formulariocorrecto .formulario_validacion{
-  color:  #1ed12d;
-  opacity: 1;
- }
+#imagen1{
+  background-image: url("../img/pedido1.1.jpg");
+ background-repeat: no-repeat;
+  width: 10rem;
+  height: 9rem;
+  background-position: center;
+  margin: 3rem;
+}
+#imagen2{
+  background-image: url("../img/pedido2.jpg");
+ background-repeat: no-repeat;
+ background-size: contain;
+  width: 10rem;
+  height: 9rem;
+  background-position: center;
+}
+#imagen3{
+  background-image: url("../img/pedido3.jpg");
+ background-repeat: no-repeat;
+ background-size: contain;
+  width: 10rem;
+  height: 9rem;
+  background-position: center;
+}
+
 

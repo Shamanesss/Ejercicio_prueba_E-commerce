@@ -126,7 +126,7 @@
                     <a href="../ES/cuenta.html" class="ocultar"><i class="login fa-regular fa-user  text-white"></i></a>
                   </li>
   
-                  <li class="nav-item submenu ">
+                  <!-- <li class="nav-item submenu ">
                     <i class=" fa-sharp fa-solid fa-cart-shopping text-white"></i>
                     <ul id="carrito" >
                       <div class="scrollable">
@@ -150,7 +150,7 @@
                         </div>
   
                       </ul>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
   <!--Fin Iconos idiomas, login, carrito -->
@@ -364,7 +364,7 @@ function leerLocalStorage(){
                     <h5>Subtotal</h5>
                     <p>${zapato.precio} </p>
                 </div>
-                <button class="carrito-producto-delete borrar-producto-trash" data-id="${zapato.id}"><i id="clear" class="trash fa-solid fa-trash "></i></button>
+                <a href="#" class="carrito-producto-delete borrar-producto-trash" data-id="${zapato.id}"><i class="trash fa-solid fa-trash" onclick="eliminarProductoLS()"></i></a>            </div>
             </div>
         </div>
         `;

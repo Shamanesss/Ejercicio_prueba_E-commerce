@@ -186,7 +186,17 @@
   
 </header>
 
+<div id="clockdate">
+  <div class="clockdate-wrapper fecha">
+    <!-- <div id="clock"></div>
+    <div id="date"></div> -->
+    <p><span id="date"></span> - <span id="clock"></span></p>
+  </div>
+</div>
+
 <div class="contenedor contenedor-servicio-cliente" >
+
+
 
   <div class="preguntas">
     <h3 class="titulos-servicio-cliente">FAQs</h3>
@@ -339,27 +349,27 @@
     <h3 class="titulos-servicio-cliente">Contact Form</h3>
       <div class=" mt-5 mb-5 mt-lg-0">
         <!-- Formulario-->
-        <form action="forms/contact.php" method="post" role="form">
+        <form action="forms/contact.php" id="myForm" onsubmit="return validar()" method="post" role="form">
           <div class="row">
-            <div class="col-md-6 form-group">
+            <div class=" form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
             </div>
-            <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+            <div class=" form-group mt-3 ">
+              <input type="email" class="form-control" name="email" id="email" placeholder="email@example.com" required>
             </div>
           </div>
           <div class="form-group mt-3">
             <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
           </div>
           <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Please get in touch with us with any questions you may have regarding you our services" required ></textarea>
+            <textarea class="form-control" name="message" id="mensaje" rows="5" placeholder="Please get in touch with us with any questions you may have regarding you our services" required ></textarea>
           </div>
           <!-- <div class="my-3">
             <div class="loading">Loading</div>
             <div class="error-message"></div>
             <div class="sent-message">Your message has been sent. Thank you!</div>
           </div> -->
-          <div class="text-center pt-3"><button type="submit" class="contact-boton">Send</button></div>
+          <div class="text-center pt-3"><button type="submit" class="contact-boton" id="enviar">Enviar</button></div>
         </form>
       </div>
   </div>
