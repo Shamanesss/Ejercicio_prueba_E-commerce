@@ -364,7 +364,7 @@ function leerLocalStorage(){
                     <h5>Subtotal</h5>
                     <p>${zapato.precio} </p>
                 </div>
-                <button class="carrito-producto-delete borrar-producto-trash" data-id="${zapato.id}"><i id="clear" class="trash fa-solid fa-trash "></i></button>
+                <a href="#" class="carrito-producto-delete borrar-producto-trash" data-id="${zapato.id}"><i class="trash fa-solid fa-trash" onclick="eliminarProductoLS()"></i></a>            </div>
             </div>
         </div>
         `;

@@ -58,3 +58,15 @@ function vaciarLocalStorage(){
 }
 
 }
+
+
+function eliminarProductoLS() {
+    console.log("lista zapato"+ ""+listaZapatos);
+     nuevoArray = listaZapatos.removeChild(listaZapatos.firstChild);
+     console.log("hijo renovido"+ ""+listaZapatos.removeChild);
+     console.log(listaZapatos.removeChild);
+     console.log("nuevo array"+ ""+nuevoArray);
+     console.log(nuevoArray);
+     //localStorage.setItem("zapatos", JSON.stringify(nuevoArray));
+   }
+  
