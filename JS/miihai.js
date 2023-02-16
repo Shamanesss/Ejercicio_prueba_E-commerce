@@ -36,37 +36,69 @@ function total (subtotales){
 
 
 
+
+
+
 let vaciar = document.getElementById("vaciartodo")
 vaciar.addEventListener("click",eliminarZapato)
-//carrito.addEventListener("click",eliminarZapato);
+carrito.addEventListener("click",eliminarZapato);
 
-function eliminarZapato(){
+ function eliminarZapato(){
     
-while(listaZapatos.firstChild){
+ while(listaZapatos.firstChild){
     
-    listaZapatos.removeChild(listaZapatos.firstChild);
-   }
+     listaZapatos.removeChild(listaZapatos.firstChild);
+    }
    
-   vaciarLocalStorage();
-  // return false;
+    vaciarLocalStorage();
+    return false;
   
-function vaciarLocalStorage(){
+ function vaciarLocalStorage(){
 
-    total(0);
-    localStorage.clear();
+     total(0);
+     localStorage.clear();
     
-}
+ }
 
-}
+ }
 
 
-function eliminarProductoLS() {
-    //console.log("lista zapato"+ ""+listaZapatos);
-     nuevoArray = listaZapatos.removeChild(listaZapatos.firstChild);
-     //console.log("hijo renovido"+ ""+listaZapatos.removeChild);
-     //console.log(listaZapatos.removeChild);
-     //console.log("nuevo array"+ ""+nuevoArray);
-     //console.log(nuevoArray);
-     //localStorage.setItem("zapatos", JSON.stringify(nuevoArray));
-   }
+//    function eliminarZapato(e){
+//     e.preventDefault();
+    
+//     let zapato, zapatoId;
+//     //identificamos el enlace que tiene la clase borrar producto, en este caso la X
+//     if (e.target.classList.contains("carrito-producto-delete")){
+//        // console.log(e.target.parentElement.parentElement);
+//        //eliminamos la card
+//        e.target.parentElement.parentElement.remove();
+//         zapato = e.target.parentElement.parentElement;
+//         zapatoId = zapato.querySelector("button").getAttribute("data-id");
+//         //console.log(zapatoId);
+
+//     }
+
+//     //paso 8  llamar funcion para eliminar del local storage al dar X
+//     eliminarProductoLocalStorage(zapatoId);
+
+// }
+
+// function eliminarProductoLocalStorage(zapato){
+//     //console.log(zapato);
+//     let zapatosLS;
+//     // obtenemos el arreglo de zapatos
+//     zapatosLS = obtenerProductoLocalStorage();
+
+//     //Iteramos comparando el ID del zapato borrado con los del LS    
+//     zapatosLS.forEach(function(zapatoLS, index){
+//         // si el zapato id de la iteracion actual es igual al zapato que estamos eliminando fuera de la funcion entonces eliminamos ese zapato...
+//         //console.log(zapato.id);
+//         if(zapatoLS.id === zapato){
+//             zapatosLS.splice(index,1);
+//         }
+//     });
+//     //console.log(zapatosLS);
+//     //añadimos el arreglo actual a storage
+//     localStorage.setItem("zapatos",JSON.stringify(zapatosLS));
+// }
   
