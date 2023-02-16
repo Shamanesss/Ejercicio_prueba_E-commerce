@@ -47,11 +47,11 @@
 <!--2. Menu de paginas  -->
             <div class=" navegacion collapse navbar-collapse" id="navbarTogglerDemo03">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item margen-lados">
-                  <a href="../ES/index.html" class="nav-link active px-2 text-white" aria-current="page">Inicio</a>
+                <li class=" nav-item margen-lados">
+                  <a href="../ES/index.html" class=" nav-link active px-2 text-white" aria-current="page">Inicio</a>
                 </li>   
-                <li class="nav-item dropdown margen-lados">
-                  <a class="nav-link px-2 text-white dropdown-toggle" href="../ES/catalogo.html" id="navbarDropdownMenuLink"
+                <li class=" nav-item dropdown margen-lados">
+                  <a class=" nav-link px-2 text-white dropdown-toggle" href="../ES/catalogo.html" id="navbarDropdownMenuLink"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     Tienda
                   </a>
@@ -61,23 +61,23 @@
                   </ul>
                 </li>
 
-                <li class="nav- margen-lados">
+                <li class=" nav- margen-lados">
                   <a href="../ES/servicio-cliente.html" class="nav-link px-2 text-white">Servicio al cliente</a>
                 </li>
 
-                <li class="nav-item margen-lados">
+                <li class=" nav-item margen-lados">
                   <a href="../ES/sobreZapatON.html" class="nav-link px-2 text-white">Sobre ZapatON</a>
                 </li>
 
-                <li class="nav-item margen-lados">
+                <li class=" nav-item margen-lados">
                   <a href="../ES/perfil.html" class="nav-link px-2 text-white">Inicio Sessión</a>
                 </li>
 
-                <li class="nav-item ocultar-login">
+                <li class=" nav-item ocultar-login">
                   <a href="../ES/cuenta.html" class="nav-link px-2 text-white"> <strong>Mi cuenta</strong> </a>
                 </li>
 
-                <li class="nav-item dropdown ocultar-login">
+                <li class=" nav-item dropdown ocultar-login">
                   <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
                     data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="idiomas fa-solid fa-globe text-white"></i>
@@ -311,20 +311,20 @@
 
 <!-- Coleccion -->
 
-<div class="coleccion-tienda" >
-  <div class="coleccion coleccion-mujer" >
-    <div class=" " >
-      <img src="">
+<!-- <div class="coleccion-tienda" >
+  <div class=" coleccion-mujer" >
+    <div class="coleccion" >
+      <img src="../img/imgZapatos/coleccion-mujer.jpg">
       <p class="coleccion-texto">Coleccion para mujer</p>
     </div>
   </div>
-  <div class="coleccion coleccion-hombre" >
-    <div class=" " >
-      <img src="">
+  <div class="coleccion-hombre" >
+    <div class="coleccion" >
+      <img src="../img/imgZapatos/coleccion-hombre.jpg">
       <p class="coleccion-texto">Coleccion para hombre</p>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Promocion -->
 <div id="background-banner" >
@@ -389,27 +389,27 @@
 
             <!-- Formulario-->
 
-            <form action="forms/contact.php" method="post" role="form">
+            <form action="forms/contact.php" id="myForm" onsubmit="return validar()" method="post" role="form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nombre" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Correo" required>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="nombre@ejemplo.com" required>
                 </div>
               </div>
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Dejanos tu mensaje y nos contactaremos en un plazo de 2 dias" required ></textarea>
+                <textarea class="form-control" name="message" id="mensaje" rows="5" placeholder="Dejanos tu mensaje y nos contactaremos en un plazo de 2 dias" required ></textarea>
               </div>
               <!-- <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div> -->
-              <div class="text-center pt-3"><button type="submit" class="contact-boton">Enviar</button></div>
+              <div class="text-center pt-3"><button type="submit" class="contact-boton" id="enviar">Enviar</button></div>
             </form>
           </div>
         </div>
