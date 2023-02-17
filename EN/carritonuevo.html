@@ -127,7 +127,7 @@
               <a href="../ES/cuenta.html" class="ocultar"><i class="login fa-regular fa-user  text-white"></i></a>
             </li>
   
-            <li class="nav-item submenu">
+            <!-- <li class="nav-item submenu">
               <i class=" fa-sharp fa-solid fa-cart-shopping text-white"></i>
               <ul id="carrito" >
   
@@ -150,7 +150,7 @@
                   </div>
   
                 </ul>
-            </li>
+            </li> -->
           </ul>
         </div>
   <!--Fin Iconos idiomas, login, carrito -->
@@ -235,7 +235,7 @@
 
     <div id="carrito-acciones" class="carrito-acciones disabled d-flex justify-content-between flex-wrap align-items-center gap-2">
       <div class="carrito-acciones-izq d-flex gap-2">
-          <button type="button" class="colorbtn btn btn-success ms-5">EMPTY</button>
+          <button id="vaciartodo" type="button" class="colorbtn btn btn-success ms-5">EMPTY</button>
          <a href="../ES/checkout.html"><button type="button" class="colorbtn btn btn-success me-5">CHECKOUT</button></a>
       </div>
       <div class="carrito-acciones-dr d-flex me-5 ms-5">
@@ -316,6 +316,7 @@ const listaZapatos = document.querySelector("#lista-carrito-nuevo .contenidoAqui
 //boton
 const vaciarCarritoBtn = document.getElementById("vaciar-carrito");
 
+
 //verificar que hay informacion en local storage y no repetir
 function obtenerProductoLocalStorage(){
     let zapatosLS;
@@ -364,22 +365,42 @@ function leerLocalStorage(){
                     <h5>Subtotal</h5>
                     <p>${zapato.precio} </p>
                 </div>
-                <button class="carrito-producto-delete borrar-producto-trash" data-id="${zapato.id}"><i class="trash fa-solid fa-trash "></i></button>
+                <button <i class="carrito-producto-delete trash fa-solid fa-trash " id="${zapato.id}"></i></button>
             </div>
         </div>
         `;
-        // arriba tambien se añadio una clase dinamicamente
-        // añadir la informacion a la lista del carrito (imrimir dentro la lista)
+
         listaZapatos.appendChild(row);
 
-
+        eventoBasura()
 
     });
 }
 
+function eventoBasura(){
+    let bas = document.getElementsByClassName("carrito-producto-delete")
+    
+    for(let i=0; i<bas.length;i++ ){
+      bas[i].addEventListener("click",(e)=>{
+        e.preventDefault();
+        let aux=e.target.id
+        eliminarZapato2(aux)
+        
+        while(listaZapatos.firstChild){
+          listaZapatos.removeChild(listaZapatos.firstChild)
+        }
+        leerLocalStorage()
+      })
+    }
+  }
+
+  
+
 leerLocalStorage()
+eventoBasura();
+
     </script>
     <script src="../JS/miihai.js"></script>
-    <script src="../JS/app-mihai.js"></script>
+    <script src="../JS/app.js"></script>
 </body>
 </html>

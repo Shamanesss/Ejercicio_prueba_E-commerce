@@ -222,7 +222,7 @@
                   <li>
                     <a
                       class="dropdown-item menu-banderas"
-                      href="../EN/catalogue.html"
+                      href="../EN/Catalogue.html"
                     >
                       <img
                         class="bandera bandera-en"
@@ -237,7 +237,7 @@
                   <li>
                     <a
                       class="dropdown-item menu-banderas"
-                      href="../eus/catalogo.html"
+                      href="../eus/Catalogo.html"
                     >
                       <img
                         class="bandera bandera-eus"
@@ -278,7 +278,7 @@
                   <a href="#" id="vaciar-carrito" class="button">Vaciar Carrito</a> -->
 
                   <div class="botones-carrito">
-                         <a  href="../ES/carritonuevo.html" class="button ir-carrito btn btn-success">Ir a carrito</a>
+                        <a href="../ES/carritonuevo.html" class=" ir-carrito btn btn-success">Ir a carrito</a>
 
                         <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito" class="button ">Vaciar Carrito</a></button>
                       </div>
@@ -291,7 +291,7 @@
         <!-- contenedor header fin -->
 
         <div class="nav-bajo">
-          <div id="saludarcatalogo" class="saludar">
+          <div id="saludar-home" class="saludar">
             <p>¡Bienvenid@ a nuestra tienda!</p>
           </div>
         </div>
@@ -393,22 +393,21 @@
             class="sandalias"
           />
         </div>
-        <!-- mujer -->
         <div id="cajaRadioMujer">
           <p class="categoriasParrafo">Mujeres</p>
           <label for="">Todo</label>
           <input
             type="radio"
-            name="categoriaMujer"
+            name="categoria"
             id="checkTodoMujer"
             class="todo"
           />
           <label for="">Zapatillas 👟</label>
-          <input type="radio" name="categoriaMujer" id="checkZapatillaMujer"/>
+          <input type="radio" />
           <label for="">Botas 👢</label>
-          <input type="radio" name="categoriaMujer" id="checkBotasMujer"/>
+          <input type="radio" />
           <label for="">Sandalias 🩴</label>
-          <input type="radio" name="categoriaMujer" id="checkSandaliasMujer"/>
+          <input type="radio" />
         </div>
       </div>
 
@@ -428,16 +427,16 @@
           <h2>HOMBRE</h2>
           <p>Zapatillas</p>
         </section>
-        <div class="row column-gap-4 row-gap-4">
-          <div class="col d-flex justify-content-center hombreZapatillaCard">
-            <div class="card hombreZapatillaCard1" style="width: 18rem">
+        <div class="products row column-gap-4 row-gap-4"> <!-- Contenedor de todos los zapatos -->
+          <div class="card-catalogo zapatilla hombre col d-flex justify-content-center hombreZapatillaCard"> <!-- Contenedor card -->
+            <div class="image-container card hombreZapatillaCard1" style="width: 18rem"> <!-- Contenedor imagen -->
               <img
                 src="../img/imgZapatos/hombre/zapatillas/zapatillaHombre1.jpg"
                 class="card-img-top"
                 alt="..."
               />
-              <div class="card-body info-card">
-                <h5 class="card-title">Colorido Stack</h5>
+              <div class="container-producto-texto card-body info-card"> <!-- Contenedor texto-->
+                <h5 class="product-name card-title">Colorido Stack</h5>
                 <p class="card-text">Increible zapatilla</p>
                 <p class="precio"><span>$200</span></p>
                 <a
@@ -451,8 +450,8 @@
             </div>
           </div>
 
-          <div class="col d-flex justify-content-center hombreZapatilla">
-            <div class="card hombreZapatillaCard2" style="width: 18rem">
+          <div class="card-catalogo zapatilla hombre col d-flex justify-content-center hombreZapatilla">
+            <div class="image-container card hombreZapatillaCard2" style="width: 18rem">
               <img
                 src="../img/imgZapatos/hombre/zapatillas/zapatillaHombre2.jpg"
                 class="card-img-top"
@@ -472,8 +471,8 @@
             </div>
           </div>
 
-          <div class="col d-flex justify-content-center hombreZapatilla">
-            <div class="card hombreZapatillaCard3" style="width: 18rem">
+          <div class="card-catalogo zapatilla hombre col d-flex justify-content-center hombreZapatilla">
+            <div class="image-container card hombreZapatillaCard3" style="width: 18rem">
               <img
                 src="../img/imgZapatos/hombre/zapatillas/zapatillaHombre3.jpg"
                 class="card-img-top"
@@ -502,8 +501,8 @@
 
           <!-- -------------------------------SECTION GRID BOTAS-------------------------------- -->
           <div class="row column-gap-4 row-gap-4 hombreBotasCard">
-            <div class="col d-flex justify-content-center hombreBotasHijo">
-              <div class="card" style="width: 18rem hombreBotasNieto">
+            <div class="card-catalogo bota hombre col d-flex justify-content-center hombreBotasHijo">
+              <div class="image-container card" style="width: 18rem hombreBotasNieto">
                 <img
                   src="../img/imgZapatos/hombre/botas/botaHombre1.jpg"
                   class="card-img-top"
@@ -522,8 +521,8 @@
                 </div>
               </div>
             </div>
-            <div class="col d-flex justify-content-center">
-              <div class="card" style="width: 18rem">
+            <div class="card-catalogo bota hombre col d-flex justify-content-center">
+              <div class="image-container card" style="width: 18rem">
                 <img
                   src="../img/imgZapatos/hombre/botas/botaHombre2.jpg"
                   class="card-img-top"
@@ -542,8 +541,8 @@
                 </div>
               </div>
             </div>
-            <div class="col d-flex justify-content-center">
-              <div class="card" style="width: 18rem">
+            <div class="card-catalogo bota hombre col d-flex justify-content-center">
+              <div class="image-container card" style="width: 18rem">
                 <img
                   src="../img/imgZapatos/hombre/botas/botaHombre3.jpg"
                   class="card-img-top"
@@ -573,8 +572,8 @@
 
           <!-- -------------------------------SECTION GRID SANDALIAS-------------------------------- -->
           <div class="row column-gap-4 row-gap-4 hombreSandaliasCard">
-            <div class="col d-flex justify-content-center">
-              <div class="card" style="width: 18rem">
+            <div class="card-catalogo sandalia hombre col d-flex justify-content-center">
+              <div class="image-container card" style="width: 18rem">
                 <img
                   src="../img/imgZapatos/hombre/sandalias/saldaliaHombre1.jpg"
                   class="card-img-top"
@@ -594,8 +593,8 @@
                 </div>
               </div>
             </div>
-            <div class="col d-flex justify-content-center">
-              <div class="card" style="width: 18rem">
+            <div class="card-catalogo sandalia hombre col d-flex justify-content-center">
+              <div class="image-container card" style="width: 18rem">
                 <img
                   src="../img/imgZapatos/hombre/sandalias/saldaliaHombre2.jpg"
                   class="card-img-top"
@@ -615,8 +614,8 @@
                 </div>
               </div>
             </div>
-            <div class="col d-flex justify-content-center">
-              <div class="card" style="width: 18rem">
+            <div class="card-catalogo sandalia hombre col d-flex justify-content-center">
+              <div class="image-container card" style="width: 18rem">
                 <img
                   src="../img/imgZapatos/hombre/sandalias/saldaliaHombre3.jpg"
                   class="card-img-top"
@@ -650,7 +649,7 @@
           <!-- -------------------------------SECTION GRID ZAPATILLAS MUJERES-------------------------------- -->
           <div class="row column-gap-4 row-gap-4 mujerZapatilla">
             <div class="col d-flex justify-content-center">
-              <div class="card mujerZapatillaCard1" style="width: 18rem">
+              <div class="card" style="width: 18rem">
                 <img
                   src="../img/imgZapatos/mujer/zapatillas/zapatillaMujer1.jpg"
                   class="card-img-top"
@@ -670,7 +669,7 @@
               </div>
             </div>
             <div class="col d-flex justify-content-center">
-              <div class="card mujerZapatillaCard2" style="width: 18rem">
+              <div class="card" style="width: 18rem">
                 <img
                   src="../img/imgZapatos/mujer/zapatillas/zapatillaMujer2.jpg"
                   class="card-img-top"
@@ -690,7 +689,7 @@
               </div>
             </div>
             <div class="col d-flex justify-content-center">
-              <div class="card mujerZapatillaCard3" style="width: 18rem">
+              <div class="card" style="width: 18rem">
                 <img
                   src="../img/imgZapatos/mujer/zapatillas/zapatillaMujer3.jpg"
                   class="card-img-top"
@@ -717,7 +716,7 @@
             <p>Botas</p>
           </section>
           <!-- -------------------------------SECTION GRID BOTAS MUJERES-------------------------------- -->
-          <div class="row column-gap-4 row-gap-4 mujerBotasCard">
+          <div class="row column-gap-4 row-gap-4 mujerBotas">
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem">
                 <img
@@ -786,7 +785,7 @@
             <p>Sandalias</p>
           </section>
           <!-- -------------------------------SECTION GRID SANDALIAS MUJERES-------------------------------- -->
-          <div class="row column-gap-4 row-gap-4 mujerSandaliasCard">
+          <div class="row column-gap-4 row-gap-4 mujerSandalias">
             <div class="col d-flex justify-content-center">
               <div class="card" style="width: 18rem">
                 <img
@@ -847,7 +846,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> <!-- Contenedor de todos los zapatos -->
       </div>
     </section>
 
@@ -929,6 +928,5 @@
     <!-- <script src="../JS/hora.js"></script> -->
     <script src="../JS/app.js"></script>
     <script src="../JS/categoriaCatalogo.js"></script>
-    <script src="../JS/login_catalogo.js"></script>
   </body>
 </html>

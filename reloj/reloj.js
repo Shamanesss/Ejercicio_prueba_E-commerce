@@ -70,3 +70,33 @@ const modelbox = document.getElementById('modelbox1')
 //     setTimeout(showPopup, 1000);
 //     localStorage.setItem('first-time',1);
 //   }
+
+
+//<!-- ---------------------Validacion de formulario---------------------------------- -->
+
+function validar() {
+	var user = document.getElementById("name");
+	var email = document.getElementById("email");
+    // var expresion = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
+    var mensaje = document.getElementById("mensaje");
+
+	if(user.value.length == 0){
+      alert("Debe ingresar el Usuario");
+    	user.focus();
+    	return false;
+	}
+	else if(email.value.length == 0) {
+		alert("Por favor, ingrese su Email");
+		email.focus();
+		return false;
+	}else if(mensaje.value == ""){
+        mensaje.focus();
+        alert("Escribe tu mensaje.");
+        return false;
+  
+    }else {
+    alert("Datos de formulario enviados exitosamente.");
+    document.getElementById("myForm").reset();
+	  return false;
+	}
+}

@@ -1,309 +1,194 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Catalogo de zapatos ZapaTon" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="../img/logo-rm.ico" />
+    <title>Catolegue</title>
+    <link rel="icon" type="image/png" href="../img/logo-rm.ico">
+    <meta name="description" content="ZapatON - Tu tienda online preferida para comprar zapatos"/>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
+
+    <!-- css custom -->
+    <link rel="stylesheet" href="../CSS/header-footer.css">
     <link rel="stylesheet" href="../CSS/styleCatalogo.css" />
-    <link rel="stylesheet" href="../CSS/header-footer.css" />
-    <title>Catalogo</title>
+    <!-- <link rel="stylesheet" href="/skeleton.css"> -->
+
+
     <!-- Font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/8c655d3807.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/8c655d3807.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <!-- -------Espacio Header jhonata-------- -->
-    <!-- header -->
 
-    <header class="encabezado-altura encabezado">
-      <nav class="contenedor navbar navbar-expand-lg d-flex flex-column">
-        <div class="contenedor-header">
-          <!-- 1. Logo -->
-          <div class="logo-menu-movil">
-            <a
-              href="../ES/index.html"
-              class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
-              ;
-            >
-              <img
-                class="logo"
-                src="../img/logo-blanco.png"
-                alt="Logo de ZapatON"
-              />
+<!-- header -->
+
+<header class=" encabezado-altura  encabezado">
+  <nav class="contenedor navbar navbar-expand-lg d-flex flex-column">
+    <div class="contenedor-header ">
+
+<!-- 1. Logo -->
+      <div class="logo-menu-movil">
+        <a href="../EN/index-en.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" ;>
+          <img class="logo" src="../img/logo-blanco.png" alt="Logo de ZapatON" />
+        </a>
+
+        <!-- Icono de menu en movil y tablet -->
+  <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+  aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+  <span class=" text-white"><i class="fa-solid fa-bars"></i></span>
+</div>
+
+      </div>
+      
+
+
+<!--2. Menu de paginas  -->
+      <div class=" navegacion collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="../EN/index-en.html" class="nav-link active px-2 text-white" aria-current="page">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link px-2 text-white dropdown-toggle" href="../en/Catalogue.html" id="navbarDropdownMenuLink"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Store
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../EN/catalogue.html#seccion-hombres">Man</a></li>
+              <li><a class="dropdown-item" href="../EN/catalogue.html#seccion-mujer">Woman</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="../EN/costumer-service.html" class="nav-link px-2 text-white">Customer Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../EN/aboutZapaton.html" class="nav-link px-2 text-white">About ZapatON</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../EN/perfil.html" class="nav-link px-2 text-white">Log in</a>
+          </li>
+
+          <li class="nav-item ocultar-login">
+            <a href="../EN/cuenta.html" class="nav-link px-2 text-white"> <strong>My Account</strong> </a>
+          </li>
+
+          <li class="nav-item dropdown ocultar-login">
+            <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="idiomas fa-solid fa-globe text-white"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item menu-banderas" href="../ES/catalogo.html">
+                <img class="bandera bandera-es" id="bandera-es-movil" src="../img/espana.png" alt=""> ES</a>
+              </li>
+
+              <li>
+                <a class="dropdown-item menu-banderas" href="../EN/catalogue.html">
+                  <img class="bandera bandera-en" id="bandera-en-movil" src="../img/reino-unido.png" alt=""> EN</a>
+              </li>
+
+              <li>
+                <a class="dropdown-item menu-banderas" href="../eus/catalogo.html">
+                  <img class="bandera bandera-eus"  id="bandera-eus-movil" src="../img/euskadi.png" alt=""> EUS</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+<!-- Menu de paginas fin -->
+
+<!-- 3. Iconos idiomas, login, carrito -->
+
+      <div class="d-flex align-items-center iconos-header col-md-2 text-end">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 en-linea">
+          <li class="ocultar nav-item dropdown">
+            <a class="nav-link px-2 text-white dropdown-toggle sin-padding" href="#" id="navbarDropdownMenuLink"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="idiomas fa-solid fa-globe text-white"></i>
             </a>
 
-            <!-- Icono de menu en movil y tablet -->
-            <div
-              class="navbar-toggler"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarTogglerDemo03"
-              aria-controls="navbarTogglerDemo03"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="text-white"><i class="fa-solid fa-bars"></i></span>
-            </div>
-          </div>
-
-          <!--2. Menu de paginas  -->
-          <div
-            class="navegacion collapse navbar-collapse"
-            id="navbarTogglerDemo03"
-          >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item margen-lados">
-                <a
-                  href="../ES/index.html"
-                  class="nav-link active px-2 text-white"
-                  aria-current="page"
-                  >Inicio</a
-                >
-              </li>
-              <li class="nav-item dropdown margen-lados">
-                <a
-                  class="nav-link px-2 text-white dropdown-toggle"
-                  href="../ES/catalogo.html"
-                  id="navbarDropdownMenuLink"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Tienda
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="../ES/catalogo.html#seccion-hombres"
-                      >Hombre</a
-                    >
+            <ul class="dropdown-menu" id="idiomas">
+                <li><a class="dropdown-item menu-banderas" href="../ES/catalogo.html">
+                    <img class="bandera bandera-es" id="bandera-es-movil" src="../img/espana.png" alt=""> ES</a>
                   </li>
+    
                   <li>
-                    <a
-                      class="dropdown-item"
-                      href="../ES/catalogo.html#seccion-mujer"
-                      >Mujer</a
-                    >
+                    <a class="dropdown-item menu-banderas" href="../EN/catalogue.html">
+                      <img class="bandera bandera-en" id="bandera-en-movil" src="../img/reino-unido.png" alt=""> EN</a>
                   </li>
-                </ul>
-              </li>
-
-              <li class="nav- margen-lados">
-                <a
-                  href="../ES/servicio-cliente.html"
-                  class="nav-link px-2 text-white"
-                  >Servicio al cliente</a
-                >
-              </li>
-
-              <li class="nav-item margen-lados">
-                <a
-                  href="../ES/sobreZapatON.html"
-                  class="nav-link px-2 text-white"
-                  >Sobre ZapatON</a
-                >
-              </li>
-
-              <li class="nav-item margen-lados">
-                <a href="../ES/perfil.html" class="nav-link px-2 text-white"
-                  >Inicio Sessión</a
-                >
-              </li>
-
-              <li class="nav-item ocultar-login">
-                <a href="../ES/cuenta.html" class="nav-link px-2 text-white">
-                  <strong>Mi cuenta</strong>
-                </a>
-              </li>
-
-              <li class="nav-item dropdown ocultar-login">
-                <a
-                  class="nav-link px-2 text-white dropdown-toggle sin-padding"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="idiomas fa-solid fa-globe text-white"></i>
-                </a>
-                <ul class="dropdown-menu menu-banderas-idiomas">
+    
                   <li>
-                    <a
-                      class="dropdown-item menu-banderas"
-                      href="/ES/catalogo.html"
-                    >
-                      <img
-                        class="bandera bandera-es"
-                        id="bandera-es-desktop"
-                        src="../img/espana.png"
-                        alt=""
-                      />
-                      ES
-                    </a>
+                    <a class="dropdown-item menu-banderas" href="../eus/catalogo.html">
+                      <img class="bandera bandera-eus"  id="bandera-eus-movil" src="../img/euskadi.png" alt=""> EUS</a>
                   </li>
-
-                  <li>
-                    <a
-                      class="dropdown-item menu-banderas"
-                      href="../EN/Catalogue.html"
-                    >
-                      <img
-                        class="bandera bandera-en"
-                        id="bandera-en-desktop"
-                        src="../img/reino-unido.png"
-                        alt=""
-                      />
-                      EN
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      class="dropdown-item menu-banderas"
-                      href="../eus/Catalogo.html"
-                    >
-                      <img
-                        class="bandera bandera-eus"
-                        id="bandera-eus-desktop"
-                        src="../img/euskadi.png"
-                        alt=""
-                      />
-                      EUS</a
-                    >
-                  </li>
-                </ul>
-              </li>
             </ul>
-          </div>
-          <!-- Menu de paginas fin -->
+          </li>
 
-          <!-- 3. Iconos idiomas, login, carrito -->
+          <li class="nav-item">
+            <a href="../EN/cuenta.html" class="ocultar"><i class="login fa-regular fa-user  text-white"></i></a>
+          </li>
 
-          <div
-            class="d-flex align-items-center iconos-header col-md-2 text-end"
-          >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 en-linea">
-              <li class="ocultar nav-item dropdown">
-                <a
-                  class="nav-link px-2 text-white dropdown-toggle sin-padding"
-                  href="#"
-                  id="navbarDropdownMenuLink"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="idiomas fa-solid fa-globe text-white"></i>
-                </a>
+          <li class="nav-item submenu">
+            <i class=" fa-sharp fa-solid fa-cart-shopping text-white"></i>
+            <ul id="carrito">
+              <div class="scrollable">
+                <table id="lista-carrito" class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Image</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Price</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+              <!-- <a href="../ES/carritonuevo.html"  class="button ">Ir a carrito</a>
 
-                <ul class="dropdown-menu menu-banderas-idiomas">
-                  <li>
-                    <a
-                      class="dropdown-item menu-banderas"
-                      href="/ES/catalogo.html"
-                    >
-                      <img
-                        class="bandera bandera-es"
-                        id="bandera-es-desktop"
-                        src="../img/espana.png"
-                        alt=""
-                      />
-                      ES
-                    </a>
-                  </li>
+              <a href="#" id="vaciar-carrito" class="button">Vaciar Carrito</a> -->
 
-                  <li>
-                    <a
-                      class="dropdown-item menu-banderas"
-                      href="../EN/catalogue.html"
-                    >
-                      <img
-                        class="bandera bandera-en"
-                        id="bandera-en-desktop"
-                        src="../img/reino-unido.png"
-                        alt=""
-                      />
-                      EN
-                    </a>
-                  </li>
+              <div class="botones-carrito">
+                     <a  href="../EN/carritonuevo.html" class="button ir-carrito btn btn-success">Go to cart</a>
 
-                  <li>
-                    <a
-                      class="dropdown-item menu-banderas"
-                      href="../eus/catalogo.html"
-                    >
-                      <img
-                        class="bandera bandera-eus"
-                        id="bandera-eus-desktop"
-                        src="../img/euskadi.png"
-                        alt=""
-                      />
-                      EUS</a
-                    >
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a href="../ES/cuenta.html" class="ocultar"
-                  ><i class="login fa-regular fa-user text-white"></i
-                ></a>
-              </li>
-
-              <li class="nav-item submenu">
-                <i class="fa-sharp fa-solid fa-cart-shopping text-white"></i>
-                <ul id="carrito">
-                  <div class="scrollable">
-                    <table id="lista-carrito" class="table">
-                      <thead>
-                        <tr>
-                          <th scope="col">Imagen</th>
-                          <th scope="col">Nombre</th>
-                          <th scope="col">Precio</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tbody></tbody>
-                    </table>
+                    <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito" class="button ">Empty cart</a></button>
                   </div>
-                  <!-- <a href="../ES/carritonuevo.html"  class="button ">Ir a carrito</a>
-
-                  <a href="#" id="vaciar-carrito" class="button">Vaciar Carrito</a> -->
-
-                  <div class="botones-carrito">
-                         <a  href="../ES/carritonuevo.html" class="button ir-carrito btn btn-success">Ir a carrito</a>
-
-                        <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito" class="button ">Vaciar Carrito</a></button>
-                      </div>
-                </ul>
-              </li>
             </ul>
-          </div>
-          <!--Fin Iconos idiomas, login, carrito -->
-        </div>
-        <!-- contenedor header fin -->
+          </li>
+        </ul>
+      </div>
+<!--Fin Iconos idiomas, login, carrito -->
 
-        <div class="nav-bajo">
-          <div id="saludarcatalogo" class="saludar">
-            <p>¡Bienvenid@ a nuestra tienda!</p>
-          </div>
-        </div>
 
-        <!-- <div class="nav-bajo d-flex flex-row justify-content-start">
-                <div id="reloj" >
-                </div>
-              </div> -->
-      </nav>
-    </header>
 
-    <!-- -------Espacio Header jhonata-------- -->
+
+    </div> <!-- contenedor header fin -->
+
+    <div class="nav-bajo " >
+      
+      <div id="saludar-home" class="saludar">
+        <p>Welcome to our store! </p>
+      </div>
+    </div>
+
+    <!-- <div class="nav-bajo d-flex flex-row justify-content-start">
+      <div id="reloj" >
+      </div>
+    </div> -->
+
+
+  </nav>
+
+  
+</header>
+
+<!-- -------Espacio Header jhonata-------- -->
 
     <!-- --------------------------SECTION SLIDER --------------------------->
     <section class="section_slider ms-auto me-auto">
@@ -363,29 +248,29 @@
       <!-- ----------------CREAR LOS INPUTS DE CATEGORIAS---------------- -->
       <div class="botonesCategoria">
         <div id="cajaRadioHombre">
-          <p class="categoriasParrafo">Hombres</p>
-          <label for="">Todo</label>
+          <p class="categoriasParrafo">Man</p>
+          <label for="">All</label>
           <input
             type="radio"
             name="categoria"
             id="checkTodoHombre"
             class="todo"
           />
-          <label for="">Zapatillas 👟</label>
+          <label for="">Sneakers 👟</label>
           <input
             type="radio"
             name="categoria"
             id="checkZapatillaHombre"
             class="zapatillas"
           />
-          <label for="">Botas 🥾</label>
+          <label for="">Boots 🥾</label>
           <input
             type="radio"
             name="categoria"
             id="checkBotasHombre"
             class="botas"
           />
-          <label for="">Sandalias 🩴</label>
+          <label for="">Sandals 🩴</label>
           <input
             type="radio"
             name="categoria"
@@ -395,19 +280,19 @@
         </div>
         <!-- mujer -->
         <div id="cajaRadioMujer">
-          <p class="categoriasParrafo">Mujeres</p>
-          <label for="">Todo</label>
+          <p class="categoriasParrafo">Woman</p>
+          <label for="">All</label>
           <input
             type="radio"
             name="categoriaMujer"
             id="checkTodoMujer"
             class="todo"
           />
-          <label for="">Zapatillas 👟</label>
+          <label for="">Sneakers 👟</label>
           <input type="radio" name="categoriaMujer" id="checkZapatillaMujer"/>
-          <label for="">Botas 👢</label>
+          <label for="">Boots 👢</label>
           <input type="radio" name="categoriaMujer" id="checkBotasMujer"/>
-          <label for="">Sandalias 🩴</label>
+          <label for="">Sandals 🩴</label>
           <input type="radio" name="categoriaMujer" id="checkSandaliasMujer"/>
         </div>
       </div>
@@ -425,8 +310,8 @@
           class="titulos text-center hombreZapatilla"
           id="seccion-hombres"
         >
-          <h2>HOMBRE</h2>
-          <p>Zapatillas</p>
+          <h2>MAN</h2>
+          <p>Sneakers</p>
         </section>
         <div class="row column-gap-4 row-gap-4">
           <div class="col d-flex justify-content-center hombreZapatillaCard">
@@ -445,7 +330,7 @@
                   class="btn color_botones agregar-carrito"
                   data-id="1"
                 >
-                  Añadir carrito</a
+                  Add to cart</a
                 >
               </div>
             </div>
@@ -466,7 +351,7 @@
                   href="#"
                   class="btn color_botones agregar-carrito"
                   data-id="2"
-                  >Añadir carrito</a
+                  >Add to cart</a
                 >
               </div>
             </div>
@@ -487,7 +372,7 @@
                   href="#"
                   class="btn color_botones agregar-carrito"
                   data-id="3"
-                  >Añadir carrito</a
+                  >Add to cart</a
                 >
               </div>
             </div>
@@ -496,8 +381,8 @@
           <!-- -------------------------------------------------------------------------------------------------- -->
           <!-- --------------------------SECTION TITULO --------------------------->
           <section class="titulos text-center hombreBotas">
-            <h2>HOMBRE</h2>
-            <p>Botas</p>
+            <h2>MAN</h2>
+            <p>Boots</p>
           </section>
 
           <!-- -------------------------------SECTION GRID BOTAS-------------------------------- -->
@@ -517,7 +402,7 @@
                     href="#"
                     class="btn color_botones agregar-carrito"
                     data-id="4"
-                    >Añadir carrito</a
+                    >Add to cart</a
                   >
                 </div>
               </div>
@@ -537,7 +422,7 @@
                     href="#"
                     class="btn color_botones agregar-carrito"
                     data-id="5"
-                    >Añadir carrito</a
+                    >Add to cart</a
                   >
                 </div>
               </div>
@@ -557,7 +442,7 @@
                     href="#"
                     class="btn color_botones agregar-carrito"
                     data-id="6"
-                    >Añadir carrito</a
+                    >Add to cart</a
                   >
                 </div>
               </div>
@@ -567,8 +452,8 @@
 
           <!-- --------------------------SECTION TITULO --------------------------->
           <section class="titulos text-center hombreSandalias">
-            <h2>HOMBRE</h2>
-            <p>Sandalias</p>
+            <h2>MAN</h2>
+            <p>Sandals</p>
           </section>
 
           <!-- -------------------------------SECTION GRID SANDALIAS-------------------------------- -->
@@ -589,7 +474,7 @@
                     class="btn color_botones agregar-carrito"
                     data-id="7"
                   >
-                    Añadir carrito</a
+                  Add to cart</a
                   >
                 </div>
               </div>
@@ -610,7 +495,7 @@
                     class="btn color_botones agregar-carrito"
                     data-id="8"
                   >
-                    Añadir carrito</a
+                  Add to cart</a
                   >
                 </div>
               </div>
@@ -631,7 +516,7 @@
                     class="btn color_botones agregar-carrito"
                     data-id="9"
                   >
-                    Añadir carrito</a
+                  Add to cart</a
                   >
                 </div>
               </div>
@@ -643,8 +528,8 @@
 
           <!-- --------------------------SECTION TITULO MUJERES --------------------------->
           <section class="titulos text-center mujerZapatilla">
-            <h2 id="seccion-mujer">MUJER</h2>
-            <p>Zapatillas</p>
+            <h2 id="seccion-mujer">WOMEN</h2>
+            <p>Sneakers</p>
           </section>
 
           <!-- -------------------------------SECTION GRID ZAPATILLAS MUJERES-------------------------------- -->
@@ -664,7 +549,7 @@
                     href="#"
                     class="btn color_botones agregar-carrito"
                     data-id="10"
-                    >Añadir carrito</a
+                    >Add to cart</a
                   >
                 </div>
               </div>
@@ -684,7 +569,7 @@
                     href="#"
                     class="btn color_botones agregar-carrito"
                     data-id="11"
-                    >Añadir carrito</a
+                    >Add to carto</a
                   >
                 </div>
               </div>
@@ -704,7 +589,7 @@
                     href="#"
                     class="btn color_botones agregar-carrito"
                     data-id="12"
-                    >Añadir carrito</a
+                    >Add to cart</a
                   >
                 </div>
               </div>
@@ -713,8 +598,8 @@
 
           <!-- --------------------------SECTION TITULO MUJERES --------------------------->
           <section class="titulos text-center mujerBotas">
-            <h2 id="seccion-mujer">MUJER</h2>
-            <p>Botas</p>
+            <h2 id="seccion-mujer">WOMEN</h2>
+            <p>Boots</p>
           </section>
           <!-- -------------------------------SECTION GRID BOTAS MUJERES-------------------------------- -->
           <div class="row column-gap-4 row-gap-4 mujerBotasCard">
@@ -733,7 +618,7 @@
                     href="#"
                     class="btn color_botones agregar-carrito"
                     data-id="13"
-                    >Añadir carrito</a
+                    >Add to cart</a
                   >
                 </div>
               </div>
@@ -753,7 +638,7 @@
                     href="#"
                     class="btn color_botones agregar-carrito"
                     data-id="14"
-                    >Añadir carrito</a
+                    >Add to cart</a
                   >
                 </div>
               </div>
@@ -773,7 +658,7 @@
                     href="#"
                     class="btn color_botones agregar-carrito"
                     data-id="15"
-                    >Añadir carrito</a
+                    >Add to cart</a
                   >
                 </div>
               </div>
@@ -782,8 +667,8 @@
 
           <!-- --------------------------SECTION TITULO MUJERES --------------------------->
           <section class="titulos text-center mujerSandalias">
-            <h2 id="seccion-mujer">MUJER</h2>
-            <p>Sandalias</p>
+            <h2 id="seccion-mujer">WOMEN</h2>
+            <p>Sandals</p>
           </section>
           <!-- -------------------------------SECTION GRID SANDALIAS MUJERES-------------------------------- -->
           <div class="row column-gap-4 row-gap-4 mujerSandaliasCard">
@@ -802,7 +687,7 @@
                     href="#"
                     class="btn color_botones agregar-carrito"
                     data-id="16"
-                    >Añadir carrito</a
+                    >Add to cart</a
                   >
                 </div>
               </div>
@@ -822,7 +707,7 @@
                     href="#"
                     class="btn color_botones agregar-carrito"
                     data-id="17"
-                    >Añadir carrito</a
+                    >Add to cart</a
                   >
                 </div>
               </div>
@@ -841,7 +726,7 @@
                     href="#"
                     class="btn color_botones agregar-carrito"
                     data-id="18"
-                    >Añadir carrito</a
+                    >Add to cart</a
                   >
                 </div>
               </div>
@@ -851,84 +736,77 @@
       </div>
     </section>
 
-    <!-- -------Espacio footer jhonatan-------- -->
 
-    <footer>
-      <div class="container-fluid">
-        <div class="footer-background row p-5 pb-2 text-white">
-          <div class="col-xs-12 col-md-6 col-lg-3">
+
+
+<footer>
+  <div class="container-fluid">
+    <div class="footer-background row p-5 pb-2 text-white">
+
+        <div class="col-xs-12 col-md-6 col-lg-3">
             <p class="h3">ZapatON</p>
-          </div>
+        </div>
 
-          <div class="col-xs-12 col-md-6 col-lg-3">
-            <p class="h5 mb-3">Tienda</p>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h5 mb-3">Shop</p>
 
             <div class="mb-2">
-              <a
-                class="text-secondary text-decoration-none"
-                href="../ES/catalogo.html#seccion-hombres"
-                >Zapatos Hombre</a
-              >
+                <a class="text-secondary text-decoration-none" href="../EN/catalogo.html#seccion-hombres">Men Shoes</a>
             </div>
 
             <div class="mb-2">
-              <a
-                class="text-secondary text-decoration-none"
-                href="../ES/catalogo.html#seccion-mujer"
-                >Zapatos Mujer</a
-              >
+                <a class="text-secondary text-decoration-none" href="../EN/catalogo.html#seccion-mujer">Women Shoes</a>
             </div>
-          </div>
+        </div>
 
-          <div class="col-xs-12 col-md-6 col-lg-3">
+        <div class="col-xs-12 col-md-6 col-lg-3">
             <p class="h5 mb-3">Links</p>
             <div class="mb-2">
-              <a class="text-secondary text-decoration-none" href="#"
-                >Terminos y Condiciones</a
-              >
+                <a class="text-secondary text-decoration-none" href="#">Terms and Conditions</a>
             </div>
             <div class="mb-2">
-              <a class="text-secondary text-decoration-none" href="#"
-                >Politicas de privacidad</a
-              >
+                <a class="text-secondary text-decoration-none" href="#">Privacy Policy</a>
             </div>
-          </div>
-
-          <div class="col-xs-12 col-md-6 col-lg-3">
-            <p class="h5 mb-3">Contacto</p>
-            <div>
-              <a href="" class="me-4 text-white">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-
-              <a href="" class="me-4 text-white">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-
-              <a href="" class="me-4 text-white">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </div>
-          </div>
-          <div class="col-xs-12 pt-4">
-            <p class="text-secondary text-center">
-              <a>Copyright - Todos los derechos reservados</a>
-            </p>
-          </div>
         </div>
-      </div>
-    </footer>
 
-    <!-- -------Espacio footer jhonatan-------- -->
-    <script src="../JS/capturarCadaCard.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
-    <!-- <script src="../JS/hora.js"></script> -->
-    <script src="../JS/app.js"></script>
-    <script src="../JS/categoriaCatalogo.js"></script>
-    <script src="../JS/login_catalogo.js"></script>
+        <div class="col-xs-12 col-md-6 col-lg-3">
+            <p class="h5 mb-3">Contact</p>
+            <div>
+                <a href="" class="me-4 text-white">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="" class="me-4 text-white">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="" class="me-4 text-white">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+              </div>
+            
+        </div>
+        <div class="col-xs-12 pt-4 ">
+            <p class="text-secondary text-center">Copyright -
+              All rights reserved</a>
+        </div>
+    </div>
+</div>
+
+</footer>
+
+
+<script src="../JS/capturarCadaCard.js"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+  crossorigin="anonymous"
+></script>
+<!-- <script src="../JS/hora.js"></script> -->
+<script src="../JS/app.js"></script>
+<script src="../JS/categoriaCatalogo.js"></script>
+<script src="../JS/login_catalogo.js"></script>
+
   </body>
 </html>
