@@ -6,6 +6,8 @@
       // seleccionamos el Id y especificamente el tbody donde se agregara los productos
       const listaZapatos = document.querySelector("#lista-carrito-factura tbody");
 
+      const totalFactura 
+
 
 
       cargarEventListeners();
@@ -63,6 +65,11 @@ function obtenerTotalLS(){
 function leerLocalStorage(){
     let zapatosLS;
     zapatosLS = obtenerProductoLocalStorage();
+
+    let totalEnLocalStorage;
+    totalEnLocalStorage = obtenerTotalLS();
+
+
     //console.log("leer"+zapatosLS);
 
     //console.log(zapatosLS)
