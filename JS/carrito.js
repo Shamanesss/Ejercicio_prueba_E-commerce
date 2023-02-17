@@ -99,10 +99,10 @@
      subtotal.value=suma;
    }
 
- let tarjetas = [document.querySelectorAll("card")];
- tarjetas.forEach((tarjeta) => {
+//  let tarjetas = [document.querySelectorAll("card")];
+//  tarjetas.forEach((tarjeta) => {
  
- })
+//  })
 
 
 
