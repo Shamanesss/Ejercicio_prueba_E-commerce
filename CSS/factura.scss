@@ -5,9 +5,7 @@
     table-layout: fixed;
   }
   
-  .fact-info > div > h5 {
-    font-weight: bold;
-  }
+  
   
   .factura > thead {
     border-top: solid 3px #000;
@@ -23,15 +21,19 @@
     
   }
   
+  th {
+    font-weight: 400;
+  }
+  
   .factura > tbody > tr > td:nth-child(n+3) {
     text-align: right;
   }
   
-  .factura > tfoot > tr > th, .factura > tfoot > tr > th:last-child {
-    font-size: 1.5rem;
-    text-align: right;
+  // .factura > tfoot > tr > th, .factura > tfoot > tr > th:last-child {
+  //   font-size: 1.5rem;
+  //   text-align: right;
     
-  }
+  // }
 
   .right {
     text-align: right;
