@@ -49,9 +49,18 @@ function total (subtotales){
 
     var total= document.getElementById("total");
     total.innerHTML = "$" + suma ;
+   console.log("adentro" + suma);
+   totalPagar = suma;
+
+   
+   
 }
 
+localStorage.setItem("totalCheckout" , JSON.stringify(totalPagar));
 
+//totalPagar = suma;
+console.log(totalPagar);
+ 
 
 let vaciar = document.getElementById("vaciartodo")
 //vaciar.addEventListener("click",eliminarZapato)
@@ -138,3 +147,10 @@ function eliminarZapato2(id){
   localStorage.setItem("zapatos",JSON.stringify(nuevZapatos))
 }
 
+
+
+//ALMACENAR CANTIDADES Y VALORES
+
+let productosFactura = document.getElementById("contenidoAqui");
+
+console.log(totalTotal);

@@ -38,7 +38,7 @@ function registrousuario(){
         email: email.value,
         passworwd1:password1.value
         
-    };window.location.href="../ES/cuenta.html"
+    };window.location.href="../EN/cuenta.html"
     
     console.log(aUsuario);
     let jsonUsuario = localStorage.setItem("registro",JSON.stringify(aUsuario));
