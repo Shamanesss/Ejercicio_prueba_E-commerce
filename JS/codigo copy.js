@@ -12,7 +12,7 @@ function validar(){
      let form_nombre = names.value;
      let form_password= password.value;
      if(form_nombre!=null && form_password !=undefined){
-        return swal("Uppss!!  Usuario no encontrado","Registrate" ,"error")
+        return swal("Uppss!!  Usuario no encontrado","Por favor Registrate" ,"error")
      
    
     }
@@ -53,6 +53,7 @@ function registrousuario(){
     console.log(jsonUsuario);
     
     cargar();
+     check();
     
 }
 function cargar(){
@@ -63,4 +64,16 @@ function cargar(){
             saludar.innerHTML = `¡Hola, ${usuario.names1 }¡`
             console.log("no hago nada")
         }
+}
+
+function check() {
+    let clicau =document.querySelector('#dropdownCheck');
+    
+    if(clicau.checked){
+       btn_usuario.disabled= false;
+    }
+    else{
+        btn_usuario.disabled = true;
+    }
+
 }
