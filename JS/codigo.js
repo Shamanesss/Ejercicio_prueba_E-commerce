@@ -26,12 +26,9 @@ const names1 = document.getElementById('DropdownFormName1');
 const password1 = document.getElementById('DropdownFormPassword1');
 const email = document.getElementById('DropdownFormEmail1');
 const btn_usuario = document.getElementById('btn-usuario')
-const formulario1= document.getElementById('formulario1')
-const forumlario2 = documentt.getElementById('formulario2')
+
 btn_usuario.addEventListener('click',registrousuario);
- formulario1.addEventListener('submit', e => {
-    e.prevenDefault();
- })     
+      
 
 function registrousuario(){
     const aUsuario={
@@ -41,26 +38,8 @@ function registrousuario(){
         email: email.value,
         passworwd1:password1.value
         
-
-   
-        
-
-    }
-    // if(name1===''){
-
-    // }
+    };window.location.href="../ES/cuenta.html"
     
-    
-    
-    
-    ;window.location.href="../ES/cuenta.html"
-    
-
-
-
-
-
-
     console.log(aUsuario);
     let jsonUsuario = localStorage.setItem("registro",JSON.stringify(aUsuario));
     // let usuario = localStorage.getItem("registro",JSON.parse(jsonUsuario));
@@ -70,17 +49,7 @@ function registrousuario(){
    
 }
 
-// function errorValidacion(input, message){
-//     const formcontrol= input.parentElement;
-//     const small = formcontrol.querySelector('small');
-//     formcontrol.className = 'error';
-//     small.innerText=message;
-// }
 
-// function okValidacion(input){
-//     const formcontrol = input.parentElement;
-//     formcontrol.className= ="susecc"
-// }
   
 // function changepage(){
 //     location.href="cuenta.html";
