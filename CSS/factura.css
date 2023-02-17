@@ -2,10 +2,6 @@
   table-layout: fixed;
 }
 
-.fact-info > div > h5 {
-  font-weight: bold;
-}
-
 .factura > thead {
   border-top: solid 3px #000;
   border-bottom: 3px solid #000;
@@ -19,15 +15,29 @@
   text-align: right;
 }
 
+th {
+  font-weight: 400;
+}
+
 .factura > tbody > tr > td:nth-child(n+3) {
   text-align: right;
 }
 
-.factura > tfoot > tr > th, .factura > tfoot > tr > th:nth-child(n+3) {
-  font-size: 24px;
+.right {
   text-align: right;
 }
 
 .cond {
   border-top: solid 2px #000;
+}
+
+.contenedor {
+  padding-top: 2rem;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 10vw;
+  margin-right: 2rem;
 }/*# sourceMappingURL=factura.css.map */

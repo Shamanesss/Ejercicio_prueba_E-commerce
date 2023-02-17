@@ -13,22 +13,22 @@
     <div class=" container-sm contenedor d-flex flex-row flex-wrap justify-content-center">
         <div class ="caja1 d-flex flex-column gap-4">
             <div class="logo d-flex justify-content-center flex-row">
-                <a href="../ES/index.html"><img src="/img/logo-pequeno.png" alt=""></a>
+                <a href="../index.html"><img src="/img/logo-pequeno.png" alt=""></a>
             </div>
             <div class="contenido">
                 <div class="nomap d-flex gap-2">
                     <div class="nombre corto">
                         <h6 class="pt-0.5">Nombre</h6>
-                        <input type="text">
+                        <input type="text" id="nombre">
                     </div>
                     <div class="apellido corto">
                         <h6 class="pt-0.5">Apellido</h6>
-                        <input type="text">
+                        <input type="text" id="apellido">
                     </div>
                 </div>
                 <div class="direccion largo">
                     <h6 class="pt-0.5">Direccion</h6>
-                    <input type="text">
+                    <input type="text" id="direccion">
                 </div>
                 <div class="ciuco d-flex gap-2">
                     <div class="ciudad corto">
@@ -57,7 +57,7 @@
                 </div>
                 <div class="email largo">
                     <h6 class="pt-0.5">Correo electronico</h6>
-                    <input type="text" placeholder="zapaton@gmail.com">
+                    <input type="text" placeholder="zapaton@gmail.com" id="email">
                 </div>
                 <div class="pago">
                     <h6 class="pt-0.5">Metodo de pago</h6>
@@ -84,7 +84,8 @@
                     <input type="checkbox" class="form-check-input checkgreen " id="dropdownCheck" value="checked">
                   Aceptas la condiciones</label>
                   </div>
-                <button id ="boton" class="btn btn-success-emphasis col-12 my-5" value="">COMPRAR</button>
+                <!-- <button  class="btn btn-success-emphasis col-12 my-5" value="">COMPRAR</button> -->
+                <a  href="../ES/factura.html" id ="boton" class="btn btn-success-emphasis col-12 my-5">COMPRAR</a>
 
             </div>
         </div>

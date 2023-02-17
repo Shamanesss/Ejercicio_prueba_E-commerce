@@ -23,7 +23,7 @@
   
   <!-- 1. Logo -->
         <div class="logo-menu-movil">
-          <a href="../ES/index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" ;>
+          <a href="../index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none" ;>
             <img class="logo" src="../img/logo-blanco.png" alt="Logo de ZapatON" />
           </a>
   
@@ -41,7 +41,7 @@
               <div class=" navegacion collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item margen-lados">
-                    <a href="../ES/index.html" class="nav-link active px-2 text-white" aria-current="page">Inicio</a>
+                    <a href="../index.html" class="nav-link active px-2 text-white" aria-current="page">Inicio</a>
                   </li>   
                   <li class="nav-item dropdown margen-lados">
                     <a class="nav-link px-2 text-white dropdown-toggle" href="../ES/catalogo.html" id="navbarDropdownMenuLink"
@@ -162,7 +162,7 @@
   
             <div class="nav-bajo " >
               
-              <div id="saludar-home" class="saludar">
+              <div id="saludar-carrito" class="saludar">
                 <p>¡Bienvenid@ a nuestra tienda! </p>
               </div>
             </div>
@@ -189,7 +189,9 @@
            <th></th>
          </tr>
        </thead>-->
-       <div class="contenidoAqui"></div> 
+       <div id="contenidoAqui" class="contenidoAqui">
+
+       </div> 
      </div>
    </div>
 </div>
@@ -316,6 +318,7 @@ const listaZapatos = document.querySelector("#lista-carrito-nuevo .contenidoAqui
 //boton
 const vaciarCarritoBtn = document.getElementById("vaciar-carrito");
 
+
 //verificar que hay informacion en local storage y no repetir
 function obtenerProductoLocalStorage(){
     let zapatosLS;
@@ -353,33 +356,52 @@ function leerLocalStorage(){
                     <p class="card-text">description goes here</p>
                 </div>
                 <div class="carrito-pr-cantidad">
-                    <h5>Cantidad</h5>
+                    <h5>Quantity</h5>
                     <input class="cantidad-producto w-25 pl-1" value="1" type="number">
                 </div>
                 <div class="carrito-pr-precio">
-                    <h5>Precio</h5>
+                    <h5>Price</h5>
                     <p>${zapato.precio} IVA Incl.</p>
                 </div>
                 <div class="carrito-pr-subtotal">
                     <h5>Subtotal</h5>
                     <p>${zapato.precio} </p>
                 </div>
-                <a href="#" class="carrito-producto-delete borrar-producto-trash" data-id="${zapato.id}"><i class="trash fa-solid fa-trash" onclick="eliminarProductoLS()"></i></a>            </div>
+                <button <i class="carrito-producto-delete trash fa-solid fa-trash " id="${zapato.id}"></i></button>
             </div>
         </div>
         `;
-        // arriba tambien se añadio una clase dinamicamente
-        // añadir la informacion a la lista del carrito (imrimir dentro la lista)
+
         listaZapatos.appendChild(row);
 
-
+        eventoBasura()
 
     });
 }
 
+function eventoBasura(){
+    let bas = document.getElementsByClassName("carrito-producto-delete")
+    
+    for(let i=0; i<bas.length;i++ ){
+      bas[i].addEventListener("click",(e)=>{
+        e.preventDefault();
+        let aux=e.target.id
+        eliminarZapato2(aux)
+        
+        while(listaZapatos.firstChild){
+          listaZapatos.removeChild(listaZapatos.firstChild)
+        }
+        leerLocalStorage()
+      })
+    }
+  }
+
 leerLocalStorage()
+eventoBasura();
+
     </script>
     <script src="../JS/miihai.js"></script>
+    <script src="../JS/login-carrito.js"></script>
     <script src="../JS/app.js"></script>
 </body>
 </html>
