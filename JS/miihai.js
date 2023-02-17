@@ -5,15 +5,33 @@ let subtotales = document.querySelectorAll(".carrito-pr-subtotal p");
 let borrar =document.querySelectorAll(".trash");
 
 
+
 let cant, precio, sterge;
 
 for (let i=0; i<cantidades.length; i++){
-    cantidades[i].addEventListener("change", function(){
+    if(cantidades[i]!=0){
         cant=parseInt(cantidades[i].value);
         precio =parseInt((precios[i].textContent).slice(1));
         mi (cant , precio, subtotales[i])  ;  
         total(subtotales)
-    })
+        contador();
+    
+
+   }
+   
+    function contador(){
+        cantidades[i].addEventListener("change", function (){
+                 cant=parseInt(cantidades[i].value);
+                 precio =parseInt((precios[i].textContent).slice(1));
+                 mi (cant , precio, subtotales[i])  ;  
+                 total(subtotales)
+             })
+
+    }
+    
+  
+   
+
 };
 
 function mi (cantidad, precio, subtotal){
@@ -57,7 +75,7 @@ carrito.addEventListener("click",eliminarZapato);
   
  function vaciarLocalStorage(){
 
-     total(0);
+     //total(0);
      localStorage.clear();
     
  }
@@ -86,7 +104,7 @@ carrito.addEventListener("click",eliminarZapato);
 }
 
 function eliminarProductoLocalStorage(zapato){
-  debugger
+ 
     //console.log(zapato);
     let zapatosLS;
     // obtenemos el arreglo de zapatos
@@ -119,3 +137,4 @@ function eliminarZapato2(id){
   
   localStorage.setItem("zapatos",JSON.stringify(nuevZapatos))
 }
+
