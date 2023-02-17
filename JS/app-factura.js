@@ -30,9 +30,10 @@
 
 function obtenerProductoLocalStorage(){
     let zapatosLS;
+    
 
     //comprobamos si hay algo en local storage
-    if(localStorage.getItem("zapatos")===null){
+    if(localStorage.getItem("zapatos")===null) {
         zapatosLS = [];
     }else{
         // lo que viene lo convierte a un arreglo porque viene como string
@@ -40,6 +41,19 @@ function obtenerProductoLocalStorage(){
     //console.log(zapatosLS);
     }
     return zapatosLS;
+}
+
+function obtenerTotalLS(){
+    let totalFactura;
+
+    if(localStorage.getItem("totalCheckout")===null) {
+        totalFactura = [];
+    }else{
+        // lo que viene lo convierte a un arreglo porque viene como string
+        totalFactura = JSON.parse(localStorage.getItem("totalCheckout"));
+    //console.log(zapatosLS);
+    }
+    return totalFactura;
 }
 
 
