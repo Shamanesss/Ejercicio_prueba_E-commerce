@@ -154,3 +154,5 @@ function eliminarZapato2(id){
 let productosFactura = document.getElementById("contenidoAqui");
 
 console.log(totalTotal);
+
+// Log in Edurn
