@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Factura - ZapatON</title>
+    <title>Invoice - ZapatON</title>
     <link rel="icon" type="image/png" href="../img/logo-rm.ico">
     <meta name="description" content="ZapatON - Tu tienda online preferida para comprar zapatos"/>
 
@@ -16,13 +16,13 @@
 <body>
 <div class="contenedor " >
 
-    <h2 class="">Factura</h2>
+    <h2 class="">Invoice</h2>
 
     <div class="row my-3">
       <div class="col-10">
-        <h1>Tienda ZapatON</h1>
+        <h1>ZapatON Store</h1>
         <p>Av. Bolueta</p>
-        <p>Peñascal-Piso 2</p>
+        <p>Peñascal-2nd Floor</p>
         <p>Bilbao</p>
       </div>
       <div class="logo col-2">
@@ -34,21 +34,21 @@
   
     <div class="row fact-info mt-3">
       <div class="col-3">
-        <h5>Cliente</h5>
+        <h5>Costumer</h5>
         <p>
           Nombre Cliente
         </p>
       </div>
       <div class="col-3">
-        <h5>Enviar a</h5>
+        <h5>Address</h5>
         <p>
           Direccion Cliente
         </p>
       </div>
       <div class="col-3">
-        <h5>N° de factura</h5>
-        <h5>Fecha</h5>
-        <h5>Garantia</h5>
+        <h5>Invoice #</h5>
+        <h5>Date</h5>
+        <h5>Guarantee</h5>
       </div>
       <div class="col-3">
         <h5>103</h5>
@@ -58,13 +58,13 @@
     </div>
   
     <div class="row my-5">
-      <table id="lista-carrito-factura" class="table table-borderless factura">
+      <table class="table table-borderless factura">
         <thead>
           <tr>
-            <th>Cant.</th>
-            <th>Descripcion</th>
-            <th>Precio Unitario</th>
-            <th>Importe</th>
+            <th>QTY</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Total</th>
           </tr>
         </thead>
         <tbody>
@@ -74,24 +74,19 @@
             <td>3,000.00</td>
             <td>3,000.00</td>
           </tr>
-          <tr>
-            <td>3</td>
-            <td>Clases de Salsa</td>
-            <td>4,000.00</td>
-            <td>12,000.00</td>
-          </tr>
+          
         </tbody>
         <tfoot>
           <tr>
             <th></th>
             <th></th>
-            <th>Subtotal</th>
+            <th>Sub Total</th>
             <th>€ 15,000.00</th>
           </tr>
           <tr>
             <td></td>
             <td></td>
-            <td class="right">IVA</td>
+            <td class="right">TAX</td>
             <td class="right factura-iva">€ 15,000.00</td>
           </tr>
           <tr>
@@ -106,19 +101,17 @@
   
     <div class="cond row">
       <div class="col-12 mt-3">
-        <h4>Formas de pago</h4>
-        <p>El pago se ha realizado con tarjeta de credito.</p>
+        <h4>Payment method</h4>
+        <p>Payment has been made by credit card.</p>
         <p>
           <br />
-          Tarjeta de Credito: XXXX XXXX XXXX XXXX XXXX 0075
+          Credit Card: XXXX XXXX XXXX XXXX XXXX 0075
           <br />
           
         </p>
       </div>
     </div>
 </div>
-
-<script src="../JS/app-factura.js"></script>
 
 </body>
 </html>
