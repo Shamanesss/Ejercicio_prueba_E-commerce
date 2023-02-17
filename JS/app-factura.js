@@ -6,7 +6,7 @@
       // seleccionamos el Id y especificamente el tbody donde se agregara los productos
       const listaZapatos = document.querySelector("#lista-carrito-factura tbody");
 
-      const totalFactura 
+    //   const totalFactura 
 
 
 
@@ -45,18 +45,18 @@ function obtenerProductoLocalStorage(){
     return zapatosLS;
 }
 
-function obtenerTotalLS(){
-    let totalFactura;
+// function obtenerTotalLS(){
+//     let totalFactura;
 
-    if(localStorage.getItem("totalCheckout")===null) {
-        totalFactura = [];
-    }else{
-        // lo que viene lo convierte a un arreglo porque viene como string
-        totalFactura = JSON.parse(localStorage.getItem("totalCheckout"));
-    //console.log(zapatosLS);
-    }
-    return totalFactura;
-}
+//     if(localStorage.getItem("totalCheckout")===null) {
+//         totalFactura = [];
+//     }else{
+//         // lo que viene lo convierte a un arreglo porque viene como string
+//         totalFactura = JSON.parse(localStorage.getItem("totalCheckout"));
+//     //console.log(zapatosLS);
+//     }
+//     return totalFactura;
+// }
 
 
 //<!-- ----------------------- MOSTRAR VALORES-------MODIFICAR PLANTILLA------------------------------- -->
@@ -66,8 +66,8 @@ function leerLocalStorage(){
     let zapatosLS;
     zapatosLS = obtenerProductoLocalStorage();
 
-    let totalEnLocalStorage;
-    totalEnLocalStorage = obtenerTotalLS();
+    // let totalEnLocalStorage;
+    // totalEnLocalStorage = obtenerTotalLS();
 
 
     //console.log("leer"+zapatosLS);
