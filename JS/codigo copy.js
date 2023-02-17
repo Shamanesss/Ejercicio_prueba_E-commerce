@@ -4,15 +4,18 @@ const password = document.getElementById('DropdownFormPassword');
 const saludar = document.getElementById('saludar');
 const error =document.getElementById('error')
 const cerrar = document.querySelector("#btn-cerrar-login");
-
-login.addEventListener('click',validar);
-
+const formulario1 = document.querySelector('formulario1')
+// login.addEventListener('click',validar);
+formulario1.addEventListener('submit', e =>{
+    e.preventDefault();
+    login.addEventListener('click', validar);
+   }); 
 function validar(){
 
      let form_nombre = names.value;
      let form_password= password.value;
      if(form_nombre!=null && form_password !=undefined){
-        return swal("Uppss!!  Usuario no encontrado","Registrate" ,"error")
+        return swal("Uppss!!  Usuario no encontrado","Por favor, Registrate" ,"error")
      
    
     }
@@ -32,10 +35,13 @@ const names1 = document.getElementById('DropdownFormName1');
 const password1 = document.getElementById('DropdownFormPassword1');
 const email = document.getElementById('DropdownFormEmail1');
 const btn_usuario = document.getElementById('btn-usuario')
-
+const formulario2 = document.getElementById('formulario2')
 btn_usuario.addEventListener('click',registrousuario);
 
-      
+formulario2.addEventListener('submit', e =>{
+ e.preventDefault();
+ btn_usuario.addEventListener('click',registrousuario);
+});    
 
 function registrousuario(){
     const aUsuario={
