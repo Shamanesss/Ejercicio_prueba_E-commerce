@@ -14,9 +14,8 @@
     <link rel="stylesheet" href="../CSS/factura.css">
 </head>
 <body>
-<div class="contenedor " >
 
-    <h2 class="">Invoice</h2>
+  <div class="contenedor " >
 
     <div class="row my-3">
       <div class="col-10">
@@ -35,30 +34,30 @@
     <div class="row fact-info mt-3">
       <div class="col-3">
         <h5>Costumer</h5>
-        <p>
-          Nombre Cliente
+        <p id="nombreFactura">
+          Jonathan  Echeverria
         </p>
       </div>
       <div class="col-3">
-        <h5>Address</h5>
-        <p>
-          Direccion Cliente
+        <h5>Shipping to</h5>
+        <p id="direccionFactura" >
+          Bilbao Calle 123
         </p>
       </div>
       <div class="col-3">
         <h5>Invoice #</h5>
-        <h5>Date</h5>
+        <h5 >Date</h5>
         <h5>Guarantee</h5>
       </div>
       <div class="col-3">
         <h5>103</h5>
-        <p>09/05/2019</p>
+        <p id="reloj">09/05/2019</p>
         <p>09/05/2019</p>
       </div>
     </div>
   
     <div class="row my-5">
-      <table class="table table-borderless factura">
+      <table id="lista-carrito-factura" class="table table-borderless factura">
         <thead>
           <tr>
             <th>QTY</th>
@@ -70,30 +69,30 @@
         <tbody>
           <tr>
             <td>1</td>
-            <td>Clases de Cha-Cha-Cha</td>
-            <td>3,000.00</td>
-            <td>3,000.00</td>
+            <td>Test product</td>
+            <td>€ 0.00</td>
+            <td>€ 0.00</td>
           </tr>
-          
+
         </tbody>
         <tfoot>
           <tr>
             <th></th>
             <th></th>
-            <th>Sub Total</th>
-            <th>€ 15,000.00</th>
+            <th class="right">Sub Total</th>
+            <th class="right">€ 800.00</th>
           </tr>
           <tr>
             <td></td>
             <td></td>
             <td class="right">TAX</td>
-            <td class="right factura-iva">€ 15,000.00</td>
+            <td class="right factura-iva">€ 800.00</td>
           </tr>
           <tr>
             <td></td>
             <td></td>
             <td class="right">Total</td>
-            <td class="right">€ 15,000.00</td>
+            <td id="total-en-factura" class="right">€ 800.00</td>
           </tr>
         </tfoot>
       </table>
@@ -112,6 +111,8 @@
       </div>
     </div>
 </div>
+  
 
+  <script src="../JS/app-factura.js"></script>
 </body>
 </html>
