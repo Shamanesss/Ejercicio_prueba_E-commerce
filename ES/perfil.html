@@ -198,10 +198,14 @@
           <label for="DropdownFormEmail" class="form-label"></label>
           <input type="email" class="form-control" id="DropdownFormEmail" name="DropdownFormEmail"placeholder="Direccion de correo electronico"required>
         </div>
-        <div class="mb-3 "id="login-password">
+        <div class="mb-3 contenedor-ojo "id="login-password">
           <label for="DropdownFormPassword" class="form-label"></label>
           <input type="password" class="form-control" id="DropdownFormPassword" name="DropdownFormPassword" placeholder="Contraseña"required pattern="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$" title="La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula, al menos una mayúscula y al menos un caracter no alfanumérico.">
+        
+          <i class="fa-solid fa-eye ojo" id="ojo2"></i>
+          <i class="fa-solid fa-eye-slash ojo" id="ojo3"></i> 
         </div>
+        
         <div class="mb-3">
           <div class="form-check">
             <label class="form-check-label " for="dropdownCheck">
@@ -220,34 +224,36 @@
         <h3 class="text-center pb-3">Registro</h3>
         <div class="mb-3">
             <label for="DropdownFormName1" class="form-label"></label>
-            <input type="text" class="form-control" id="DropdownFormName1" placeholder="Nombre" pattern ="[a-zA-Z0-9]{4,16}$" title="Invalido numeros y simbolos"required>
+            <input type="text" class="form-control" id="DropdownFormName1" placeholder="Nombre" pattern ="[a-zA-Z0-9]{4,16}$" title="Invalido simbolos y que tener al menos 4 caracteres"required>
         </div>
         <div class="mb-3">
             <label for="DropdownFormlastname" class="form-label"></label>
-            <input type="text" class="form-control" id="DropdownFormlastName" placeholder="Apellidos" pattern ="[a-zA-Z0-9]{4,16}$" title="Invalido numeros y simbolos"required>
+            <input type="text" class="form-control" id="DropdownFormlastName" placeholder="Apellidos" pattern ="[a-zA-Z0-9]{4,16}$" title="Invalido simbolos y que tener al menos 4 caracteres"required>
         </div>
         <div class="mb-3">
             <label for="DropdownFormdirection" class="form-label"></label>
-            <input type="text" class="form-control" id="DropdownFormdirection" placeholder="Direccion"required pattern ="[a-zA-Z0-9]{4,25}$" title="Invalido numeros y simbolos">
+            <input type="text" class="form-control" id="DropdownFormdirection" placeholder="Direccion"required pattern ="[a-zA-Z0-9]{4,25}$" title="">
         </div>
         <div class="mb-3">
           <label for="DropdownFormEmail1" class="form-label"></label>
           <input type="email" class="form-control" id="DropdownFormEmail1" placeholder="Direccion de correo electronico"required>
         </div>
-        <div class="mb-3">
+        <div class="mb-3 contenedor-ojo">
           <label for="DropdownFormPassword1" class="form-label"></label>
           <input type="password" class="form-control" id="DropdownFormPassword1" placeholder="Contraseña"required pattern="^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=.*[a-z])\S{8,16}$" title="La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula, al menos una mayúscula y al menos un caracter no alfanumérico.">
+          <i class="fa-solid fa-eye ojo" id="ojo"></i>
+          <i class="fa-solid fa-eye-slash ojo" id="ojo1"></i> 
         </div>
         <div class="mb-3">
           <div class="form-check">
-            <label class="form-check-label " for="dropdownCheck">
-            <input type="checkbox" class="form-check-input " id="dropdownCheck">
-          Aceptas la condiciones</label>
+            <label class="form-check-label " for="dropdownCheck1" >
+            <input type="checkbox" class="form-check-input " id="dropdownCheck1">
+          Aceptas la condiciones</label> 
           </div>
         </div>
 
           <div class="mb-3">
-            <button type="submit" id="btn-usuario"class="mb-3 btn btn-success btn-color" disabled>Iniciar Sesión</button>
+            <button type="submit"  id="btn-usuario"class="mb-3 btn btn-success btn-color" >Iniciar Sesión</button>
           </div>
         
       </form>
@@ -313,7 +319,7 @@
   <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script> 
  
   
-  <script src="../JS/formulario.js"></script> 
+  
   <!-- <script src="../JS/carrito.js"></script> -->
    </body>
 </html>
