@@ -104,7 +104,7 @@ function leerLocalStorage(){
 //Capturar datos pagina de registo
 // vamos a capturar los datos para cogerlos del local storage
 
-let nombreApellidoFactura = document.getElementById('nombreFactura');
+/*let nombreApellidoFactura = document.getElementById('nombreFactura');
 let direccionFactura = document.getElementById("direccionFactura");  
 
 
@@ -164,7 +164,7 @@ function startTime(){
 
 
 
-
+*/
 
 
 
