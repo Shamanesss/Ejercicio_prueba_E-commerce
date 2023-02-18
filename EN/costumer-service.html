@@ -63,7 +63,7 @@
             </ul>
           </li>
 
-          <li class="nav-item">
+          <li class="actualmente nav-item">
             <a href="../EN/costumer-service.html" class="nav-link px-2 text-white">Customer Services</a>
           </li>
 
@@ -138,23 +138,24 @@
           <li class="nav-item submenu">
             <i class=" fa-sharp fa-solid fa-cart-shopping text-white"></i>
             <ul id="carrito" >
-
-              <table id="lista-carrito-home" class="table">
-                  <thead>
-                      <tr>
-                        <th scope="col">Image</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Price</th>
-                        <th></th>
-                      </tr>
-                  </thead>
-                  <tbody></tbody>
-              </table>
+              <div class="scrollable">
+                <table id="lista-carrito-home" class="table ">
+                    <thead>
+                        <tr>
+                          <th scope="col">Imagen</th>
+                          <th scope="col">Nombre</th>
+                          <th scope="col">Precio</th>
+                          <th></th>
+                        </tr>
+                    </thead>
+                    <tbody ></tbody>
+                </table>
+              </div>
 
                 <div class="botones-carrito">
-                  <button class="ir-carrito btn btn-success"> <a href="../ES/carritonuevo.html" id="vaciar-carrito" class="button ">go to cart</a></button>
+                  <button class="ir-carrito btn btn-success"> <a href="../ES/carritonuevo.html" id="vaciar-carrito" class="button ">Ir a carrito</a></button>
 
-                  <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito" class="button ">Empty cart</a></button>
+                  <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito-home" class="button ">Vaciar Carrito</a></button>
                 </div>
 
               </ul>
@@ -369,7 +370,7 @@
             <div class="error-message"></div>
             <div class="sent-message">Your message has been sent. Thank you!</div>
           </div> -->
-          <div class="text-center pt-3"><button type="submit" class="contact-boton" id="enviar">Enviar</button></div>
+          <div class="text-center pt-3"><button type="submit" class="contact-boton" id="enviar">Send</button></div>
         </form>
       </div>
   </div>
@@ -442,7 +443,7 @@
     ></script>
 
     <script src="/reloj/reloj-en.js"></script>
-    <script src="../JS/login-home.js"></script>
+    <script src="../JS/login-servicios.js"></script>
     <script src="../JS/app-home.js"></script>
 
   </body>

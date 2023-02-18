@@ -63,7 +63,7 @@
                   <a href="../EN/sobreZapatON.html" class="nav-link px-2 text-white">About ZapatON</a>
                 </li>
     
-                <li class="nav-item">
+                <li class="actualmente nav-item">
                   <a href="../EN/perfil.html" class="nav-link px-2 text-white">Log in</a>
                 </li>
     
@@ -134,25 +134,26 @@
                 <li class="nav-item submenu">
                   <i class=" fa-sharp fa-solid fa-cart-shopping text-white"></i>
                   <ul id="carrito" >
-    
-                    <table id="lista-carrito-home" class="table">
-                        <thead>
-                            <tr>
-                              <th scope="col">Image</th>
-                              <th scope="col">Name</th>
-                              <th scope="col">Price</th>
-                              <th></th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-    
+                    <div class="scrollable">
+                      <table id="lista-carrito-home" class="table ">
+                          <thead>
+                              <tr>
+                                <th scope="col">Imagen</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Precio</th>
+                                <th></th>
+                              </tr>
+                          </thead>
+                          <tbody ></tbody>
+                      </table>
+                    </div>
+
                       <div class="botones-carrito">
-                        <button class="ir-carrito btn btn-success"> <a href="../EN/carritonuevo.html" id="vaciar-carrito" class="button ">Go to cart</a></button>
-    
-                        <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito" class="button ">Empty cart</a></button>
+                        <button class="ir-carrito btn btn-success"> <a href="../ES/carritonuevo.html" id="vaciar-carrito" class="button ">Ir a carrito</a></button>
+
+                        <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito-home" class="button ">Vaciar Carrito</a></button>
                       </div>
-    
+
                     </ul>
                 </li>
               </ul>
@@ -312,6 +313,7 @@
 
 </footer>
   <script src="../JS/codigo.js"></script>
+  <script src="../JS/app-home.js"></script>
   
  
   
