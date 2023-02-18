@@ -101,6 +101,45 @@ function leerLocalStorage(){
 // Eliminando zapato del carrito en el DOM
 //acceder al elemento con  e
 
+//Capturar datos pagina de registo
+// vamos a capturar los datos para cogerlos del local storage
+
+let nombreApellidoFactura = document.getElementById('nombreFactura');
+let direccionFactura = document.getElementById("direccionFactura");  
+
+
+obtenerUsuarioFactura();
+
+function obtenerUsuarioFactura(){
+    let datos_usuario = JSON.parse(localStorage.getItem("registro"));
+
+   //comprobamos si hay algo en local storage
+     if(localStorage.getItem("registro")===null){
+         datos_usuario =[" "];
+        console.log("que hay  aqui "+datos_usuario);
+     }else{
+    
+    console.log("Obteniendo datos exitosamente"+datos_usuario)
+   
+     console.log(datos_usuario.names1);
+   return datos_usuario;  
+ }}
+
+
+function mostrarInformacionUsuario(){
+let datos_usuario = obtenerUsuarioFactura();
+// console.log(datos_usuario.names1);
+// console.log(datos_usuario.apellido);
+// console.log(datos_usuario.direccion);
+// console.log(datos_usuario.email);
+
+nombreApellidoFactura.textContent = datos_usuario.names1 + " " + datos_usuario.apellido;
+direccionFactura.textContent =datos_usuario.direccion;
+
+
+}
+
+mostrarInformacionUsuario();
 
 
 
@@ -110,8 +149,18 @@ function leerLocalStorage(){
 
 
 
-
- 
+function startTime(){
+      today=new Date();
+      h=today.getHours();
+      m=today.getMinutes();
+      
+      m=checkTime(m);
+      
+      document.getElementById('reloj').innerHTML=h+":"+m;
+      t=setTimeout('startTime()',500);}
+      function checkTime(i)
+      {if (i<10) {i="0" + i;}return i;}
+      window.onload=function(){startTime();}
 
 
 
