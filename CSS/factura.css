@@ -25,14 +25,24 @@ th {
 
 .right {
   text-align: right;
+  font-weight: 700;
 }
 
 .cond {
   border-top: solid 2px #000;
 }
 
+thead tr th {
+  font-weight: 700;
+}
+
+h1, thead tr th {
+  color: #266150;
+}
+
 .contenedor {
   padding-top: 2rem;
+  padding-bottom: 2rem;
   width: 80vw;
   margin: 0 auto;
 }

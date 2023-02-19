@@ -34,24 +34,27 @@
       <div class="col-3">
         <h5>Cliente</h5>
         <p id="nombreFactura">
-          Jonathan  Echeverria
+          Harry Potter
+        </p>
+        <p id="emailFactura">
+          Harrypotter@hogwarts.com
         </p>
       </div>
       <div class="col-3">
         <h5>Enviar a</h5>
         <p id="direccionFactura" >
-          Bilbao Calle 123
+          Godric's Hollow
         </p>
       </div>
       <div class="col-3">
         <h5>N° de factura</h5>
         <h5 >Fecha</h5>
-        <h5>Garantia</h5>
+        <h5></h5>
       </div>
       <div class="col-3">
         <h5>103</h5>
-        <p id="reloj">09/05/2019</p>
-        <p>09/05/2019</p>
+        <p id="date">09/05/2019</p>
+        <p id="clock">12:25 PM</p>
       </div>
     </div>
   
@@ -79,19 +82,19 @@
             <th></th>
             <th></th>
             <th class="right">Subtotal</th>
-            <th class="right">€ 800.00</th>
+            <th id="subtotal-en-factura" class="right">€ 0.00</th>
           </tr>
           <tr>
             <td></td>
             <td></td>
             <td class="right">IVA</td>
-            <td class="right factura-iva">€ 800.00</td>
+            <td id="IVA-en-factura"class="right factura-iva">€ 0.00</td>
           </tr>
           <tr>
             <td></td>
             <td></td>
             <td class="right">Total</td>
-            <td id="total-en-factura" class="right">€ 800.00</td>
+            <td id="total-en-factura" class="right">€ 0.00</td>
           </tr>
         </tfoot>
       </table>
@@ -99,18 +102,16 @@
   
     <div class="cond row">
       <div class="col-12 mt-3">
-        <h4>Formas de pago</h4>
-        <p>El pago se ha realizado con tarjeta de credito.</p>
+        <h4>Forma de pago</h4>
+        <p>El pago se ha realizado con tarjeta de credito. Tarjeta de Credito: XXXX XXXX XXXX XXXX XXXX 0075</p>
         <p>
-          <br />
-          Tarjeta de Credito: XXXX XXXX XXXX XXXX XXXX 0075
-          <br />
-          
+          Los cambios se pueden realizar dentro de los 30 dias desde la fecha que fue realizada la compra.
         </p>
       </div>
     </div>
 </div>
 
+<script src="../reloj/fecha-factura.js"></script>
 <script src="../JS/app-factura.js"></script>
 
 </body>

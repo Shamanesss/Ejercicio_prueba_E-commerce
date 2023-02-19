@@ -51,27 +51,30 @@ function startTime() {
 
 
 
- //  PopUP
+//  PopUP
 
 
-const modelbox = document.getElementById('modelbox1')
+const modelbox = document.getElementById('modelbox');
+
+setTimeout(function(){
+
+  modelbox.style.display = "block";
+}, 10000);
 
 
+//   document.onmouseleave = function(){
+    
+//       modelbox.style.display = "block"
+//   }
 
-document.onmouseleave = function(){
-  
-    modelbox.style.display = "block"
-}
-
-function closemodel() {
-  modelbox.style.display = "none"
-}
+  function closemodel() {
+    modelbox.style.display = "none"
+  }
 
 //   if (!localStorage.getItem('first-time')){
 //     setTimeout(showPopup, 1000);
 //     localStorage.setItem('first-time',1);
 //   }
-
 
 //<!-- ---------------------Validacion de formulario---------------------------------- -->
 

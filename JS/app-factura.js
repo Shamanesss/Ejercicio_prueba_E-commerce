@@ -1,12 +1,12 @@
       // Variables
       // obtenemos el UL
-      const carrito = document.getElementById("carrito");
+      // const carrito = document.getElementById("carrito");
       //contenedor div de todas las card de zapatos
-      const zapatos = document.getElementById("lista-zapatos");
+      // const zapatos = document.getElementById("lista-zapatos");
       // seleccionamos el Id y especificamente el tbody donde se agregara los productos
       const listaZapatos = document.querySelector("#lista-carrito-factura tbody");
 
-    //   const totalFactura 
+    //   const totalFactura */
 
 
 
@@ -82,7 +82,7 @@ function leerLocalStorage(){
         //Construiremos una plantilla para cada uno de los zapatos
         row.innerHTML=
         `
-        <td>3</td>
+        <td>#</td>
         <td>${zapato.titulo}</td>
         <td>${zapato.precio}</td>
         <td>${zapato.precio}</td>
@@ -104,8 +104,21 @@ function leerLocalStorage(){
 //Capturar datos pagina de registo
 // vamos a capturar los datos para cogerlos del local storage
 
-/*let nombreApellidoFactura = document.getElementById('nombreFactura');
-let direccionFactura = document.getElementById("direccionFactura");  
+let nombreApellidoFactura = document.getElementById('nombreFactura');
+let direccionFactura = document.getElementById("direccionFactura");
+let emailFactura = document.getElementById("emailFactura");
+
+let totalFactura = document.getElementById("total-en-factura");
+let subtotalFactura = document.getElementById("subtotal-en-factura");
+let ivaEnFactura = document.getElementById("IVA-en-factura");
+
+let totalLS = JSON.parse(localStorage.getItem("totalCheckout"));
+let iva = (totalLS * 21)/100;
+let subtotal = totalLS - iva;
+
+totalFactura.textContent ="€ " + totalLS +".00";
+ivaEnFactura.textContent = "€ " + iva ;
+subtotalFactura.textContent = "€ " + subtotal ;
 
 
 obtenerUsuarioFactura();
@@ -135,7 +148,7 @@ let datos_usuario = obtenerUsuarioFactura();
 
 nombreApellidoFactura.textContent = datos_usuario.names1 + " " + datos_usuario.apellido;
 direccionFactura.textContent =datos_usuario.direccion;
-
+emailFactura.textContent = datos_usuario.email;
 
 }
 
@@ -149,22 +162,22 @@ mostrarInformacionUsuario();
 
 
 
-function startTime(){
-      today=new Date();
-      h=today.getHours();
-      m=today.getMinutes();
+// function startTime(){
+//       today=new Date();
+//       h=today.getHours();
+//       m=today.getMinutes();
       
-      m=checkTime(m);
+//       m=checkTime(m);
       
-      document.getElementById('reloj').innerHTML=h+":"+m;
-      t=setTimeout('startTime()',500);}
-      function checkTime(i)
-      {if (i<10) {i="0" + i;}return i;}
-      window.onload=function(){startTime();}
+//       document.getElementById('reloj').innerHTML=h+":"+m;
+//       t=setTimeout('startTime()',500);}
+//       function checkTime(i)
+//       {if (i<10) {i="0" + i;}return i;}
+//       window.onload=function(){startTime();}
 
 
 
-*/
+
 
 
 
