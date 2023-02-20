@@ -82,7 +82,7 @@ function leerLocalStorage(){
         //Construiremos una plantilla para cada uno de los zapatos
         row.innerHTML=
         `
-        <td>#</td>
+        <td>1</td>
         <td>${zapato.titulo}</td>
         <td>${zapato.precio}</td>
         <td>${zapato.precio}</td>
