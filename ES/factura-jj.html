@@ -29,19 +29,13 @@
     </div>
   
     <hr />
-   
-    <span id="date">09/05/2019</span>
-    <span id="clock">12:25 PM</span>
-    <hr>
+  
     <div class="row fact-info mt-3">
       <div class="col-3">
         <h5>Cliente</h5>
         <p id="nombreFactura">
           Harry Potter
         </p>
-        </div>
-        <div class="col-3">
-          <h5>E-mail</h5>
         <p id="emailFactura">
           Harrypotter@hogwarts.com
         </p>
@@ -54,10 +48,14 @@
       </div>
       <div class="col-3">
         <h5>N° de factura</h5>
-        <p>#2903</p>
+        <h5 >Fecha</h5>
         <h5></h5>
       </div>
-      
+      <div class="col-3">
+        <h5>103</h5>
+        <p id="date">09/05/2019</p>
+        <p id="clock">12:25 PM</p>
+      </div>
     </div>
   
     <div class="row my-5">
@@ -71,20 +69,25 @@
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td>1</td>
+            <td>Articulo de prueba</td>
+            <td>€ 0.00</td>
+            <td>€ 0.00</td>
+          </tr>
 
         </tbody>
         <tfoot>
           <tr>
             <th></th>
             <th></th>
-            <th class="right " >Subtotal</th>
+            <th class="right">Subtotal</th>
             <th id="subtotal-en-factura" class="right">€ 0.00</th>
           </tr>
           <tr>
             <td></td>
-            <td>
-            </td>
-            <td class="right">IVA 21%</td>
+            <td></td>
+            <td class="right">IVA</td>
             <td id="IVA-en-factura"class="right factura-iva">€ 0.00</td>
           </tr>
           <tr>
@@ -109,7 +112,7 @@
 </div>
 
 <script src="../reloj/fecha-factura.js"></script>
-<script src="../JS/app-factura copy.js"></script>
+<script src="../JS/app-factura.js"></script>
 
 </body>
 </html>
