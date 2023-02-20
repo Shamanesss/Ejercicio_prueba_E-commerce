@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="../CSS/factura.css">
 </head>
 <body>
-
-  <div class="contenedor " >
+<div class="contenedor " >
 
     <div class="row my-3">
       <div class="col-10">
@@ -30,13 +29,19 @@
     </div>
   
     <hr />
-  
+   
+    <span id="date">09/05/2019</span>
+    <span id="clock">12:25 PM</span>
+    <hr>
     <div class="row fact-info mt-3">
       <div class="col-3">
-        <h5>Costumer</h5>
+        <h5>Customer</h5>
         <p id="nombreFactura">
           Harry Potter
         </p>
+        </div>
+        <div class="col-3">
+          <h5>E-mail</h5>
         <p id="emailFactura">
           Harrypotter@hogwarts.com
         </p>
@@ -48,15 +53,11 @@
         </p>
       </div>
       <div class="col-3">
-        <h5>Invoice #</h5>
-        <h5 >Date</h5>
+        <h5>Invoice</h5>
+        <p>#2903</p>
         <h5></h5>
       </div>
-      <div class="col-3">
-        <h5>103</h5>
-        <p id="date">09/05/2019</p>
-        <p id="clock">12:25 PM</p>
-      </div>
+      
     </div>
   
     <div class="row my-5">
@@ -70,25 +71,20 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>Test product</td>
-            <td>€ 0.00</td>
-            <td>€ 0.00</td>
-          </tr>
 
         </tbody>
         <tfoot>
           <tr>
             <th></th>
             <th></th>
-            <th class="right">Subtotal</th>
+            <th class="right " >Subtotal</th>
             <th id="subtotal-en-factura" class="right">€ 0.00</th>
           </tr>
           <tr>
             <td></td>
-            <td></td>
-            <td class="right">TAX</td>
+            <td>
+            </td>
+            <td class="right">TAX 21%</td>
             <td id="IVA-en-factura"class="right factura-iva">€ 0.00</td>
           </tr>
           <tr>
