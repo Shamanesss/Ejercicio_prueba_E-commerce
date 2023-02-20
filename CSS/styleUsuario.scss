@@ -67,5 +67,20 @@ body{
   height: 9rem;
   background-position: center;
 }
-
+.contenedor-ojo{
+  position:relative
+}
+.ojo{
+  position: absolute;
+  top: 55%;
+  right: 12px;
+ 
+  
+}
+#ojo1{
+  visibility: hidden;
+}
+#ojo3{
+  visibility: hidden;
+}
 

@@ -38,6 +38,7 @@ function startTime() {
      
      var time = setTimeout(function(){ startTime() }, 500);
  }
+ 
  function checkTime(i) {
      if (i < 10) {
          i = "0" + i;
@@ -53,14 +54,18 @@ function startTime() {
 //  PopUP
 
 
-const modelbox = document.getElementById('modelbox1')
+const modelbox = document.getElementById('modelbox');
+
+setTimeout(function(){
+
+  modelbox.style.display = "block";
+}, 10000);
 
 
-
-  document.onmouseleave = function(){
+//   document.onmouseleave = function(){
     
-      modelbox.style.display = "block"
-  }
+//       modelbox.style.display = "block"
+//   }
 
   function closemodel() {
     modelbox.style.display = "none"

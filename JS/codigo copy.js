@@ -60,8 +60,10 @@ function registrousuario(){
     console.log(jsonUsuario);
     
     cargar();
+     
     
 }
+
 function cargar(){
     let usuario =localStorage.getItem("registro",JSON.parse);
         if(usuario===null){
@@ -71,3 +73,56 @@ function cargar(){
             console.log("no hago nada")
         }
 }
+let contrasena = document.querySelector('#DropdownFormPassword1');
+let ojo = document.getElementById('ojo')
+
+let ojo1 = document.getElementById('ojo1')
+ojo.addEventListener('click', hacker);
+ojo1.addEventListener('click', hacker);
+function hacker(){
+    if(contrasena.type == 'password'){
+        contrasena.type = 'text';
+     
+        ojo.style.visibility="hidden";
+        ojo1.style.visibility="visible";
+
+    }else{
+        contrasena.type = 'password';
+        ojo1.style.visibility="hidden";
+        ojo.style.visibility="visible";
+
+    }
+}
+let contrasen = document.querySelector('#DropdownFormPassword');
+let ojo2 = document.getElementById('ojo2')
+
+let ojo3 = document.getElementById('ojo3')
+ojo2.addEventListener('click', hackers);
+ojo3.addEventListener('click', hackers);
+function hackers(){
+    if(contrasen.type == 'password'){
+        contrasen.type = 'text';
+     
+        ojo2.style.visibility="hidden";
+        ojo3.style.visibility="visible";
+
+    }else{
+        contrasen.type = 'password';
+        ojo3.style.visibility="hidden";
+        ojo2.style.visibility="visible";
+
+    }
+}
+
+
+// function check() {
+//     let clicau =document.querySelector('#dropdownCheck1');
+    
+//     if(clicau.checked){
+//         document.querySelector('#btn-usuario').disabled= false;
+//     }
+//     else{
+//         document.querySelector('#btn-usuario').disabled = true;
+//     }
+
+// }check();

@@ -42,22 +42,22 @@
                 </li>
     
                 <li class="nav-item dropdown">
-                  <a class="nav-link px-2 text-white dropdown-toggle" href="../EN/Catalogue.html" id="navbarDropdownMenuLink"
+                  <a class="nav-link px-2 text-white dropdown-toggle" href="../EN/catalogue.html" id="navbarDropdownMenuLink"
                     data-bs-toggle="dropdown" aria-expanded="false">
                   Shop
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="../ES/">Man</a></li>
-                    <li><a class="dropdown-item" href="../ES/">Woman</a></li>
+                    <li><a class="dropdown-item" href="../EN/catalogue.html#seccion-hombres">Man</a></li>
+                    <li><a class="dropdown-item" href="../EN/catalogue.html#seccion-mujer">Woman</a></li>
                   </ul>
                 </li>
     
                 <li class="nav-item">
-                  <a href="#" class="nav-link px-2 text-white">Customer Services</a>
+                  <a href="../EN/costumer-service.html" class="nav-link px-2 text-white">Customer Services</a>
                 </li>
     
                 <li class="nav-item">
-                  <a href="#" class="nav-link px-2 text-white">About ZapatON</a>
+                  <a href="../EN/sobreZapatON.html" class="nav-link px-2 text-white">About ZapatON</a>
                 </li>
     
                 <li class="nav-item">
@@ -65,7 +65,7 @@
                 </li>
     
                 <li class="nav-item ocultar-login">
-                  <a href="../EN/cuenta.html" class="nav-link px-2 text-white"> <strong>My count</strong> </a>
+                  <a href="../EN/cuenta.html" class="nav-link px-2 text-white"> <strong>My Account</strong> </a>
                 </li>
     
                 <li class="nav-item dropdown ocultar-login">
@@ -130,27 +130,30 @@
     
                 <li class="nav-item submenu">
                   <i class=" fa-sharp fa-solid fa-cart-shopping text-white"></i>
-                  <ul id="carrito" >
+                  <ul id="carrito">
+
+                    <div class="scrollable">
+                      <table id="lista-carrito-cuenta" class="table ">
+                          <thead>
+                              <tr>
+                                <th scope="col">Image</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th></th>
+                              </tr>
+                          </thead>
+                          <tbody ></tbody>
+                      </table>
+                    </div>
     
-                    <table id="lista-carrito-home" class="table">
-                        <thead>
-                            <tr>
-                              <th scope="col">Image</th>
-                              <th scope="col">Name</th>
-                              <th scope="col">Price</th>
-                              <th></th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
+                    <div class="botones-carrito">
+                      <button class="ir-carrito btn btn-success"> <a href="../EN/carritonuevo.html" 
+                          class="button ">Go to cart</a></button>
     
-                      <div class="botones-carrito">
-                        <button class="ir-carrito btn btn-success"> <a href="../EN/carritonuevo.html" id="vaciar-carrito" class="button ">Go to cart</a></button>
+                      <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito-cuenta" class="button ">Empty cart</a></button>
+                    </div>
     
-                        <button class="vaciar-carrito btn btn-success"> <a href="#" id="vaciar-carrito" class="button ">Empty car</a></button>
-                      </div>
-    
-                    </ul>
+                  </ul>
                 </li>
               </ul>
             </div>
@@ -315,6 +318,7 @@
        
     
         <script src="../JS/login-cuenta.EN.js"></script>  
+        <script src="../JS/app-cuenta.js"></script>
          
 </body>
 </html>
