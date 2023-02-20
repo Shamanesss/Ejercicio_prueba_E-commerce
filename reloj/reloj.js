@@ -56,10 +56,7 @@ setTimeout(function(){
     modelbox.style.display = "none"
   }
 
-//   if (!localStorage.getItem('first-time')){
-//     setTimeout(showPopup, 1000);
-//     localStorage.setItem('first-time',1);
-//   }
+
 
 
 //<!-- ---------------------Validacion de formulario---------------------------------- -->

@@ -1,7 +1,4 @@
 
-
-
-
 function startTime() {
      var today = new Date();
      var hr = today.getHours();
@@ -35,7 +32,6 @@ function startTime() {
  }
  
  
- 
  window.onload = startTime();
 
 
@@ -51,19 +47,10 @@ setTimeout(function(){
 }, 10000);
 
 
-//   document.onmouseleave = function(){
-    
-//       modelbox.style.display = "block"
-//   }
-
   function closemodel() {
     modelbox.style.display = "none"
   }
 
-//   if (!localStorage.getItem('first-time')){
-//     setTimeout(showPopup, 1000);
-//     localStorage.setItem('first-time',1);
-//   }
 
 //<!-- ---------------------Validacion de formulario---------------------------------- -->
 
