@@ -26,9 +26,10 @@ const interval = () => {
     
  input.addEventListener("change",(e) => {
     if(input.value === "checked") {
+        debugger
         boton.disabled = false;
     }else {
-        boton.disabled =true;
+        boton.disabled = true;
     }
 })
 
@@ -45,15 +46,16 @@ const interval = () => {
     obtenerUsuario();
     
     function obtenerUsuario(){
+        
         let datos_usuario = JSON.parse(localStorage.getItem("registro"));
-    
+        
        //comprobamos si hay algo en local storage
          if(localStorage.getItem("registro")===null){
              datos_usuario =[" "];
             console.log("que hay  aqui "+datos_usuario);
          }else{
         
-        console.log("Obteniendo datos exitosamente"+datos_usuario)
+       // console.log("Obteniendo datos exitosamente"+datos_usuario)
        
          console.log(datos_usuario.names1);
        return datos_usuario;  
