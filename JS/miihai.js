@@ -89,23 +89,23 @@ carrito.addEventListener("click",eliminarZapato);
 
     
 //     let zapato, zapatoId;
-//     //identificamos el enlace que tiene la clase borrar producto, en este caso la X
+// //     //identificamos el enlace que tiene la clase borrar producto, en este caso la X
 //     if (e.target.classList.contains("carrito-producto-delete")){
-//        // console.log(e.target.parentElement.parentElement);
-//        //eliminamos la card
-//        e.target.parentElement.parentElement.remove();
+// //        // console.log(e.target.parentElement.parentElement);
+// //        //eliminamos la card
+//         e.target.parentElement.parentElement.remove();
 //         zapato = e.target.parentElement.parentElement;
 //         zapatoId = zapato.querySelector("button").getAttribute("data-id");
-//         //console.log(zapatoId);
+// //         //console.log(zapatoId);
 
 //     }
 
-//     //paso 8  llamar funcion para eliminar del local storage al dar X
-//     eliminarProductoLocalStorage(zapatoId);
+// //     //paso 8  llamar funcion para eliminar del local storage al dar X
+//      eliminarProductoLocalStorage(zapatoId);
 
-// }
+//  }
 
-// function eliminarProductoLocalStorage(zapato){
+//  function eliminarProductoLocalStorage(zapato){
  
 //     //console.log(zapato);
 //     let zapatosLS;
@@ -123,7 +123,7 @@ carrito.addEventListener("click",eliminarZapato);
 //     //console.log(zapatosLS);
 //     //añadimos el arreglo actual a storage
 //     localStorage.setItem("zapatos",JSON.stringify(zapatosLS));
-// }
+//  }
 
 
 function eliminarZapato2(id){
