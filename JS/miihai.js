@@ -4,7 +4,7 @@ let precios = document.querySelectorAll(".carrito-pr-precio p");
 let subtotales = document.querySelectorAll(".carrito-pr-subtotal p");
 let borrar =document.querySelectorAll(".trash");
 
-
+//Subtotales
 
 let cant, precio, sterge;
 
@@ -15,8 +15,6 @@ for (let i=0; i<cantidades.length; i++){
         mi (cant , precio, subtotales[i])  ;  
         total(subtotales)
         contador();
-    
-
    }
    
     function contador(){
@@ -28,11 +26,9 @@ for (let i=0; i<cantidades.length; i++){
              })
 
     }
-    
-  
-   
-
 };
+
+//Totales
 
 function mi (cantidad, precio, subtotal){
 let result = (cantidad * precio); 
@@ -85,47 +81,6 @@ carrito.addEventListener("click",eliminarZapato);
 
 
 
-//  function eliminarZapato(e){
-
-    
-//     let zapato, zapatoId;
-//     //identificamos el enlace que tiene la clase borrar producto, en este caso la X
-//     if (e.target.classList.contains("carrito-producto-delete")){
-//        // console.log(e.target.parentElement.parentElement);
-//        //eliminamos la card
-//        e.target.parentElement.parentElement.remove();
-//         zapato = e.target.parentElement.parentElement;
-//         zapatoId = zapato.querySelector("button").getAttribute("data-id");
-//         //console.log(zapatoId);
-
-//     }
-
-//     //paso 8  llamar funcion para eliminar del local storage al dar X
-//     eliminarProductoLocalStorage(zapatoId);
-
-// }
-
-// function eliminarProductoLocalStorage(zapato){
- 
-//     //console.log(zapato);
-//     let zapatosLS;
-//     // obtenemos el arreglo de zapatos
-//     zapatosLS = obtenerProductoLocalStorage();
-
-//     //Iteramos comparando el ID del zapato borrado con los del LS    
-//     zapatosLS.forEach(function(zapatoLS, index){
-//         // si el zapato id de la iteracion actual es igual al zapato que estamos eliminando fuera de la funcion entonces eliminamos ese zapato...
-//         //console.log(zapato.id);
-//         if(zapatoLS.id === zapato){
-//             zapatosLS.splice(index,1);
-//         }
-//     });
-//     //console.log(zapatosLS);
-//     //añadimos el arreglo actual a storage
-//     localStorage.setItem("zapatos",JSON.stringify(zapatosLS));
-// }
-
-
 function eliminarZapato2(id){
   let zapatosLS=[];
   zapatosLS = obtenerProductoLocalStorage();
@@ -140,12 +95,9 @@ function eliminarZapato2(id){
   localStorage.setItem("zapatos",JSON.stringify(nuevZapatos))
 }
 
-
-
 //ALMACENAR CANTIDADES Y VALORES
 
 let productosFactura = document.getElementById("contenidoAqui");
 
 console.log(totalTotal);
 
-// Log in Edurn
