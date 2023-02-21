@@ -31,6 +31,7 @@ for (let i=0; i<cantidades.length; i++){
 //Totales
 
 function mi (cantidad, precio, subtotal){
+
 let result = (cantidad * precio); 
 subtotal.innerHTML = "$" + result;
 }
@@ -55,17 +56,22 @@ localStorage.setItem("totalCheckout" , JSON.stringify(totalPagar));
 
 //totalPagar = suma;
 console.log(totalPagar);
+ 
+
 let vaciar = document.getElementById("vaciartodo")
 //vaciar.addEventListener("click",eliminarZapato)
+
 vaciar.addEventListener("click",()=>{
 
  eliminarZapatoMihai() })
 
 
 carrito.addEventListener("click",eliminarZapato);
+
  function eliminarZapatoMihai(){
     
  while(listaZapatos.firstChild){
+    
      listaZapatos.removeChild(listaZapatos.firstChild);
     }
    
@@ -73,6 +79,7 @@ carrito.addEventListener("click",eliminarZapato);
     return false;
   
  function vaciarLocalStorage(){
+
      //total(0);
      localStorage.clear();
     
@@ -81,6 +88,50 @@ carrito.addEventListener("click",eliminarZapato);
 
 
 
+<<<<<<< HEAD
+=======
+ function eliminarZapato(e){
+
+    
+    let zapato, zapatoId;
+    //identificamos el enlace que tiene la clase borrar producto, en este caso la X
+    if (e.target.classList.contains("carrito-producto-delete")){
+       // console.log(e.target.parentElement.parentElement);
+       //eliminamos la card
+       e.target.parentElement.parentElement.remove();
+        zapato = e.target.parentElement.parentElement;
+        zapatoId = zapato.querySelector("button").getAttribute("data-id");
+        //console.log(zapatoId);
+
+    }
+
+    //paso 8  llamar funcion para eliminar del local storage al dar X
+    eliminarProductoLocalStorage(zapatoId);
+
+}
+
+function eliminarProductoLocalStorage(zapato){
+ 
+    //console.log(zapato);
+    let zapatosLS;
+    // obtenemos el arreglo de zapatos
+    zapatosLS = obtenerProductoLocalStorage();
+
+    //Iteramos comparando el ID del zapato borrado con los del LS    
+    zapatosLS.forEach(function(zapatoLS, index){
+        // si el zapato id de la iteracion actual es igual al zapato que estamos eliminando fuera de la funcion entonces eliminamos ese zapato...
+        //console.log(zapato.id);
+        if(zapatoLS.id === zapato){
+            zapatosLS.splice(index,1);
+        }
+    });
+    //console.log(zapatosLS);
+    //añadimos el arreglo actual a storage
+    localStorage.setItem("zapatos",JSON.stringify(zapatosLS));
+}
+
+
+>>>>>>> 49392c79c2a350b3990a78110285e816a3587c9a
 function eliminarZapato2(id){
   let zapatosLS=[];
   zapatosLS = obtenerProductoLocalStorage();
