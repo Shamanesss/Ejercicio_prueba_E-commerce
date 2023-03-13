@@ -1,8 +1,6 @@
 @import "_parcial";
 
-*{
-    font-family: 'Libre Baskerville', serif;
-}
+
 
 
 body {
@@ -10,9 +8,9 @@ body {
     background-color: $color-marron-light;
 }
 
-    background-image: $fondo;
+    background-image: $color-blanco;
      .section1{
-        background-image: linear-gradient(to right, rgba(253, 248, 245, 0.5)20%, rgba(232, 206, 191, 0.7)40%,rgba(221,175,148,0.8)70% , rgba(79,72,70,0.9)100%), url(../img/bilbaoZapato.jpeg);
+        background-color: url(../img/bilbaoZapato.jpeg);
         background-repeat: no-repeat;
         background-size: cover;
     
