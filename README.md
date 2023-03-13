@@ -52,16 +52,7 @@ Listo para el primer sprint review.
 * GitHub
 * Trello
 
-## Instalación y prueba
-1. Copie la URL del proyecto:
-```
-https://github.com/mihaicce/ZapatON
-```
-2. Abra un terminal en su Visual Studio Code, seleccione la carpeta en la que quiere poner el proyecto y clónelo (para ésto deberá tener instalado en su terminal git):
 
-![Imagen git clone](./img/img-readme/gitClone.png)
-```
-$ git clone https://github.com/mihaicce/ZapatON
 ```
 
 3. Sitúese en la página principal, denominada index.html y ábrala. Presione el botón derecho del ratón y escoja la opción "Open in default browser" o presione Ctrl+B. Se abrirá el navegador con la página principal de nuestra web y ya podrá navegar para probarla.
@@ -76,14 +67,4 @@ $ git clone https://github.com/mihaicce/ZapatON
 * SEO
 * CSS3
 * Visual Studio Code
-
-## Equipo
-* Yorlin Pachacoa (SCRUM Master)
-* Edurne Montalban
-* Gorka Ibarrondo
-* Mihai Cocea
-* Jonathan Echevarria 
-* Andrés Ocina (Product owner)
-
-## Agradecimientos
 
